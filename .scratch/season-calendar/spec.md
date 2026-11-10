@@ -13,6 +13,7 @@ SvelteKit 2 + Svelte 5 (TypeScript, runes syntax), `@sveltejs/adapter-static` (e
 - Locale in the URL path: `/en`, `/de`, `/fr`, `/it`. Root `/` is a tiny prerendered page that client-side detects `navigator.languages` (base language ∈ {en,de,fr,it}, else `en`) and redirects to `/{locale}?m={currentMonth}`.
 - Month and view are **query params**: `/{locale}?m=1..12&view=month|season`. Month switcher, view toggle and language links are real `<a href>` links (shareable, prerender-friendly).
 - Invalid `m` → current month. Missing `m` → current month (browser date at runtime; build date baked into prerendered HTML — hydration corrects it).
+- Query params are read client-side from SvelteKit's `page` state (`$app/state`, guarded by `BROWSER`): SvelteKit throws on `url.searchParams` inside `load` during prerendering, so `+page.ts` only validates the locale; the component derives `month`/`view` reactively from `page.url.searchParams` (undefined during SSR → fallback).
 - Search box and category chips are local component state, not URL.
 - `prerender.entries` = `['/', '/en', '/de', '/fr', '/it']`; `export const prerender = true` in root `+layout.ts`. `[locale]` layout guard: unknown locale → client-side redirect to `/en`.
 - i18n: `src/lib/i18n/{index,en,de,fr,it}.ts`; `StringKey` derived from the `en` dictionary; `t(locale, key)` helper; vitest asserts key parity across all four dictionaries. Month/season names from `Intl.DateTimeFormat` (tags `en-GB`, `de-CH`, `fr-CH`, `it-CH`), short month names capitalized via helper (de/fr return lowercase from `Intl`).
@@ -64,7 +65,7 @@ Chips `<button aria-pressed>`; month links `aria-label="{aria.showMonth} {Month}
 1. **`<html lang>` per locale**: `hooks.server.ts` rewrites `lang="en"` → `lang="{locale}"` via `transformPageChunk` (pathname-based), which adapter-static bakes into each prerendered page.
 2. **Root page no-JS**: the four locale links are server-rendered into the prerendered HTML (present with or without JS), which fulfills the brief's `<noscript>` intent; the client script auto-redirects after hydration.
 3. **`View` type** (`'month' | 'season'`) lives in a small `src/lib/types.ts`.
-4. **Hydration safety net**: `[locale]/+page.svelte` onMount re-navigates if the browser URL's `m`/`view` differ from the prerendered load data, so deep links like `/de?m=7` are always honored even if load-data reuse at hydration lagged.
+4. **Query params at hydration**: since `+page.ts` cannot read `url.searchParams` during prerender, the page component derives `m`/`view` from `page` state (`$app/state`) with a `BROWSER` guard; on hydration the real URL (`/de?m=7&view=season`) is picked up immediately, no re-navigation needed.
 5. **Language/month/view links** always carry explicit `m` and `view` params (deterministic shareable URLs); the brand link goes to bare `/{locale}` per brief.
 6. **Footer** = `footer.note` only (it already contains the region hint).
 7. **Card sort order** = dataset order (vegetables → fruits → herbs → nuts).
