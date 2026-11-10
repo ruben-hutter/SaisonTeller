@@ -1,0 +1,143 @@
+/*
+ * SaisonTeller design tokens & base styles.
+ * Theme: system only (prefers-color-scheme), light/dark pairs verified ≥ 4.5:1 contrast.
+ */
+
+:root {
+	--bg: #f6f5f1;
+	--surface: #ffffff;
+	--surface-dim: #ecebe4;
+	--text: #26292e;
+	--text-muted: #5b6470;
+	--border: #d9d6cd;
+	--on-accent: #17191d;
+	--shadow:
+		0 1px 2px rgb(20 23 27 / 0.06),
+		0 4px 12px rgb(20 23 27 / 0.06);
+	--radius: 10px;
+	--storage-alpha: 34%;
+
+	/* Category dot colors */
+	--dot-vegetable: #3f9d5c;
+	--dot-fruit: #c2496b;
+	--dot-herb: #2c8f84;
+	--dot-nut: #8a5a34;
+
+	/* Default accent (root page and fallback); overridden by [data-season] */
+	--accent: #3f9d5c;
+	--accent-ink: #2c7a44;
+}
+
+[data-season='spring'] {
+	--accent: #3f9d5c;
+	--accent-ink: #2c7a44;
+}
+
+[data-season='summer'] {
+	--accent: #d9a404;
+	--accent-ink: #7a6102;
+}
+
+[data-season='autumn'] {
+	--accent: #d97a2b;
+	--accent-ink: #a0541a;
+}
+
+[data-season='winter'] {
+	--accent: #4a8fc2;
+	--accent-ink: #2b6a9c;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg: #14171b;
+		--surface: #1d2126;
+		--surface-dim: #262b32;
+		--text: #e9e7e2;
+		--text-muted: #a8aeb8;
+		--border: #31373f;
+		--on-accent: #14171b;
+		--shadow:
+			0 1px 2px rgb(0 0 0 / 0.35),
+			0 4px 12px rgb(0 0 0 / 0.25);
+
+		--dot-vegetable: #7dcb9a;
+		--dot-fruit: #e593ab;
+		--dot-herb: #72c7bb;
+		--dot-nut: #c99a6d;
+	}
+
+	[data-season='spring'] {
+		--accent: #7dcb9a;
+		--accent-ink: #7dcb9a;
+	}
+
+	[data-season='summer'] {
+		--accent: #e8c04a;
+		--accent-ink: #e8c04a;
+	}
+
+	[data-season='autumn'] {
+		--accent: #e59a5f;
+		--accent-ink: #e59a5f;
+	}
+
+	[data-season='winter'] {
+		--accent: #7fb3d9;
+		--accent-ink: #7fb3d9;
+	}
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	color-scheme: light dark;
+}
+
+body {
+	margin: 0;
+	font-family:
+		system-ui,
+		-apple-system,
+		'Segoe UI',
+		Roboto,
+		'Helvetica Neue',
+		Arial,
+		sans-serif;
+	background: var(--bg);
+	color: var(--text);
+	line-height: 1.55;
+	-webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+	outline: 2px solid var(--accent, currentColor);
+	outline-offset: 2px;
+}
+
+/* Visually hidden, still available to screen readers */
+.vh {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	white-space: nowrap;
+	border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		transition-duration: 0.01ms !important;
+		animation-duration: 0.01ms !important;
+	}
+}
