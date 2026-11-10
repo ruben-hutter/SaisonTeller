@@ -1,6 +1,6 @@
 # 02 — i18n & routing
 
-Status: ready-for-agent
+Status: resolved
 
 ## Task
 
@@ -18,3 +18,7 @@ Status: ready-for-agent
 ## Acceptance
 
 - `npm run build` prerenders `/`, `/en`, `/de`, `/fr`, `/it`; each locale page has correct `lang` attr; deep links like `/de?m=7&view=season` honored after hydration.
+
+## Comments
+
+- Proof: `npm run build` prerenders /, /en, /de, /fr, /it; `lang="de|fr|it"` baked via hooks transformPageChunk; query params read client-side from page state (Kit blocks url.searchParams in prerendered loads — see ADR-0001); key-parity test green.

@@ -1,6 +1,6 @@
 # 01 — Data model: seasons + produce dataset
 
-Status: ready-for-agent
+Status: resolved
 
 ## Task
 
@@ -17,3 +17,7 @@ Status: ready-for-agent
 
 - Vitest passes with no DOM, node environment.
 - Dataset matches spec table exactly.
+
+## Comments
+
+- Proof: `npm test` — seasons (range helper incl. wrap-around, seasonOfMonth ×12, monthsOfSeason round-trip) and items integrity (85 items, unique kebab ids, 4 non-empty names, ascending/disjoint harvest/storage, 6 south items, itemsForMonth grouping) all pass; dataset byte-verified against spec table by the spec reviewer.

@@ -1,6 +1,6 @@
 # 04 — Theme & accessibility
 
-Status: ready-for-agent
+Status: resolved
 
 ## Task
 
@@ -12,3 +12,7 @@ Status: ready-for-agent
 ## Acceptance
 
 - `npm run check` clean; manual pass over both themes at mobile and desktop widths.
+
+## Comments
+
+- Proof: all text/surface pairs verified >= 4.5:1 in both themes (light: text 13.4-14.6, muted 5.5-6.0, accent-ink 4.84-5.44, on-accent 5.03-7.76; dark: 7.0-14.6); prefers-color-scheme + prefers-reduced-motion only; focus-visible rings in accent; svelte-check 0 errors.

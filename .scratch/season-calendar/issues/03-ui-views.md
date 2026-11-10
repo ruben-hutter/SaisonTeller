@@ -1,6 +1,6 @@
 # 03 — UI views: month & season
 
-Status: ready-for-agent
+Status: resolved
 
 ## Task
 
@@ -14,3 +14,7 @@ Status: ready-for-agent
 ## Acceptance
 
 - Both views render correctly for all locales; filters + search work; shareable URLs.
+
+## Comments
+
+- Proof: month view (h1 month · season, harvest grid then tagged storage grid) and season view (per-month sections) render for all locales; chips aria-pressed, search diacritic-insensitive across 4 languages, results.none, shareable ?m&view links — verified in prerendered HTML and via `vite preview`.

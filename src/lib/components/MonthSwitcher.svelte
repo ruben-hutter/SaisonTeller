@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { monthName, monthShort, t, type Locale } from '$lib/i18n';
+	import { ALL_MONTHS } from '$lib/seasons';
 	import type { View } from '$lib/types';
 
 	interface Props {
@@ -12,7 +13,7 @@
 
 	let { locale, selected, view, current }: Props = $props();
 
-	const months = Array.from({ length: 12 }, (_, i) => i + 1);
+	const months = ALL_MONTHS;
 </script>
 
 <nav class="months" aria-label={t(locale, 'view.month')}>

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
 	import { onMount } from 'svelte';
-	import { LOCALES, type Locale } from '$lib/i18n';
+	import { LOCALES, isLocale, type Locale } from '$lib/i18n';
 
 	// Language names in their own language — intentionally not localized.
 	const languageNames: Record<Locale, string> = {
@@ -17,7 +17,7 @@
 		const preferred =
 			navigator.languages
 				.map((tag) => tag.split('-')[0]!.toLowerCase())
-				.find((base) => (LOCALES as readonly string[]).includes(base)) ?? 'en';
+				.find(isLocale) ?? 'en';
 		goto(`/${preferred}?m=${new Date().getMonth() + 1}`, { replaceState: true });
 	});
 </script>

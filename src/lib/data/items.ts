@@ -589,10 +589,20 @@ export const items: ProduceItem[] = [
 	}
 ];
 
+/** True when the item is freshly harvested in this month. */
+export function isHarvestMonth(item: ProduceItem, month: number): boolean {
+	return item.harvest.includes(month);
+}
+
+/** True when the item is available from storage (not fresh) in this month. */
+export function isStorageMonth(item: ProduceItem, month: number): boolean {
+	return (item.storage ?? []).includes(month);
+}
+
 /** Items in season for a month, split into fresh harvest and storage-only availability. */
 export function itemsForMonth(month: number): { harvest: ProduceItem[]; storage: ProduceItem[] } {
 	return {
-		harvest: items.filter((item) => item.harvest.includes(month)),
-		storage: items.filter((item) => (item.storage ?? []).includes(month))
+		harvest: items.filter((item) => isHarvestMonth(item, month)),
+		storage: items.filter((item) => isStorageMonth(item, month))
 	};
 }

@@ -1,5 +1,8 @@
 export type Season = 'spring' | 'summer' | 'autumn' | 'winter';
 
+/** The twelve month numbers, 1..12. */
+export const ALL_MONTHS: readonly number[] = Array.from({ length: 12 }, (_, i) => i + 1);
+
 /**
  * Expand an inclusive month range like '7-10' into month numbers (1..12).
  * Wrap-around ranges are allowed: '10-2' = October..February.

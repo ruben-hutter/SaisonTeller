@@ -1,6 +1,7 @@
 <script lang="ts">
-	import type { ProduceItem } from '$lib/data/items';
+	import { isHarvestMonth, isStorageMonth, type ProduceItem } from '$lib/data/items';
 	import { monthName, t, type Locale } from '$lib/i18n';
+	import { ALL_MONTHS } from '$lib/seasons';
 
 	interface Props {
 		item: ProduceItem;
@@ -13,7 +14,7 @@
 
 	let { item, locale, highlight, fromStorage = false }: Props = $props();
 
-	const monthNumbers = Array.from({ length: 12 }, (_, i) => i + 1);
+	const monthNumbers = ALL_MONTHS;
 
 	// Screen-reader alternative to the visual availability strip.
 	const summary = $derived.by(() => {
@@ -44,8 +45,8 @@
 		{#each monthNumbers as m (m)}
 			<span
 				class="cell"
-				class:harvest={item.harvest.includes(m)}
-				class:storage={(item.storage ?? []).includes(m)}
+				class:harvest={isHarvestMonth(item, m)}
+				class:storage={isStorageMonth(item, m)}
 				class:now={m === highlight}
 			></span>
 		{/each}

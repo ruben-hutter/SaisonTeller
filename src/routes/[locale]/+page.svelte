@@ -2,7 +2,7 @@
 	import { page } from '$app/state';
 	import ItemCard from '$lib/components/ItemCard.svelte';
 	import MonthSwitcher from '$lib/components/MonthSwitcher.svelte';
-	import { itemsForMonth, type Category, type ProduceItem } from '$lib/data/items';
+	import { isStorageMonth, itemsForMonth, type Category, type ProduceItem } from '$lib/data/items';
 	import { LOCALES, monthName, t, type Locale, type StringKey } from '$lib/i18n';
 	import { monthsOfSeason, seasonOfMonth } from '$lib/seasons';
 	import type { View } from '$lib/types';
@@ -152,6 +152,19 @@
 			</span>
 		</p>
 
+		{#snippet cardGrid(list: ProduceItem[], highlightMonth: number, markStorage: boolean)}
+			<div class="grid">
+				{#each list as item (item.id)}
+					<ItemCard
+						{item}
+						{locale}
+						highlight={highlightMonth}
+						fromStorage={markStorage && isStorageMonth(item, highlightMonth)}
+					/>
+				{/each}
+			</div>
+		{/snippet}
+
 		{#if view === 'month'}
 			<h1>
 				{monthName(locale, month)}
@@ -163,19 +176,11 @@
 			{:else}
 				{#if monthResult.harvest.length}
 					<h2>{t(locale, 'legend.harvest')}</h2>
-					<div class="grid">
-						{#each monthResult.harvest as item (item.id)}
-							<ItemCard {item} {locale} highlight={month} />
-						{/each}
-					</div>
+					{@render cardGrid(monthResult.harvest, month, false)}
 				{/if}
 				{#if monthResult.storage.length}
 					<h2 class="storage-heading">{t(locale, 'legend.storage')}</h2>
-					<div class="grid">
-						{#each monthResult.storage as item (item.id)}
-							<ItemCard {item} {locale} highlight={month} fromStorage />
-						{/each}
-					</div>
+					{@render cardGrid(monthResult.storage, month, true)}
 				{/if}
 			{/if}
 		{:else}
@@ -187,16 +192,7 @@
 					{#if section.items.length}
 						<section>
 							<h2>{monthName(locale, section.month)}</h2>
-							<div class="grid">
-								{#each section.items as item (item.id)}
-									<ItemCard
-										{item}
-										{locale}
-										highlight={section.month}
-										fromStorage={(item.storage ?? []).includes(section.month)}
-									/>
-								{/each}
-							</div>
+							{@render cardGrid(section.items, section.month, true)}
 						</section>
 					{/if}
 				{/each}

@@ -47,7 +47,7 @@ Dataset: **85 items** (46 vegetables, 23 fruits, 13 herbs, 3 nuts; 6 with `origi
 - **Season view**: h1 = season name; three sections (one per month of the season, h2 month name + card grid). Within each section one grid, harvest items first, storage items tagged (decision: no separate storage subgroup per month — the tag carries the distinction).
 - Filters: category chips (All / Vegetables / Fruits / Herbs / Nuts) + search input. Search matches the item name in any of the 4 languages, case-insensitive; diacritics normalized (`NFD` + strip `\p{Diacritic}`) so e.g. "chicoree" finds "Chicorée". Empty result → localized `results.none`.
 - Card: name, category-colored dot, optional "Southern Europe" badge, 12-month availability strip — one dot per month: filled = harvest, light = storage, selected month = ring highlight. Dots are `aria-hidden`; a visually-hidden summary ("harvest: … / storage: …" using `legend.*` keys and `Intl` month names) describes the strip to screen readers.
-- Availability-strip ring highlights the **selected** month `m`, not the real current month (the view answers "what's in season in m").
+- Availability strip: the ring highlights the month being viewed — the selected `m` in month view, and the section's month in season view (each section's grid answers "what's in season in this month"; ringing all three sections' months keeps every card meaningful rather than only marking where the user came from).
 
 ## Design
 
