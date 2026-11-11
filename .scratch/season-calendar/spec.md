@@ -213,3 +213,7 @@ Page `<title>`: `{app.name} — {app.tagline}`; meta description = `footer.note`
 - Availability strip cells carry month numbers 1–12 (9px tabular digits, ≥12px cells, `minmax(12px,1fr)` columns; verified 320px no-overflow); strip is `role="img"` with an `aria.stripLabel`-based label listing harvest (+storage) months.
 - "Today" pill (localized `action.today`, `aria.backToToday`) appears in the month row whenever the selected month ≠ current month — hydration-only in prerendered HTML, covered by a `svelte/server` render test of MonthSwitcher.
 - `monthsOfSeason` and the `View` type were deleted (unused after season-view removal); `seasonOfMonth` stays.
+- Round 3 (icon set): option C — the project-owned bespoke flat SVG set — won the `feat/icon-lab` bake-off and is promoted to production.
+- The emoji `image` field is removed from the dataset: icons are id-keyed at `static/img/bespoke/<id>.svg` (85/85), rendered directly by `ItemCard`.
+- Noto machinery fully retired: `static/img/produce/`, the fetch script, `emojiFileName()` mapping and `footer.credit` are gone (bespoke is project-owned, no attribution).
+- Decision record: `.scratch/season-calendar/issues/09-icon-options.md`; browsable three-set comparison stays archived on branch `feat/icon-lab`.

@@ -39,6 +39,6 @@ src/
 
 Decisions are recorded in `docs/adr/`; domain vocabulary in `GLOSSARY.md`.
 
-## Credits
+## Imagery
 
-Produce illustrations: [Noto Emoji](https://github.com/googlefonts/noto-emoji) (Apache-2.0), vendored under `static/img/produce/` (see `npm run emoji:fetch`); the upstream `LICENSE` is committed alongside.
+Every item has its own project-owned flat SVG glyph at `static/img/bespoke/<id>.svg` (id-keyed, one glyph per item, no external assets or attribution). The icon-set bake-off (Noto emoji baseline vs. ingredient photos vs. bespoke SVGs) is preserved on branch `feat/icon-lab`; the decision record is `.scratch/season-calendar/issues/09-icon-options.md`.
