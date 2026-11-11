@@ -11,6 +11,7 @@ import { fileURLToPath } from 'node:url';
 const MODEL = 'glm-5.3-flash';
 const QUESTION = [
 	'This image shows a flat, minimalist vector-style illustration (an icon) of a single real-world object.',
+	'It may be a fruit, vegetable, herb, nut, plant, or any other real-world thing.',
 	'What real-world object does the illustration depict?',
 	'Reply with ONLY your top 3 guesses, most likely first, one per line, in exactly this format:',
 	'1. <object>',

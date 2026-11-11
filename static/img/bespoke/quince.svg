@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-  <path d="M64 30 Q62 20 66 14" fill="none" stroke="#8A6B4A" stroke-width="3.5" stroke-linecap="round"/>
-  <ellipse cx="78" cy="22" rx="9" ry="5" transform="rotate(20 78 22)" fill="#6CA644"/>
-  <path d="M64 30 Q58 36 58 46 Q58 56 50 64 Q42 74 44 88 Q46 104 64 104 Q82 104 84 88 Q86 74 78 64 Q70 56 70 46 Q70 36 64 30 Z" fill="#EFC94C"/>
-  <circle cx="52" cy="78" r="2" fill="#E0B235"/>
-  <circle cx="64" cy="70" r="2" fill="#E0B235"/>
-  <circle cx="76" cy="78" r="2" fill="#E0B235"/>
+  <path d="M64 36 Q60 24 66 14 Q72 20 68 32" fill="none" stroke="#7A5230" stroke-width="5" stroke-linecap="round"/>
+  <ellipse cx="80" cy="26" rx="10" ry="5" transform="rotate(25 80 26)" fill="#6E9B4E"/>
+  <path d="M32 66 Q34 40 58 34 Q80 32 92 52 Q98 62 96 76 Q92 94 76 100 Q66 104 60 104 Q50 104 42 96 Q30 84 32 66 Z" fill="#E8B84B"/>
+  <path d="M44 46 Q50 40 58 42" fill="none" stroke="#F6D98A" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M84 62 Q90 70 88 80" fill="none" stroke="#C99A2E" stroke-width="3.5" stroke-linecap="round"/>
+  <ellipse cx="52" cy="78" rx="6" ry="4" fill="#C99A2E"/>
 </svg>

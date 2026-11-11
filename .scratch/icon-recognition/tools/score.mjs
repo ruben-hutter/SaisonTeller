@@ -29,7 +29,8 @@ const contains = (haystack, needle) => {
 
 const verdicts = {};
 let pass = 0, fail = 0;
-for (const [id, { names, aliases }] of Object.entries(expected)) {
+for (const id of Object.keys(guesses)) {
+	const { names, aliases } = expected[id];
 	const g = (guesses[id] ?? []).filter(Boolean);
 	if (g.length === 0) { verdicts[id] = { verdict: 'MISSING', guesses: g, hit: null }; fail++; continue; }
 	const synonyms = [...Object.values(names), ...aliases];

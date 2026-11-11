@@ -1,0 +1,371 @@
+{
+	"cabbage-savoy": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Turtle",
+			"Leaf",
+			"Tree"
+		],
+		"hit": null
+	},
+	"artichoke": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Tree",
+			"Pine tree",
+			"Cypress"
+		],
+		"hit": null
+	},
+	"cabbage-white": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Tree",
+			"Broccoli",
+			"Bush"
+		],
+		"hit": null
+	},
+	"cabbage-red": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Beetle",
+			"Crab",
+			"Mask"
+		],
+		"hit": null
+	},
+	"brussels-sprouts": {
+		"verdict": "PASS",
+		"guesses": [
+			"Brussels sprouts",
+			"Peas",
+			"Grapes"
+		],
+		"hit": {
+			"guess": "Brussels sprouts",
+			"synonym": "Brussels sprouts"
+		}
+	},
+	"broad-bean": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Lime",
+			"Pea pod",
+			"Sprout"
+		],
+		"hit": null
+	},
+	"corn-salad": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Plant",
+			"Flower",
+			"Leaf"
+		],
+		"hit": null
+	},
+	"celeriac": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Turnip",
+			"Radish",
+			"Beet"
+		],
+		"hit": null
+	},
+	"kale": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Sprout",
+			"Seedling",
+			"Tulip"
+		],
+		"hit": null
+	},
+	"chicory": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Flower in vase",
+			"Sprout",
+			"Plant in pot"
+		],
+		"hit": null
+	},
+	"fennel": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Sprout",
+			"Onion",
+			"Seedling"
+		],
+		"hit": null
+	},
+	"lettuce": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Brussels sprout",
+			"Cabbage",
+			"Broccoli"
+		],
+		"hit": null
+	},
+	"radicchio": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Cocoa pod",
+			"Papaya",
+			"Pecan"
+		],
+		"hit": null
+	},
+	"rhubarb": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Radish",
+			"Beet",
+			"Turnip"
+		],
+		"hit": null
+	},
+	"onion": {
+		"verdict": "PASS",
+		"guesses": [
+			"Potato",
+			"Kiwi",
+			"Onion"
+		],
+		"hit": {
+			"guess": "Onion",
+			"synonym": "Onion"
+		}
+	},
+	"kohlrabi": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Seed sprout",
+			"Melon",
+			"Bean"
+		],
+		"hit": null
+	},
+	"potato": {
+		"verdict": "PASS",
+		"guesses": [
+			"Cookie",
+			"Biscuit",
+			"Potato"
+		],
+		"hit": {
+			"guess": "Potato",
+			"synonym": "Potato"
+		}
+	},
+	"rocket": {
+		"verdict": "FAIL",
+		"guesses": [
+			"sprout",
+			"plant",
+			"seedling"
+		],
+		"hit": null
+	},
+	"spinach": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Seedling",
+			"Sprout",
+			"Plant"
+		],
+		"hit": null
+	},
+	"salsify": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Dates",
+			"Seed",
+			"Plant ovary"
+		],
+		"hit": null
+	},
+	"mirabelle": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Lemon",
+			"Apple",
+			"Orange"
+		],
+		"hit": null
+	},
+	"quince": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Lemon",
+			"Orange",
+			"Apple"
+		],
+		"hit": null
+	},
+	"shallot": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Cicada",
+			"Moth",
+			"Fly"
+		],
+		"hit": null
+	},
+	"swiss-chard": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Leaf",
+			"Sprout",
+			"Seedling"
+		],
+		"hit": null
+	},
+	"mandarin": {
+		"verdict": "PASS",
+		"guesses": [
+			"Orange",
+			"Tangerine",
+			"Grapefruit"
+		],
+		"hit": {
+			"guess": "Tangerine",
+			"synonym": "tangerine"
+		}
+	},
+	"basil": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Seedling",
+			"Sprout",
+			"Plant"
+		],
+		"hit": null
+	},
+	"lovage": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Seedling",
+			"Sprout",
+			"Plant"
+		],
+		"hit": null
+	},
+	"clementine": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Coin",
+			"Alarm clock",
+			"Smiley face"
+		],
+		"hit": null
+	},
+	"marjoram": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Plant sprig",
+			"Eucalyptus branch",
+			"String of pearls plant"
+		],
+		"hit": null
+	},
+	"mint": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Seedling",
+			"Sprout",
+			"Plant"
+		],
+		"hit": null
+	},
+	"chervil": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Firework",
+			"Yarrow",
+			"Dill"
+		],
+		"hit": null
+	},
+	"oregano": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Sprig",
+			"Lavender",
+			"Rosemary"
+		],
+		"hit": null
+	},
+	"rosemary": {
+		"verdict": "PASS",
+		"guesses": [
+			"Fern leaf",
+			"Rosemary sprig",
+			"Herb"
+		],
+		"hit": {
+			"guess": "Rosemary sprig",
+			"synonym": "Rosemary"
+		}
+	},
+	"sage": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Seedling",
+			"Sprout",
+			"Leaf"
+		],
+		"hit": null
+	},
+	"thyme": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Branch",
+			"Twig",
+			"Sprout"
+		],
+		"hit": null
+	},
+	"wild-garlic": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Celery",
+			"Asparagus",
+			"Aloe vera"
+		],
+		"hit": null
+	},
+	"walnut": {
+		"verdict": "PASS",
+		"guesses": [
+			"Walnut",
+			"Coconut",
+			"Basketball"
+		],
+		"hit": {
+			"guess": "Walnut",
+			"synonym": "Walnut"
+		}
+	},
+	"hazelnut": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Chestnut",
+			"Helmet",
+			"Shield"
+		],
+		"hit": null
+	},
+	"chestnut": {
+		"verdict": "FAIL",
+		"guesses": [
+			"seedling",
+			"pistachio",
+			"sprout"
+		],
+		"hit": null
+	}
+}

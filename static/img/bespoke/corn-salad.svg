@@ -1,16 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-  <g transform="translate(64 66)">
-    <g><path d="M0 -6 Q-8.5 -19 -5 -31 Q0 -37 5 -31 Q8.5 -19 0 -6 Z" fill="#6FA25C"/></g>
-    <g transform="rotate(36)"><path d="M0 -6 Q-8.5 -19 -5 -31 Q0 -37 5 -31 Q8.5 -19 0 -6 Z" fill="#557E4A"/></g>
-    <g transform="rotate(72)"><path d="M0 -6 Q-8.5 -19 -5 -31 Q0 -37 5 -31 Q8.5 -19 0 -6 Z" fill="#7FB069"/></g>
-    <g transform="rotate(108)"><path d="M0 -6 Q-8.5 -19 -5 -31 Q0 -37 5 -31 Q8.5 -19 0 -6 Z" fill="#6FA25C"/></g>
-    <g transform="rotate(144)"><path d="M0 -6 Q-8.5 -19 -5 -31 Q0 -37 5 -31 Q8.5 -19 0 -6 Z" fill="#557E4A"/></g>
-    <g transform="rotate(180)"><path d="M0 -6 Q-8.5 -19 -5 -31 Q0 -37 5 -31 Q8.5 -19 0 -6 Z" fill="#7FB069"/></g>
-    <g transform="rotate(216)"><path d="M0 -6 Q-8.5 -19 -5 -31 Q0 -37 5 -31 Q8.5 -19 0 -6 Z" fill="#6FA25C"/></g>
-    <g transform="rotate(252)"><path d="M0 -6 Q-8.5 -19 -5 -31 Q0 -37 5 -31 Q8.5 -19 0 -6 Z" fill="#557E4A"/></g>
-    <g transform="rotate(288)"><path d="M0 -6 Q-8.5 -19 -5 -31 Q0 -37 5 -31 Q8.5 -19 0 -6 Z" fill="#7FB069"/></g>
-    <g transform="rotate(324)"><path d="M0 -6 Q-8.5 -19 -5 -31 Q0 -37 5 -31 Q8.5 -19 0 -6 Z" fill="#6FA25C"/></g>
-    <circle r="7" fill="#C6DCA4"/>
-    <circle r="3.5" fill="#A9CC7C"/>
-  </g>
+  <ellipse cx="64" cy="96" rx="7" ry="4" fill="#C9E0A8"/>
+  <path d="M64 96 L30 74 Q20 66 26 56 Q34 48 44 58 Z" fill="#5A9E3D"/>
+  <path d="M64 96 L98 74 Q108 66 102 56 Q94 48 84 58 Z" fill="#3E7A2A"/>
+  <path d="M64 96 L22 94 Q10 90 12 80 Q16 70 28 78 Z" fill="#3E7A2A"/>
+  <path d="M64 96 L106 94 Q118 90 116 80 Q112 70 100 78 Z" fill="#5A9E3D"/>
+  <path d="M64 96 L64 40 Q64 28 74 30 Q84 34 78 46 Z" fill="#3E7A2A"/>
+  <path d="M64 96 L48 42 Q44 30 54 28 Q64 26 68 38 Z" fill="#5A9E3D"/>
+  <circle cx="64" cy="72" r="12" fill="#8FCB6B"/>
+  <path d="M56 66 Q64 60 72 66" fill="none" stroke="#5A9E3D" stroke-width="2.5" stroke-linecap="round"/>
 </svg>

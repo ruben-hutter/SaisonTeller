@@ -1,8 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-  <g transform="translate(-10.93 -14.44) scale(1.171)">
-  <path d="M64 90 L64 106" fill="none" stroke="#9CAF88" stroke-width="4" stroke-linecap="round"/>
-  <path d="M64 26 Q44 34 46 58 Q48 82 64 90 Q80 82 82 58 Q84 34 64 26 Z" fill="#9CAF88"/>
-  <path d="M64 30 L64 86" fill="none" stroke="#B8C7A6" stroke-width="3" stroke-linecap="round"/>
-  <path d="M64 46 Q54 46 50 52 M64 46 Q74 46 78 52 M64 64 Q54 64 50 70 M64 64 Q74 64 78 70" fill="none" stroke="#B8C7A6" stroke-width="2.5" stroke-linecap="round"/>
-  </g>
+  <path d="M64 108 Q64 94 64 84" fill="none" stroke="#5C7A4D" stroke-width="4" stroke-linecap="round"/>
+  <path d="M64 84 Q44 84 36 68 Q46 54 60 62 Q64 70 64 78 Z" fill="#9CAF88"/>
+  <path d="M64 84 Q84 84 92 68 Q82 54 68 62 Q64 70 64 78 Z" fill="#6B8E5A"/>
+  <path d="M64 78 Q52 76 48 68 M64 78 Q76 76 80 68" fill="none" stroke="#9CAF88" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M64 84 Q58 70 60 52 Q64 40 70 52 Q72 68 66 80 Z" fill="#9CAF88"/>
+  <path d="M64 74 L64 50" fill="none" stroke="#C9D6B8" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M50 64 Q46 60 46 56 M78 64 Q82 60 82 56" fill="none" stroke="#6B8E5A" stroke-width="2" stroke-linecap="round"/>
 </svg>

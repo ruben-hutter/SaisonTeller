@@ -1,0 +1,197 @@
+{
+	"cabbage-savoy": [
+		"Turtle",
+		"Leaf",
+		"Tree"
+	],
+	"artichoke": [
+		"Tree",
+		"Pine tree",
+		"Cypress"
+	],
+	"cabbage-white": [
+		"Tree",
+		"Broccoli",
+		"Bush"
+	],
+	"cabbage-red": [
+		"Beetle",
+		"Crab",
+		"Mask"
+	],
+	"brussels-sprouts": [
+		"Brussels sprouts",
+		"Peas",
+		"Grapes"
+	],
+	"broad-bean": [
+		"Lime",
+		"Pea pod",
+		"Sprout"
+	],
+	"corn-salad": [
+		"Plant",
+		"Flower",
+		"Leaf"
+	],
+	"celeriac": [
+		"Turnip",
+		"Radish",
+		"Beet"
+	],
+	"kale": [
+		"Sprout",
+		"Seedling",
+		"Tulip"
+	],
+	"chicory": [
+		"Flower in vase",
+		"Sprout",
+		"Plant in pot"
+	],
+	"fennel": [
+		"Sprout",
+		"Onion",
+		"Seedling"
+	],
+	"lettuce": [
+		"Brussels sprout",
+		"Cabbage",
+		"Broccoli"
+	],
+	"radicchio": [
+		"Cocoa pod",
+		"Papaya",
+		"Pecan"
+	],
+	"rhubarb": [
+		"Radish",
+		"Beet",
+		"Turnip"
+	],
+	"onion": [
+		"Potato",
+		"Kiwi",
+		"Onion"
+	],
+	"kohlrabi": [
+		"Seed sprout",
+		"Melon",
+		"Bean"
+	],
+	"potato": [
+		"Cookie",
+		"Biscuit",
+		"Potato"
+	],
+	"rocket": [
+		"sprout",
+		"plant",
+		"seedling"
+	],
+	"spinach": [
+		"Seedling",
+		"Sprout",
+		"Plant"
+	],
+	"salsify": [
+		"Dates",
+		"Seed",
+		"Plant ovary"
+	],
+	"mirabelle": [
+		"Lemon",
+		"Apple",
+		"Orange"
+	],
+	"quince": [
+		"Lemon",
+		"Orange",
+		"Apple"
+	],
+	"shallot": [
+		"Cicada",
+		"Moth",
+		"Fly"
+	],
+	"swiss-chard": [
+		"Leaf",
+		"Sprout",
+		"Seedling"
+	],
+	"mandarin": [
+		"Orange",
+		"Tangerine",
+		"Grapefruit"
+	],
+	"basil": [
+		"Seedling",
+		"Sprout",
+		"Plant"
+	],
+	"lovage": [
+		"Seedling",
+		"Sprout",
+		"Plant"
+	],
+	"clementine": [
+		"Coin",
+		"Alarm clock",
+		"Smiley face"
+	],
+	"marjoram": [
+		"Plant sprig",
+		"Eucalyptus branch",
+		"String of pearls plant"
+	],
+	"mint": [
+		"Seedling",
+		"Sprout",
+		"Plant"
+	],
+	"chervil": [
+		"Firework",
+		"Yarrow",
+		"Dill"
+	],
+	"oregano": [
+		"Sprig",
+		"Lavender",
+		"Rosemary"
+	],
+	"rosemary": [
+		"Fern leaf",
+		"Rosemary sprig",
+		"Herb"
+	],
+	"sage": [
+		"Seedling",
+		"Sprout",
+		"Leaf"
+	],
+	"thyme": [
+		"Branch",
+		"Twig",
+		"Sprout"
+	],
+	"wild-garlic": [
+		"Celery",
+		"Asparagus",
+		"Aloe vera"
+	],
+	"walnut": [
+		"Walnut",
+		"Coconut",
+		"Basketball"
+	],
+	"hazelnut": [
+		"Chestnut",
+		"Helmet",
+		"Shield"
+	],
+	"chestnut": [
+		"seedling",
+		"pistachio",
+		"sprout"
+	]
+}
