@@ -203,3 +203,13 @@ Page `<title>`: `{app.name} — {app.tagline}`; meta description = `footer.note`
 5. Code review vs `main` run and findings addressed.
 6. GLOSSARY.md + ADR-0001 present.
 7. Clean `git status --porcelain` on `feat/season-calendar`.
+
+## Comments
+
+- Round 2 changed presentation only; the dataset gained a single `image: string` (emoji) per item, everything else untouched.
+- Season view removed (ADR-0001 Update appended): month navigation only, `?m=` is the sole query param; season accent + season label next to the month heading remain.
+- Card illustrations: Google Noto Emoji SVGs vendored under `static/img/produce/` via `scripts/fetch-emoji.mjs` (`npm run emoji:fetch`); upstream restructured to `2D/svg/`, so that path is primary. `emojiFileName()` in `src/lib/images.ts` and the script share (duplicated, sync-noted) filename logic; an fs test enforces every referenced file exists.
+- Search now spans the whole dataset when a query is active: matches split into localized "In season now" / "Not in season now" groups; out-of-season cards are dimmed (head only, strip stays legible); the strip ring keeps marking the selected month.
+- Availability strip cells carry month numbers 1–12 (9px tabular digits, ≥12px cells, `minmax(12px,1fr)` columns; verified 320px no-overflow); strip is `role="img"` with an `aria.stripLabel`-based label listing harvest (+storage) months.
+- "Today" pill (localized `action.today`, `aria.backToToday`) appears in the month row whenever the selected month ≠ current month — hydration-only in prerendered HTML, covered by a `svelte/server` render test of MonthSwitcher.
+- `monthsOfSeason` and the `View` type were deleted (unused after season-view removal); `seasonOfMonth` stays.
