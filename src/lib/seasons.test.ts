@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { months, monthsOfSeason, seasonOfMonth, type Season } from './seasons';
+import { months, seasonOfMonth, type Season } from './seasons';
 
 describe('months range helper', () => {
 	it('expands a plain range ascending', () => {
@@ -48,26 +48,5 @@ describe('seasonOfMonth', () => {
 		for (let m = 1; m <= 12; m++) {
 			expect(seasonOfMonth(m)).toBe(expected[m - 1]);
 		}
-	});
-});
-
-describe('monthsOfSeason', () => {
-	it('returns the three months of each season', () => {
-		expect(monthsOfSeason('spring')).toEqual([3, 4, 5]);
-		expect(monthsOfSeason('summer')).toEqual([6, 7, 8]);
-		expect(monthsOfSeason('autumn')).toEqual([9, 10, 11]);
-		expect(monthsOfSeason('winter')).toEqual([12, 1, 2]);
-	});
-
-	it('round-trips with seasonOfMonth', () => {
-		const seasons: Season[] = ['spring', 'summer', 'autumn', 'winter'];
-		for (const season of seasons) {
-			for (const month of monthsOfSeason(season)) {
-				expect(seasonOfMonth(month)).toBe(season);
-			}
-		}
-		// Together the seasons cover every month exactly once.
-		const all = seasons.flatMap((s) => monthsOfSeason(s)).sort((a, b) => a - b);
-		expect(all).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]);
 	});
 });

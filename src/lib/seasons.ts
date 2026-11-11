@@ -34,17 +34,3 @@ export function seasonOfMonth(month: number): Season {
 	if (month >= 9 && month <= 11) return 'autumn';
 	return 'winter';
 }
-
-/** The three months of a season, in calendar order (winter wraps: [12, 1, 2]). */
-export function monthsOfSeason(season: Season): number[] {
-	switch (season) {
-		case 'spring':
-			return [3, 4, 5];
-		case 'summer':
-			return [6, 7, 8];
-		case 'autumn':
-			return [9, 10, 11];
-		case 'winter':
-			return [12, 1, 2];
-	}
-}

@@ -15,7 +15,7 @@ npm run check   # svelte-check
 
 ## How it works
 
-- **Routes**: `/` (auto-redirects to the browser's language), `/en`, `/de`, `/fr`, `/it`. Month and view live in query params: `/de?m=7&view=season`. All navigation uses real `<a href>` links, so URLs are shareable and everything works prerendered.
+- **Routes**: `/` (auto-redirects to the browser's language), `/en`, `/de`, `/fr`, `/it`. The month lives in the query param: `/de?m=7`. All navigation uses real `<a href>` links, so URLs are shareable and everything works prerendered.
 - **Data**: 85 produce items (46 vegetables, 23 fruits, 13 herbs, 3 nuts) in `src/lib/data/items.ts`, built with the inclusive month-range helper in `src/lib/seasons.ts`.
 - **i18n**: hand-rolled typed dictionaries in `src/lib/i18n/`; month names come from `Intl.DateTimeFormat` (`en-GB`, `de-CH`, `fr-CH`, `it-CH`).
 - **Theme**: CSS custom properties with `prefers-color-scheme` overrides; season accents applied via `data-season`. No toggle — the system theme wins.

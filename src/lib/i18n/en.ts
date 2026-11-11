@@ -1,8 +1,6 @@
 export const en = {
 	'app.name': 'SaisonTeller',
 	'app.tagline': "What's in season now",
-	'view.month': 'Month',
-	'view.season': 'Season',
 	'season.spring': 'Spring',
 	'season.summer': 'Summer',
 	'season.autumn': 'Autumn',
@@ -19,7 +17,6 @@ export const en = {
 	'legend.storage': 'storage',
 	'results.none': 'Nothing matches these filters.',
 	'aria.showMonth': 'Show month',
-	'aria.toggleView': 'Switch between month and season view',
 	'aria.search': 'Search produce',
 	'footer.note':
 		'Reference calendar for Switzerland & Central Europe — nature varies by year and region.'

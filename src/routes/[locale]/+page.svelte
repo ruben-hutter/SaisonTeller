@@ -4,8 +4,7 @@
 	import MonthSwitcher from '$lib/components/MonthSwitcher.svelte';
 	import { isStorageMonth, itemsForMonth, type Category, type ProduceItem } from '$lib/data/items';
 	import { LOCALES, monthName, t, type Locale, type StringKey } from '$lib/i18n';
-	import { monthsOfSeason, seasonOfMonth } from '$lib/seasons';
-	import type { View } from '$lib/types';
+	import { seasonOfMonth } from '$lib/seasons';
 	import { BROWSER } from 'esm-env';
 	import type { PageProps } from './$types';
 
@@ -18,15 +17,13 @@
 	const locale: Locale = $derived(data.locale);
 
 	// Query params are read client-side: prerendered pages carry no query params,
-	// so SSR falls back to the build-date month and the default view; on hydration
-	// the real URL (e.g. /de?m=7&view=season) is picked up immediately.
+	// so SSR falls back to the build-date month; on hydration the real URL
+	// (e.g. /de?m=7) is picked up immediately.
 	const searchParams = $derived(BROWSER ? page.url.searchParams : undefined);
 	const month: number = $derived.by(() => {
 		const raw = Number(searchParams?.get('m'));
 		return Number.isInteger(raw) && raw >= 1 && raw <= 12 ? raw : new Date().getMonth() + 1;
 	});
-	const view: View = $derived(searchParams?.get('view') === 'season' ? 'season' : 'month');
-
 	const season = $derived(seasonOfMonth(month));
 	const seasonLabel = $derived(t(locale, `season.${season}`));
 
@@ -56,15 +53,6 @@
 	});
 
 	const realMonth = new Date().getMonth() + 1;
-
-	const seasonSections = $derived.by(() =>
-		monthsOfSeason(season).map((sectionMonth) => {
-			const { harvest, storage } = itemsForMonth(sectionMonth);
-			return { month: sectionMonth, items: [...harvest, ...storage].filter(matches) };
-		})
-	);
-
-	const seasonEmpty = $derived(seasonSections.every((section) => section.items.length === 0));
 </script>
 
 <svelte:head>
@@ -83,7 +71,7 @@
 				{#each LOCALES as l (l)}
 					<li>
 						<a
-							href={`/${l}?m=${month}&view=${view}`}
+							href={`/${l}?m=${month}`}
 							aria-current={l === locale ? 'true' : undefined}
 							class:current={l === locale}
 						>
@@ -96,28 +84,9 @@
 	</header>
 
 	<main class="content">
-		<MonthSwitcher {locale} selected={month} view={view} current={realMonth} />
+		<MonthSwitcher {locale} selected={month} current={realMonth} />
 
 		<div class="toolbar">
-			<div class="segmented" role="group" aria-label={t(locale, 'aria.toggleView')}>
-				<a
-					class="seg"
-					href={`/${locale}?m=${month}&view=month`}
-					aria-current={view === 'month' ? 'true' : undefined}
-					class:active={view === 'month'}
-				>
-					{t(locale, 'view.month')}
-				</a>
-				<a
-					class="seg"
-					href={`/${locale}?m=${month}&view=season`}
-					aria-current={view === 'season' ? 'true' : undefined}
-					class:active={view === 'season'}
-				>
-					{t(locale, 'view.season')}
-				</a>
-			</div>
-
 			<div class="controls">
 				<div class="chips">
 					{#each chips as chip (chip.value)}
@@ -165,13 +134,12 @@
 			</div>
 		{/snippet}
 
-		{#if view === 'month'}
-			<h1>
-				{monthName(locale, month)}
-				<span class="sep" aria-hidden="true">·</span>
-				<span class="season-name">{seasonLabel}</span>
-			</h1>
-			{#if monthResult.harvest.length === 0 && monthResult.storage.length === 0}
+		<h1>
+			{monthName(locale, month)}
+			<span class="sep" aria-hidden="true">·</span>
+			<span class="season-name">{seasonLabel}</span>
+		</h1>
+		{#if monthResult.harvest.length === 0 && monthResult.storage.length === 0}
 				<p class="empty">{t(locale, 'results.none')}</p>
 			{:else}
 				{#if monthResult.harvest.length}
@@ -183,21 +151,6 @@
 					{@render cardGrid(monthResult.storage, month, true)}
 				{/if}
 			{/if}
-		{:else}
-			<h1>{seasonLabel}</h1>
-			{#if seasonEmpty}
-				<p class="empty">{t(locale, 'results.none')}</p>
-			{:else}
-				{#each seasonSections as section (section.month)}
-					{#if section.items.length}
-						<section>
-							<h2>{monthName(locale, section.month)}</h2>
-							{@render cardGrid(section.items, section.month, true)}
-						</section>
-					{/if}
-				{/each}
-			{/if}
-		{/if}
 	</main>
 
 	<footer class="site-footer">
@@ -303,38 +256,6 @@
 		display: flex;
 		flex-direction: column;
 		gap: 12px;
-	}
-
-	.segmented {
-		display: inline-flex;
-		align-self: flex-start;
-		gap: 2px;
-		padding: 3px;
-		border: 1px solid var(--border);
-		border-radius: 999px;
-		background: var(--surface);
-		box-shadow: var(--shadow);
-	}
-
-	.seg {
-		padding: 6px 16px;
-		border-radius: 999px;
-		color: var(--text-muted);
-		font-size: 0.88rem;
-		text-decoration: none;
-		transition:
-			color 120ms ease,
-			background-color 120ms ease;
-	}
-
-	.seg:hover {
-		color: var(--text);
-	}
-
-	.seg.active {
-		background: var(--accent);
-		color: var(--on-accent);
-		font-weight: 600;
 	}
 
 	.controls {
@@ -447,10 +368,6 @@
 
 	h2.storage-heading {
 		color: var(--text-muted);
-	}
-
-	section {
-		scroll-margin-top: 90px;
 	}
 
 	.grid {

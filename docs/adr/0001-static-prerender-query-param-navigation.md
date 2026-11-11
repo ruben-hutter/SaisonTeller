@@ -31,3 +31,7 @@ Additionally, UI strings are a small, closed set (~24 keys × 4 languages) with 
 
 - **Positive:** five static documents, zero runtime dependencies, instant hosting anywhere; deep links like `/fr?m=3&view=season` work; all navigation is plain links (accessible, prerenderable, no JS required to change month); locale coverage is compiler- and test-enforced.
 - **Negative:** the prerendered HTML shows the build-date month until hydration corrects it from the real URL (accepted); the browser back/forward stack records every month click (acceptable for a browse-style app); adding a fifth locale means adding a dictionary, an entry in `prerender.entries`, and the language switcher (a deliberate, small checklist).
+
+## Update (round 2, 2025-11-11)
+
+The season view was removed in round 2: month navigation only, links carry `?m=<1..12>` and the `view` query param is gone. Everything else about this ADR stands — query-param navigation, five prerendered documents, hand-rolled i18n. The season *accent coloring* and the season label next to the month heading remain (via `seasonOfMonth`), only the 3-month season view rendering was deleted.

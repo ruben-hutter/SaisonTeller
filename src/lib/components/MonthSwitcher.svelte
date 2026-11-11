@@ -1,26 +1,24 @@
 <script lang="ts">
 	import { monthName, monthShort, t, type Locale } from '$lib/i18n';
 	import { ALL_MONTHS } from '$lib/seasons';
-	import type { View } from '$lib/types';
 
 	interface Props {
 		locale: Locale;
 		selected: number;
-		view: View;
 		/** The real current month (gets a subtle outline). */
 		current?: number;
 	}
 
-	let { locale, selected, view, current }: Props = $props();
+	let { locale, selected, current }: Props = $props();
 
 	const months = ALL_MONTHS;
 </script>
 
-<nav class="months" aria-label={t(locale, 'view.month')}>
+<nav class="months" aria-label={t(locale, 'aria.showMonth')}>
 	{#each months as m (m)}
 		<a
 			class="month"
-			href={`/${locale}?m=${m}&view=${view}`}
+			href={`/${locale}?m=${m}`}
 			aria-current={m === selected ? 'true' : undefined}
 			aria-label={`${t(locale, 'aria.showMonth')} ${monthName(locale, m)}`}
 			class:selected={m === selected}

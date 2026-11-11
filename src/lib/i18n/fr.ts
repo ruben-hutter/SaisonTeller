@@ -3,8 +3,6 @@ import type { StringKey } from './index';
 export const fr: Record<StringKey, string> = {
 	'app.name': 'SaisonTeller',
 	'app.tagline': 'Ce qui est de saison',
-	'view.month': 'Mois',
-	'view.season': 'Saison',
 	'season.spring': 'Printemps',
 	'season.summer': 'Été',
 	'season.autumn': 'Automne',
@@ -21,7 +19,6 @@ export const fr: Record<StringKey, string> = {
 	'legend.storage': 'stockage',
 	'results.none': 'Rien ne correspond à ces filtres.',
 	'aria.showMonth': 'Afficher le mois',
-	'aria.toggleView': 'Basculer entre vue mensuelle et saisonnière',
 	'aria.search': 'Rechercher des produits',
 	'footer.note':
 		'Calendrier de référence pour la Suisse et l’Europe centrale — la nature varie selon l’année et la région.'
