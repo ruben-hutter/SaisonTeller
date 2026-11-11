@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { page } from '$app/state';
 	import ItemCard from '$lib/components/ItemCard.svelte';
 	import MonthSwitcher from '$lib/components/MonthSwitcher.svelte';
@@ -78,14 +79,14 @@
 	<header class="site-header">
 		<div class="header-inner">
 			<div class="brand-block">
-				<a class="brand" href={`/${locale}`}>{t(locale, 'app.name')}</a>
+				<a class="brand" href={`${base}/${locale}`}>{t(locale, 'app.name')}</a>
 				<p class="tagline">{t(locale, 'app.tagline')}</p>
 			</div>
 			<ul class="langs">
 				{#each LOCALES as l (l)}
 					<li>
 						<a
-							href={`/${l}?m=${month}`}
+							href={`${base}/${l}?m=${month}`}
 							aria-current={l === locale ? 'true' : undefined}
 							class:current={l === locale}
 						>

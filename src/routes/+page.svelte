@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { goto } from '$app/navigation';
 	import { onMount } from 'svelte';
 	import { LOCALES, isLocale, type Locale } from '$lib/i18n';
@@ -18,7 +19,7 @@
 			navigator.languages
 				.map((tag) => tag.split('-')[0]!.toLowerCase())
 				.find(isLocale) ?? 'en';
-		goto(`/${preferred}?m=${new Date().getMonth() + 1}`, { replaceState: true });
+		goto(`${base}/${preferred}?m=${new Date().getMonth() + 1}`, { replaceState: true });
 	});
 </script>
 
@@ -36,7 +37,7 @@
 	<ul>
 		{#each LOCALES as locale (locale)}
 			<li>
-				<a href={`/${locale}`}>{languageNames[locale]}</a>
+				<a href={`${base}/${locale}`}>{languageNames[locale]}</a>
 			</li>
 		{/each}
 	</ul>

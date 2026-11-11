@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { isHarvestMonth, isStorageMonth, type ProduceItem } from '$lib/data/items';
 	import { t, type Locale } from '$lib/i18n';
 	import { ALL_MONTHS } from '$lib/seasons';
@@ -19,7 +20,7 @@
 	// Degrade gracefully if a bespoke SVG is missing: hide the <img> entirely.
 	let imgFailed = $state(false);
 
-	const imgSrc = $derived(`/img/bespoke/${item.id}.svg`);
+	const imgSrc = $derived(`${base}/img/bespoke/${item.id}.svg`);
 	let imgEl: HTMLImageElement | undefined = $state();
 
 	// Svelte 5 hydration quirk: `src` on <img> nodes claimed from SSR HTML —

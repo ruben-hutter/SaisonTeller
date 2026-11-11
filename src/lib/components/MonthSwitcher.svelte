@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { monthName, monthShort, t, type Locale } from '$lib/i18n';
 	import { ALL_MONTHS } from '$lib/seasons';
 
@@ -19,7 +20,7 @@
 		{#each months as m (m)}
 			<a
 				class="month"
-				href={`/${locale}?m=${m}`}
+				href={`${base}/${locale}?m=${m}`}
 				aria-current={m === selected ? 'true' : undefined}
 				aria-label={`${t(locale, 'aria.showMonth')} ${monthName(locale, m)}`}
 				class:selected={m === selected}
@@ -31,7 +32,7 @@
 	</nav>
 
 	{#if current !== undefined && selected !== current}
-		<a class="today-link" href={`/${locale}?m=${current}`} aria-label={t(locale, 'aria.backToToday')}>
+		<a class="today-link" href={`${base}/${locale}?m=${current}`} aria-label={t(locale, 'aria.backToToday')}>
 			{t(locale, 'action.today')}
 		</a>
 	{/if}
