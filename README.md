@@ -38,3 +38,7 @@ src/
 ```
 
 Decisions are recorded in `docs/adr/`; domain vocabulary in `GLOSSARY.md`.
+
+## Credits
+
+Produce illustrations: [Noto Emoji](https://github.com/googlefonts/noto-emoji) (Apache-2.0), vendored under `static/img/produce/` (see `npm run emoji:fetch`); the upstream `LICENSE` is committed alongside.

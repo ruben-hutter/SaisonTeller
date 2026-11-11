@@ -19,7 +19,8 @@ export const en = {
 	'aria.showMonth': 'Show month',
 	'aria.search': 'Search produce',
 	'footer.note':
-		'Reference calendar for Switzerland & Central Europe — nature varies by year and region.'
+		'Reference calendar for Switzerland & Central Europe — nature varies by year and region.',
+	'footer.credit': 'Illustrations: Noto Emoji (Apache 2.0)',
 } as const;
 
 export type StringKey = keyof typeof en;

@@ -1,6 +1,9 @@
+import { existsSync } from 'node:fs';
+import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { de } from '../i18n/de';
 import { en } from '../i18n/en';
+import { emojiFileName } from '../images';
 import { fr } from '../i18n/fr';
 import { it as itDict } from '../i18n/it';
 import type { Locale } from '../i18n';
@@ -76,6 +79,20 @@ describe('items dataset integrity', () => {
 		}
 	});
 
+	it('gives every item a non-empty image emoji', () => {
+		for (const item of items) {
+			expect(item.image.trim().length, item.id).toBeGreaterThan(0);
+		}
+	});
+
+	it('maps every image emoji to an existing vendored SVG', () => {
+		// Strongest guard for the image feature: the exact file the card
+		// <img src> points at must exist in static/img/produce/.
+		for (const item of items) {
+			const file = join(process.cwd(), 'static', 'img', 'produce', emojiFileName(item.image));
+			expect(existsSync(file), `${file} (${item.id})`).toBe(true);
+		}
+	});
 	it('marks exactly the six southern items', () => {
 		const south = items.filter((item) => item.origin === 'south').map((item) => item.id);
 		expect(south.sort()).toEqual(

@@ -156,6 +156,7 @@
 	<footer class="site-footer">
 		<div class="footer-inner">
 			<p>{t(locale, 'footer.note')}</p>
+			<p class="credit">{t(locale, 'footer.credit')}</p>
 		</div>
 	</footer>
 </div>
@@ -402,5 +403,10 @@
 		margin: 0;
 		color: var(--text-muted);
 		font-size: 0.8rem;
+	}
+
+	.footer-inner .credit {
+		margin-top: 4px;
+		font-size: 0.72rem;
 	}
 </style>

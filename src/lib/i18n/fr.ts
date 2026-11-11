@@ -21,5 +21,6 @@ export const fr: Record<StringKey, string> = {
 	'aria.showMonth': 'Afficher le mois',
 	'aria.search': 'Rechercher des produits',
 	'footer.note':
-		'Calendrier de référence pour la Suisse et l’Europe centrale — la nature varie selon l’année et la région.'
+		'Calendrier de référence pour la Suisse et l’Europe centrale — la nature varie selon l’année et la région.',
+	'footer.credit': 'Illustrations : Noto Emoji (Apache 2.0)',
 };

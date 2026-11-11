@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { isHarvestMonth, isStorageMonth, type ProduceItem } from '$lib/data/items';
+	import { emojiFileName } from '$lib/images';
 	import { monthName, t, type Locale } from '$lib/i18n';
 	import { ALL_MONTHS } from '$lib/seasons';
 
@@ -13,6 +14,11 @@
 	}
 
 	let { item, locale, highlight, fromStorage = false }: Props = $props();
+
+	// Degrade gracefully if a vendored SVG is missing: show the plain emoji.
+	let imgFailed = $state(false);
+
+	const fileName = $derived(emojiFileName(item.image));
 
 	const monthNumbers = ALL_MONTHS;
 
@@ -31,14 +37,31 @@
 
 <article class="card" class:from-storage={fromStorage}>
 	<div class="head">
-		<span class="dot" data-category={item.category} aria-hidden="true"></span>
-		<h3 class="name">{item.names[locale]}</h3>
-		{#if item.origin === 'south'}
-			<span class="badge">{t(locale, 'label.originSouth')}</span>
+		{#if imgFailed}
+			<span class="pic pic-fallback" aria-hidden="true">{item.image}</span>
+		{:else}
+			<img
+				class="pic"
+				src={`/img/produce/${fileName}`}
+				alt=""
+				aria-hidden="true"
+				width="48"
+				height="48"
+				onerror={() => (imgFailed = true)}
+			/>
 		{/if}
-		{#if fromStorage}
-			<span class="storage-tag">{t(locale, 'label.storage')}</span>
-		{/if}
+		<div class="meta">
+			<h3 class="name">{item.names[locale]}</h3>
+			<div class="tags">
+				<span class="dot" data-category={item.category} aria-hidden="true"></span>
+				{#if item.origin === 'south'}
+					<span class="badge">{t(locale, 'label.originSouth')}</span>
+				{/if}
+				{#if fromStorage}
+					<span class="storage-tag">{t(locale, 'label.storage')}</span>
+				{/if}
+			</div>
+		</div>
 	</div>
 
 	<span class="strip" aria-hidden="true">
@@ -73,8 +96,40 @@
 	.head {
 		display: flex;
 		align-items: center;
+		gap: 10px;
+	}
+
+	.pic {
+		flex: none;
+		width: 48px;
+		height: 48px;
+		border-radius: 10px;
+		background: var(--surface-dim);
+		object-fit: contain;
+	}
+
+	/* Fallback when the vendored SVG is missing: the plain emoji character. */
+	.pic-fallback {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 30px;
+		line-height: 1;
+	}
+
+	.meta {
+		display: flex;
+		flex-direction: column;
+		gap: 2px;
+		min-width: 0;
+	}
+
+	.tags {
+		display: flex;
+		align-items: center;
 		flex-wrap: wrap;
-		gap: 8px;
+		gap: 6px;
+		min-height: 10px;
 	}
 
 	.name {
