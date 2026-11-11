@@ -693,3 +693,22 @@ export function itemsForMonth(month: number): { harvest: ProduceItem[]; storage:
 		storage: items.filter((item) => isStorageMonth(item, month))
 	};
 }
+
+/** True when the item is available in this month at all (fresh harvest or from storage). */
+export function isInSeason(item: ProduceItem, month: number): boolean {
+	return isHarvestMonth(item, month) || isStorageMonth(item, month);
+}
+
+/**
+ * Split a list of items (e.g. search matches) into "in season now" and
+ * "not in season now" relative to a month.
+ */
+export function splitBySeasonNow(
+	list: ProduceItem[],
+	month: number
+): { inSeason: ProduceItem[]; notInSeason: ProduceItem[] } {
+	return {
+		inSeason: list.filter((item) => isInSeason(item, month)),
+		notInSeason: list.filter((item) => !isInSeason(item, month))
+	};
+}

@@ -18,6 +18,8 @@ export const fr: Record<StringKey, string> = {
 	'legend.harvest': 'récolte',
 	'legend.storage': 'stockage',
 	'results.none': 'Rien ne correspond à ces filtres.',
+	'results.inSeason': 'En saison',
+	'results.notInSeason': 'Hors saison',
 	'aria.showMonth': 'Afficher le mois',
 	'aria.search': 'Rechercher des produits',
 	'action.today': "Aujourd'hui",

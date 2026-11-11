@@ -2,7 +2,14 @@
 	import { page } from '$app/state';
 	import ItemCard from '$lib/components/ItemCard.svelte';
 	import MonthSwitcher from '$lib/components/MonthSwitcher.svelte';
-	import { isStorageMonth, itemsForMonth, type Category, type ProduceItem } from '$lib/data/items';
+	import {
+		isStorageMonth,
+		items,
+		itemsForMonth,
+		splitBySeasonNow,
+		type Category,
+		type ProduceItem
+	} from '$lib/data/items';
 	import { LOCALES, monthName, t, type Locale, type StringKey } from '$lib/i18n';
 	import { seasonOfMonth } from '$lib/seasons';
 	import { BROWSER } from 'esm-env';
@@ -51,6 +58,13 @@
 		const { harvest, storage } = itemsForMonth(month);
 		return { harvest: harvest.filter(matches), storage: storage.filter(matches) };
 	});
+
+	// With an active query the grid ignores the month filter and shows every
+	// match, grouped by whether it is in season in the selected month — so
+	// out-of-season results can tell the user *when* the item is in season
+	// (the strip still highlights the selected month).
+	const searching = $derived(search.trim().length > 0);
+	const searchResult = $derived(splitBySeasonNow(items.filter(matches), month));
 
 	const realMonth = new Date().getMonth() + 1;
 </script>
@@ -121,7 +135,12 @@
 			</span>
 		</p>
 
-		{#snippet cardGrid(list: ProduceItem[], highlightMonth: number, markStorage: boolean)}
+		{#snippet cardGrid(
+			list: ProduceItem[],
+			highlightMonth: number,
+			markStorage: boolean,
+			dimmed = false
+		)}
 			<div class="grid">
 				{#each list as item (item.id)}
 					<ItemCard
@@ -129,6 +148,7 @@
 						{locale}
 						highlight={highlightMonth}
 						fromStorage={markStorage && isStorageMonth(item, highlightMonth)}
+						{dimmed}
 					/>
 				{/each}
 			</div>
@@ -139,18 +159,31 @@
 			<span class="sep" aria-hidden="true">·</span>
 			<span class="season-name">{seasonLabel}</span>
 		</h1>
-		{#if monthResult.harvest.length === 0 && monthResult.storage.length === 0}
+		{#if searching}
+			{#if searchResult.inSeason.length === 0 && searchResult.notInSeason.length === 0}
 				<p class="empty">{t(locale, 'results.none')}</p>
 			{:else}
-				{#if monthResult.harvest.length}
-					<h2>{t(locale, 'legend.harvest')}</h2>
-					{@render cardGrid(monthResult.harvest, month, false)}
+				{#if searchResult.inSeason.length}
+					<h2>{t(locale, 'results.inSeason')}</h2>
+					{@render cardGrid(searchResult.inSeason, month, true)}
 				{/if}
-				{#if monthResult.storage.length}
-					<h2 class="storage-heading">{t(locale, 'legend.storage')}</h2>
-					{@render cardGrid(monthResult.storage, month, true)}
+				{#if searchResult.notInSeason.length}
+					<h2 class="muted-heading">{t(locale, 'results.notInSeason')}</h2>
+					{@render cardGrid(searchResult.notInSeason, month, true, true)}
 				{/if}
 			{/if}
+		{:else if monthResult.harvest.length === 0 && monthResult.storage.length === 0}
+			<p class="empty">{t(locale, 'results.none')}</p>
+		{:else}
+			{#if monthResult.harvest.length}
+				<h2>{t(locale, 'legend.harvest')}</h2>
+				{@render cardGrid(monthResult.harvest, month, false)}
+			{/if}
+			{#if monthResult.storage.length}
+				<h2 class="storage-heading">{t(locale, 'legend.storage')}</h2>
+				{@render cardGrid(monthResult.storage, month, true)}
+			{/if}
+		{/if}
 	</main>
 
 	<footer class="site-footer">
@@ -367,7 +400,8 @@
 		color: var(--accent-ink);
 	}
 
-	h2.storage-heading {
+	h2.storage-heading,
+	h2.muted-heading {
 		color: var(--text-muted);
 	}
 

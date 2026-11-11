@@ -11,9 +11,11 @@
 		highlight: number;
 		/** True when shown in the "from storage" group (dimmed accent, tag). */
 		fromStorage?: boolean;
+		/** True for "not in season now" search results: dimmed card, strip stays legible. */
+		dimmed?: boolean;
 	}
 
-	let { item, locale, highlight, fromStorage = false }: Props = $props();
+	let { item, locale, highlight, fromStorage = false, dimmed = false }: Props = $props();
 
 	// Degrade gracefully if a vendored SVG is missing: show the plain emoji.
 	let imgFailed = $state(false);
@@ -32,7 +34,7 @@
 	});
 </script>
 
-<article class="card" class:from-storage={fromStorage}>
+<article class="card" class:from-storage={fromStorage} class:dimmed={dimmed}>
 	<div class="head">
 		{#if imgFailed}
 			<span class="pic pic-fallback" aria-hidden="true">{item.image}</span>
@@ -90,6 +92,12 @@
 
 	.card.from-storage {
 		background: color-mix(in srgb, var(--surface) 86%, var(--bg));
+	}
+
+	/* "Not in season now" search result: dim the card, keep the strip fully
+	 legible — it is what tells the user when the item IS in season. */
+	.card.dimmed .head {
+		opacity: 0.55;
 	}
 
 	.head {

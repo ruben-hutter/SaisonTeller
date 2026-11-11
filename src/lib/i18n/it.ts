@@ -18,6 +18,8 @@ export const it: Record<StringKey, string> = {
 	'legend.harvest': 'raccolto',
 	'legend.storage': 'magazzino',
 	'results.none': 'Nulla corrisponde a questi filtri.',
+	'results.inSeason': 'Di stagione',
+	'results.notInSeason': 'Fuori stagione',
 	'aria.showMonth': 'Mostra mese',
 	'aria.search': 'Cerca prodotti',
 	'action.today': 'Oggi',

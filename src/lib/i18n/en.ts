@@ -16,6 +16,8 @@ export const en = {
 	'legend.harvest': 'harvest',
 	'legend.storage': 'storage',
 	'results.none': 'Nothing matches these filters.',
+	'results.inSeason': 'In season now',
+	'results.notInSeason': 'Not in season now',
 	'aria.showMonth': 'Show month',
 	'aria.search': 'Search produce',
 	'action.today': 'Today',

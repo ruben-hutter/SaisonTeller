@@ -7,7 +7,7 @@ import { emojiFileName } from '../images';
 import { fr } from '../i18n/fr';
 import { it as itDict } from '../i18n/it';
 import type { Locale } from '../i18n';
-import { items, itemsForMonth, type ProduceItem } from './items';
+import { items, itemsForMonth, splitBySeasonNow, type ProduceItem } from './items';
 
 const CATEGORIES = ['vegetable', 'fruit', 'herb', 'nut'];
 const LOCALE_KEYS: Locale[] = ['en', 'de', 'fr', 'it'];
@@ -151,5 +151,40 @@ describe('itemsForMonth', () => {
 	it('returns a reasonable September (peak harvest month)', () => {
 		const { harvest } = itemsForMonth(9);
 		expect(harvest.length).toBeGreaterThan(30);
+	});
+});
+
+describe('splitBySeasonNow', () => {
+	const byId = (id: string): ProduceItem => {
+		const item = items.find((candidate) => candidate.id === id);
+		if (!item) throw new Error(`no item ${id}`);
+		return item;
+	};
+
+	it('places an out-of-season item in the not-in-season group (zucchini in November)', () => {
+		const { inSeason, notInSeason } = splitBySeasonNow([byId('zucchini')], 11);
+		expect(inSeason).toEqual([]);
+		expect(notInSeason.map((item) => item.id)).toEqual(['zucchini']);
+	});
+
+	it('places an in-season item in the in-season group (zucchini in June)', () => {
+		const { inSeason, notInSeason } = splitBySeasonNow([byId('zucchini')], 6);
+		expect(inSeason.map((item) => item.id)).toEqual(['zucchini']);
+		expect(notInSeason).toEqual([]);
+	});
+
+	it('counts storage-only months as in season (apple in May)', () => {
+		// Apple: harvest 8–11, storage 12–7 → May is storage-only, still in season.
+		const { inSeason, notInSeason } = splitBySeasonNow([byId('apple')], 5);
+		expect(inSeason.map((item) => item.id)).toEqual(['apple']);
+		expect(notInSeason).toEqual([]);
+	});
+
+	it('keeps the input order within both groups', () => {
+		// Chili harvests 7-10 → out of season in November; apple harvests 8-11.
+		const list = [byId('zucchini'), byId('apple'), byId('chili')];
+		const { inSeason, notInSeason } = splitBySeasonNow(list, 11);
+		expect(inSeason.map((item) => item.id)).toEqual(['apple']);
+		expect(notInSeason.map((item) => item.id)).toEqual(['zucchini', 'chili']);
 	});
 });
