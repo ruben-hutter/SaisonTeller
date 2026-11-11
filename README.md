@@ -2,7 +2,11 @@
 
 A fully static webapp that shows which fruits, vegetables, herbs and nuts are in season — per month or per season — for Switzerland & Central Europe. Available in English, German, French and Italian. Responsive, system light/dark theme, no runtime dependencies.
 
+**Live**: https://ruben-hutter.github.io/SaisonTeller/ — deploys on every push to `main` via GitHub Actions (`.github/workflows/deploy-pages.yml`).
+
 ## Commands
+
+Local dev and preview run under the base path `/SaisonTeller/` (matching GitHub Pages): open `http://localhost:5173/SaisonTeller/` for dev and `http://localhost:4173/SaisonTeller/` for preview.
 
 ```sh
 npm install     # install dev dependencies
@@ -15,7 +19,7 @@ npm run check   # svelte-check
 
 ## How it works
 
-- **Routes**: `/` (auto-redirects to the browser's language), `/en`, `/de`, `/fr`, `/it`. The month lives in the query param: `/de?m=7`. All navigation uses real `<a href>` links, so URLs are shareable and everything works prerendered.
+- **Routes**: `/` (auto-redirects to the browser's language), `/en`, `/de`, `/fr`, `/it`. The month lives in the query param: `/de?m=7`. All navigation uses real `<a href>` links, so URLs are shareable and everything works prerendered. The site is served under the base path `/SaisonTeller/` (GitHub Pages project site); a copy of `index.html` is emitted as `404.html` so unknown paths land on the language-detect redirect.
 - **Data**: 85 produce items (46 vegetables, 23 fruits, 13 herbs, 3 nuts) in `src/lib/data/items.ts`, built with the inclusive month-range helper in `src/lib/seasons.ts`.
 - **i18n**: hand-rolled typed dictionaries in `src/lib/i18n/`; month names come from `Intl.DateTimeFormat` (`en-GB`, `de-CH`, `fr-CH`, `it-CH`).
 - **Theme**: CSS custom properties with `prefers-color-scheme` overrides; season accents applied via `data-season`. No toggle — the system theme wins.
