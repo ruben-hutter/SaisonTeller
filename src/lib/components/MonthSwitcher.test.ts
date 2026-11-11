@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest';
+import { base } from '$app/paths';
 import { render } from 'svelte/server';
 import MonthSwitcher from './MonthSwitcher.svelte';
 
@@ -11,7 +12,7 @@ describe('MonthSwitcher', () => {
 			props: { locale: 'en', selected: 1, current: 11 }
 		});
 		expect(body).toContain('today-link');
-		expect(body).toContain('href="/en?m=11"');
+		expect(body).toContain(`href="${base}/en?m=11"`);
 		expect(body).toContain('aria-label="Back to the current month"');
 		expect(body).toContain('>Today</a>');
 	});
@@ -28,7 +29,7 @@ describe('MonthSwitcher', () => {
 		const { body } = render(MonthSwitcher, {
 			props: { locale: 'fr', selected: 6, current: 6 }
 		});
-		expect(body).toContain('href="/fr?m=12"');
+		expect(body).toContain(`href="${base}/fr?m=12"`);
 		expect(body).not.toContain('view=');
 	});
 });
