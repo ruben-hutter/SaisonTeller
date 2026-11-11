@@ -1,9 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-  <g transform="rotate(-30 64 64)">
-  <ellipse cx="29" cy="64" rx="8" ry="4.5" fill="#EED23A"/>
-  <ellipse cx="99" cy="64" rx="8" ry="4.5" fill="#EED23A"/>
-  <ellipse cx="64" cy="64" rx="29" ry="20" fill="#EED23A"/>
-  <path d="M48 56 Q45 64 49 73" fill="none" stroke="#F7E183" stroke-width="3.5" stroke-linecap="round"/>
-  <ellipse cx="106" cy="48" rx="11" ry="5" transform="rotate(30 106 48)" fill="#6CA644"/>
+  <g transform="rotate(-12 64 64)">
+    <!-- stem + leaf -->
+    <path d="M62 48 Q64 43 68 40" fill="none" stroke="#8A6B4A" stroke-width="3" stroke-linecap="round"/>
+    <ellipse cx="78" cy="40" rx="10" ry="4.5" transform="rotate(20 78 40)" fill="#6CA644"/>
+    <path d="M71 43 L84 36.5" fill="none" stroke="#4C7A2E" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- body with nipple tips -->
+    <ellipse cx="60" cy="66" rx="27" ry="20" fill="#EED23A"/>
+    <circle cx="90" cy="66" r="6" fill="#EED23A"/>
+    <path d="M93 62.5 Q101 61.5 103 65.5 Q102 69.5 94 69.5 Q91.5 68.5 93 62.5 Z" fill="#EED23A"/>
+    <circle cx="32" cy="66" r="5" fill="#EED23A"/>
+    <!-- peel dimples -->
+    <circle cx="52" cy="58" r="1.6" fill="#E0B840"/>
+    <circle cx="70" cy="74" r="1.6" fill="#E0B840"/>
+    <circle cx="64" cy="54" r="1.6" fill="#E0B840"/>
+    <circle cx="46" cy="72" r="1.6" fill="#E0B840"/>
+    <circle cx="78" cy="60" r="1.6" fill="#E0B840"/>
+    <!-- highlight -->
+    <path d="M42 56 Q45 50 52 48" fill="none" stroke="#F7E183" stroke-width="3.5" stroke-linecap="round"/>
   </g>
 </svg>
