@@ -1,48 +1,33 @@
 # SaisonTeller
 
-A fully static webapp that shows which fruits, vegetables, herbs and nuts are in season — per month or per season — for Switzerland & Central Europe. Available in English, German, French and Italian. Responsive, system light/dark theme, no runtime dependencies.
+A fully static webapp that shows which fruits, vegetables, herbs and nuts are in season — per month or per season — for Switzerland & Central Europe. Available in English, German, French and Italian.
 
-**Live**: https://ruben-hutter.github.io/SaisonTeller/ — deploys on every push to `main` via GitHub Actions (`.github/workflows/deploy-pages.yml`).
+**Try it**: https://ruben-hutter.github.io/SaisonTeller/ (deploys automatically on push to `main`)
 
-## Commands
-
-Local dev and preview run under the base path `/SaisonTeller/` (matching GitHub Pages): open `http://localhost:5173/SaisonTeller/` for dev and `http://localhost:4173/SaisonTeller/` for preview.
+## Quick start
 
 ```sh
-npm install     # install dev dependencies
-npm run dev     # dev server
-npm run build   # prerender to build/ (adapter-static)
-npm run preview # serve the production build
-npm test        # vitest (seasons, dataset integrity, i18n key parity)
-npm run check   # svelte-check
+npm install
+npm run dev      # http://localhost:5173/SaisonTeller/
 ```
+
+| Command            | What it does                        |
+| ------------------ | ----------------------------------- |
+| `npm run dev`      | dev server                          |
+| `npm run build`    | prerender static site to `build/`   |
+| `npm run preview`  | serve the production build          |
+| `npm test`         | vitest (seasons, dataset, i18n)     |
+| `npm run check`    | svelte-check                        |
 
 ## How it works
 
-- **Routes**: `/` (auto-redirects to the browser's language), `/en`, `/de`, `/fr`, `/it`. The month lives in the query param: `/de?m=7`. All navigation uses real `<a href>` links, so URLs are shareable and everything works prerendered. The site is served under the base path `/SaisonTeller/` (GitHub Pages project site); a copy of `index.html` is emitted as `404.html` so unknown paths land on the language-detect redirect.
-- **Data**: 85 produce items (46 vegetables, 23 fruits, 13 herbs, 3 nuts) in `src/lib/data/items.ts`, built with the inclusive month-range helper in `src/lib/seasons.ts`. Project-owned reference calendar, verified item-by-item against published calendars (BZfE/BLE, Verbraucherzentrale, Bio Suisse) — see `docs/adr/0002-dataset-provenance-no-api.md`.
-- **i18n**: hand-rolled typed dictionaries in `src/lib/i18n/`; month names come from `Intl.DateTimeFormat` (`en-GB`, `de-CH`, `fr-CH`, `it-CH`).
-- **Theme**: CSS custom properties with `prefers-color-scheme` overrides; season accents applied via `data-season`. No toggle — the system theme wins.
-- **No runtime dependencies** — SvelteKit + adapter-static, everything prerendered.
+- **Routes**: `/` redirects to the browser's language (`/en`, `/de`, `/fr`, `/it`); month via query param, e.g. `/de?m=7`.
+- **Data**: 85 produce items in `src/lib/data/items.ts`, month ranges via `src/lib/seasons.ts`. Project-owned dataset, verified against published Swiss/German calendars.
+- **i18n**: typed dictionaries in `src/lib/i18n/`, month names from `Intl.DateTimeFormat`.
+- **Theme**: follows the system (`prefers-color-scheme`), no toggle.
+- **Zero runtime dependencies** — SvelteKit + adapter-static, everything prerendered.
 
-## Project layout
+## More
 
-```
-src/
-  app.html / app.css          # shell + design tokens
-  hooks.server.ts             # bakes <html lang> per locale into prerendered pages
-  lib/
-    seasons.ts                # month ranges, season helpers
-    data/items.ts             # the produce dataset + itemsForMonth()
-    i18n/                     # en/de/fr/it dictionaries + helpers
-    components/               # MonthSwitcher, ItemCard
-  routes/
-    +page.svelte              # language-detection redirect page
-    [locale]/+page.svelte     # month & season views
-```
-
-Decisions are recorded in `docs/adr/`; domain vocabulary in `GLOSSARY.md`.
-
-## Imagery
-
-Every item has its own project-owned flat SVG glyph at `static/img/bespoke/<id>.svg` (id-keyed, one glyph per item, no external assets or attribution). The icon-set bake-off (Noto emoji baseline vs. ingredient photos vs. bespoke SVGs) is preserved on branch `feat/icon-lab`; the decision record is `.scratch/season-calendar/issues/09-icon-options.md`.
+- Domain vocabulary: `GLOSSARY.md`
+- Decision records: `docs/adr/`
