@@ -20,6 +20,9 @@ export const it: Record<StringKey, string> = {
 	'results.none': 'Nulla corrisponde a questi filtri.',
 	'aria.showMonth': 'Mostra mese',
 	'aria.search': 'Cerca prodotti',
+	'action.today': 'Oggi',
+	'aria.backToToday': 'Torna al mese corrente',
+	'aria.stripLabel': 'Mesi di raccolto',
 	'footer.note':
 		'Calendario di riferimento per la Svizzera e l’Europa centrale — la natura varia secondo anno e regione.',
 	'footer.credit': 'Immagini: Noto Emoji (Apache 2.0)',

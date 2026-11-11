@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { isHarvestMonth, isStorageMonth, type ProduceItem } from '$lib/data/items';
 	import { emojiFileName } from '$lib/images';
-	import { monthName, t, type Locale } from '$lib/i18n';
+	import { t, type Locale } from '$lib/i18n';
 	import { ALL_MONTHS } from '$lib/seasons';
 
 	interface Props {
@@ -22,14 +22,11 @@
 
 	const monthNumbers = ALL_MONTHS;
 
-	// Screen-reader alternative to the visual availability strip.
-	const summary = $derived.by(() => {
-		const harvest = item.harvest.map((m) => monthName(locale, m)).join(', ');
-		const parts = [`${t(locale, 'legend.harvest')}: ${harvest}`];
+	// Concise screen-reader description of the visual strip: month numbers, not names.
+	const stripLabel = $derived.by(() => {
+		const parts = [`${t(locale, 'aria.stripLabel')}: ${item.harvest.join(', ')}`];
 		if (item.storage?.length) {
-			parts.push(
-				`${t(locale, 'legend.storage')}: ${item.storage.map((m) => monthName(locale, m)).join(', ')}`
-			);
+			parts.push(`${t(locale, 'legend.storage')}: ${item.storage.join(', ')}`);
 		}
 		return parts.join('; ');
 	});
@@ -64,17 +61,19 @@
 		</div>
 	</div>
 
-	<span class="strip" aria-hidden="true">
+	<span class="strip" role="img" aria-label={stripLabel}>
 		{#each monthNumbers as m (m)}
 			<span
 				class="cell"
 				class:harvest={isHarvestMonth(item, m)}
 				class:storage={isStorageMonth(item, m)}
 				class:now={m === highlight}
-			></span>
+				aria-hidden="true"
+			>
+				{m}
+			</span>
 		{/each}
 	</span>
-	<span class="vh">{item.names[locale]}: {summary}</span>
 </article>
 
 <style>
@@ -185,18 +184,27 @@
 
 	.strip {
 		display: grid;
-		grid-template-columns: repeat(12, 1fr);
+		grid-template-columns: repeat(12, minmax(12px, 1fr));
 		gap: 3px;
-		height: 9px;
 	}
 
 	.cell {
-		border-radius: 999px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 16px;
+		border-radius: 4px;
 		background: var(--surface-dim);
+		color: var(--text-muted);
+		font-size: 9px;
+		line-height: 1;
+		font-variant-numeric: tabular-nums;
 	}
 
 	.cell.harvest {
 		background: var(--accent);
+		color: var(--on-accent);
+		font-weight: 700;
 	}
 
 	.cell.storage {

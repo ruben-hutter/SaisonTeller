@@ -20,6 +20,9 @@ export const de: Record<StringKey, string> = {
 	'results.none': 'Nichts passt zu diesen Filtern.',
 	'aria.showMonth': 'Monat anzeigen',
 	'aria.search': 'Produkte suchen',
+	'action.today': 'Heute',
+	'aria.backToToday': 'Zurück zum aktuellen Monat',
+	'aria.stripLabel': 'Erntemonate',
 	'footer.note':
 		'Referenzkalender für die Schweiz & Mitteleuropa — die Natur variiert je nach Jahr und Region.',
 	'footer.credit': 'Bilder: Noto Emoji (Apache 2.0)',

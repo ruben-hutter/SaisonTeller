@@ -18,6 +18,9 @@ export const en = {
 	'results.none': 'Nothing matches these filters.',
 	'aria.showMonth': 'Show month',
 	'aria.search': 'Search produce',
+	'action.today': 'Today',
+	'aria.backToToday': 'Back to the current month',
+	'aria.stripLabel': 'Harvest months',
 	'footer.note':
 		'Reference calendar for Switzerland & Central Europe — nature varies by year and region.',
 	'footer.credit': 'Illustrations: Noto Emoji (Apache 2.0)',
