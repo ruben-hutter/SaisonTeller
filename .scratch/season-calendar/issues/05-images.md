@@ -34,3 +34,8 @@ Every produce card gets a small colorful illustration so the app reads less text
 - The spec review caught that `pepper` had been given 🎯-adjacent U+1F391 (🎑 moon-viewing ceremony) instead of 🫑 U+1FAD1 (bell pepper) — a codepoint slip in the one-off data script. Fixed; `emoji_u1f391.svg` removed, `emoji_u1fad1.svg` fetched. A fresh programmatic comparison of all 85 id→emoji pairs against the TASK.md table now reports zero mismatches.
 - Hardened `items.test.ts`: new test pins the exact set of 33 distinct `emojiFileName()` results, so any accidental glyph change fails loudly (the fs-existence test alone was self-consistent only, as the review noted).
 - `image:` lines reordered to sit after `names` inside each item, matching the interface field order.
+
+## Comments (browser verification)
+
+- Headless-Chromium check of the production build found a Svelte 5 hydration quirk: on a direct `/{locale}?m=N` load, `src` attributes on `<img>` nodes claimed from the prerendered HTML (or cloned while the keyed each re-keys from the build-month grid to `?m=N`) are not re-patched — 27 of 53 July cards kept November images. Text, aria-labels, class toggles and link hrefs all patched fine; only `img src` was affected.
+- Fix: the card re-asserts `src` in a `$effect` (runs after hydration; no-op when already correct). Verified: direct `?m=7` and client-side navigation both render 53/53 correct images; `onerror` emoji fallback still works when a file is missing.

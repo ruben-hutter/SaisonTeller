@@ -21,6 +21,16 @@
 	let imgFailed = $state(false);
 
 	const fileName = $derived(emojiFileName(item.image));
+	const imgSrc = $derived(`/img/produce/${fileName}`);
+	let imgEl: HTMLImageElement | undefined = $state();
+
+	// Svelte 5 hydration quirk: `src` on <img> nodes claimed from SSR HTML —
+	// or cloned from them when the keyed each re-keys — is not re-patched, so a
+	// direct /{locale}?m=N load could keep the prerendered month's image.
+	// Re-assert the src once hydration settles; a no-op when already correct.
+	$effect(() => {
+		if (imgEl && imgEl.getAttribute('src') !== imgSrc) imgEl.setAttribute('src', imgSrc);
+	});
 
 	const monthNumbers = ALL_MONTHS;
 
@@ -40,8 +50,9 @@
 			<span class="pic pic-fallback" aria-hidden="true">{item.image}</span>
 		{:else}
 			<img
+				bind:this={imgEl}
 				class="pic"
-				src={`/img/produce/${fileName}`}
+				src={imgSrc}
 				alt=""
 				aria-hidden="true"
 				width="48"
