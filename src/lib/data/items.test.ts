@@ -85,6 +85,47 @@ describe('items dataset integrity', () => {
 		}
 	});
 
+	it('uses exactly the expected set of distinct glyphs', () => {
+		// Pins the dataset's emoji vocabulary: an accidental glyph edit (e.g. a
+		// wrong codepoint) changes this set and fails loudly here, not just in art.
+		const files = [...new Set(items.map((item) => emojiFileName(item.image)))].sort();
+		expect(files).toEqual([
+			'emoji_u1f330.svg',
+			'emoji_u1f331.svg',
+			'emoji_u1f336.svg',
+			'emoji_u1f33d.svg',
+			'emoji_u1f33f.svg',
+			'emoji_u1f340.svg',
+			'emoji_u1f344.svg',
+			'emoji_u1f345.svg',
+			'emoji_u1f346.svg',
+			'emoji_u1f347.svg',
+			'emoji_u1f348.svg',
+			'emoji_u1f349.svg',
+			'emoji_u1f34a.svg',
+			'emoji_u1f34b.svg',
+			'emoji_u1f34e.svg',
+			'emoji_u1f350.svg',
+			'emoji_u1f351.svg',
+			'emoji_u1f352.svg',
+			'emoji_u1f353.svg',
+			'emoji_u1f360.svg',
+			'emoji_u1f383.svg',
+			'emoji_u1f952.svg',
+			'emoji_u1f954.svg',
+			'emoji_u1f955.svg',
+			'emoji_u1f957.svg',
+			'emoji_u1f966.svg',
+			'emoji_u1f96c.svg',
+			'emoji_u1f9c4.svg',
+			'emoji_u1f9c5.svg',
+			'emoji_u1fad0.svg',
+			'emoji_u1fad1.svg',
+			'emoji_u1fad8.svg',
+			'emoji_u1fadb.svg'
+		]);
+	});
+
 	it('maps every image emoji to an existing vendored SVG', () => {
 		// Strongest guard for the image feature: the exact file the card
 		// <img src> points at must exist in static/img/produce/.

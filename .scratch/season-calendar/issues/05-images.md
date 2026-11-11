@@ -28,3 +28,9 @@ Every produce card gets a small colorful illustration so the app reads less text
 - Tests: `items.test.ts` — non-empty `image` per item + fs existence check for every `emojiFileName()` result; `images.test.ts` — 🌶️ → `emoji_u1f336.svg` (VS16 stripped), multi-codepoint joining.
 - Zero new dependencies: added `src/env.d.ts` ambient shims (`node:fs`, `node:path`, `process`) so svelte-check resolves the fs test without @types/node.
 - Proof: `npm test` 23 passed; `npm run check` clean; `npm run build` prerenders 5 pages; built `en.html` contains `<img … src="/img/produce/emoji_u….svg" …>` tags (17 distinct SVGs for the November grid); `footer.credit` line in all four locales (2025-11-11).
+
+## Comments (code review round)
+
+- The spec review caught that `pepper` had been given 🎯-adjacent U+1F391 (🎑 moon-viewing ceremony) instead of 🫑 U+1FAD1 (bell pepper) — a codepoint slip in the one-off data script. Fixed; `emoji_u1f391.svg` removed, `emoji_u1fad1.svg` fetched. A fresh programmatic comparison of all 85 id→emoji pairs against the TASK.md table now reports zero mismatches.
+- Hardened `items.test.ts`: new test pins the exact set of 33 distinct `emojiFileName()` results, so any accidental glyph change fails loudly (the fs-existence test alone was self-consistent only, as the review noted).
+- `image:` lines reordered to sit after `names` inside each item, matching the interface field order.
