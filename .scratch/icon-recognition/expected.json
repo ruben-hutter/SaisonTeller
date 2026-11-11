@@ -1,0 +1,1220 @@
+{
+	"artichoke": {
+		"category": "vegetable",
+		"names": {
+			"en": "Artichoke",
+			"de": "Artischocke",
+			"fr": "Artichaut",
+			"it": "Carciofo"
+		},
+		"aliases": [
+			"artichoke",
+			"globe artichoke"
+		]
+	},
+	"asparagus": {
+		"category": "vegetable",
+		"names": {
+			"en": "Asparagus",
+			"de": "Spargel",
+			"fr": "Asperge",
+			"it": "Asparagi"
+		},
+		"aliases": [
+			"asparagus",
+			"asparagus spears",
+			"asparagus stalks"
+		]
+	},
+	"beetroot": {
+		"category": "vegetable",
+		"names": {
+			"en": "Beetroot",
+			"de": "Rote Bete",
+			"fr": "Betterave rouge",
+			"it": "Barbabietola rossa"
+		},
+		"aliases": [
+			"beetroot",
+			"beet",
+			"red beet",
+			"garden beet",
+			"table beet"
+		]
+	},
+	"broad-bean": {
+		"category": "vegetable",
+		"names": {
+			"en": "Broad bean",
+			"de": "Dicke Bohne",
+			"fr": "Fève",
+			"it": "Fava"
+		},
+		"aliases": [
+			"broad bean",
+			"fava bean",
+			"faba bean",
+			"horse bean",
+			"field bean"
+		]
+	},
+	"broccoli": {
+		"category": "vegetable",
+		"names": {
+			"en": "Broccoli",
+			"de": "Brokkoli",
+			"fr": "Brocoli",
+			"it": "Broccolo"
+		},
+		"aliases": [
+			"broccoli",
+			"calabrese"
+		]
+	},
+	"brussels-sprouts": {
+		"category": "vegetable",
+		"names": {
+			"en": "Brussels sprouts",
+			"de": "Rosenkohl",
+			"fr": "Chou de Bruxelles",
+			"it": "Cavolo di Bruxelles"
+		},
+		"aliases": [
+			"brussels sprout",
+			"brussels sprouts",
+			"sprouts",
+			"sprout stalk"
+		]
+	},
+	"cabbage-white": {
+		"category": "vegetable",
+		"names": {
+			"en": "White cabbage",
+			"de": "Weißkohl",
+			"fr": "Chou blanc",
+			"it": "Cavolo cappuccio"
+		},
+		"aliases": [
+			"white cabbage",
+			"green cabbage",
+			"cabbage"
+		]
+	},
+	"cabbage-red": {
+		"category": "vegetable",
+		"names": {
+			"en": "Red cabbage",
+			"de": "Rotkohl",
+			"fr": "Chou rouge",
+			"it": "Cavolo rosso"
+		},
+		"aliases": [
+			"red cabbage",
+			"purple cabbage",
+			"cabbage"
+		]
+	},
+	"cabbage-savoy": {
+		"category": "vegetable",
+		"names": {
+			"en": "Savoy cabbage",
+			"de": "Wirsing",
+			"fr": "Chou de Milan",
+			"it": "Cavolo verza"
+		},
+		"aliases": [
+			"savoy cabbage",
+			"cabbage"
+		]
+	},
+	"carrot": {
+		"category": "vegetable",
+		"names": {
+			"en": "Carrot",
+			"de": "Karotte",
+			"fr": "Carotte",
+			"it": "Carota"
+		},
+		"aliases": [
+			"carrot"
+		]
+	},
+	"cauliflower": {
+		"category": "vegetable",
+		"names": {
+			"en": "Cauliflower",
+			"de": "Blumenkohl",
+			"fr": "Chou-fleur",
+			"it": "Cavolfiore"
+		},
+		"aliases": [
+			"cauliflower"
+		]
+	},
+	"celeriac": {
+		"category": "vegetable",
+		"names": {
+			"en": "Celeriac",
+			"de": "Knollensellerie",
+			"fr": "Céleri-rave",
+			"it": "Sedano rapa"
+		},
+		"aliases": [
+			"celeriac",
+			"celery root",
+			"celery root",
+			"knob celery",
+			"turnip-rooted celery"
+		]
+	},
+	"celery": {
+		"category": "vegetable",
+		"names": {
+			"en": "Celery",
+			"de": "Stangensellerie",
+			"fr": "Céleri branche",
+			"it": "Sedano"
+		},
+		"aliases": [
+			"celery",
+			"celery stalk",
+			"celery stalks",
+			"celery bunch",
+			"head of celery"
+		]
+	},
+	"chicory": {
+		"category": "vegetable",
+		"names": {
+			"en": "Belgian endive",
+			"de": "Chicorée",
+			"fr": "Endive",
+			"it": "Cicoria belga"
+		},
+		"aliases": [
+			"belgian endive",
+			"chicory",
+			"endive",
+			"witloof"
+		]
+	},
+	"chili": {
+		"category": "vegetable",
+		"names": {
+			"en": "Chili pepper",
+			"de": "Chilischote",
+			"fr": "Piment",
+			"it": "Peperoncino"
+		},
+		"aliases": [
+			"chili",
+			"chili pepper",
+			"chilli",
+			"chilli pepper",
+			"hot pepper",
+			"jalapeno",
+			"jalapeño"
+		]
+	},
+	"corn-salad": {
+		"category": "vegetable",
+		"names": {
+			"en": "Lamb’s lettuce",
+			"de": "Feldsalat",
+			"fr": "Mâche",
+			"it": "Valerianella"
+		},
+		"aliases": [
+			"lamb's lettuce",
+			"lambs lettuce",
+			"corn salad",
+			"mache",
+			"mâche",
+			"field salad",
+			"valerian salad"
+		]
+	},
+	"cucumber": {
+		"category": "vegetable",
+		"names": {
+			"en": "Cucumber",
+			"de": "Gurke",
+			"fr": "Concombre",
+			"it": "Cetriolo"
+		},
+		"aliases": [
+			"cucumber"
+		]
+	},
+	"eggplant": {
+		"category": "vegetable",
+		"names": {
+			"en": "Aubergine",
+			"de": "Aubergine",
+			"fr": "Aubergine",
+			"it": "Melanzana"
+		},
+		"aliases": [
+			"aubergine",
+			"eggplant",
+			"brinjal"
+		]
+	},
+	"fennel": {
+		"category": "vegetable",
+		"names": {
+			"en": "Fennel",
+			"de": "Fenchel",
+			"fr": "Fenouil",
+			"it": "Finocchio"
+		},
+		"aliases": [
+			"fennel",
+			"fennel bulb",
+			"florence fennel"
+		]
+	},
+	"garlic": {
+		"category": "vegetable",
+		"names": {
+			"en": "Garlic",
+			"de": "Knoblauch",
+			"fr": "Ail",
+			"it": "Aglio"
+		},
+		"aliases": [
+			"garlic",
+			"garlic bulb",
+			"head of garlic",
+			"garlic clove"
+		]
+	},
+	"green-bean": {
+		"category": "vegetable",
+		"names": {
+			"en": "Green bean",
+			"de": "Grüne Bohne",
+			"fr": "Haricot vert",
+			"it": "Fagiolino"
+		},
+		"aliases": [
+			"green bean",
+			"green beans",
+			"string bean",
+			"string beans",
+			"french bean",
+			"bean pod",
+			"beans"
+		]
+	},
+	"kale": {
+		"category": "vegetable",
+		"names": {
+			"en": "Curly kale",
+			"de": "Grünkohl",
+			"fr": "Chou frisé",
+			"it": "Cavolo riccio"
+		},
+		"aliases": [
+			"curly kale",
+			"kale",
+			"borecole"
+		]
+	},
+	"kohlrabi": {
+		"category": "vegetable",
+		"names": {
+			"en": "Kohlrabi",
+			"de": "Kohlrabi",
+			"fr": "Chou-rave",
+			"it": "Cavolo rapa"
+		},
+		"aliases": [
+			"kohlrabi",
+			"german turnip"
+		]
+	},
+	"leek": {
+		"category": "vegetable",
+		"names": {
+			"en": "Leek",
+			"de": "Lauch",
+			"fr": "Poireau",
+			"it": "Porro"
+		},
+		"aliases": [
+			"leek"
+		]
+	},
+	"lettuce": {
+		"category": "vegetable",
+		"names": {
+			"en": "Lettuce",
+			"de": "Kopfsalat",
+			"fr": "Laitue",
+			"it": "Lattuga"
+		},
+		"aliases": [
+			"lettuce",
+			"head of lettuce",
+			"butterhead lettuce",
+			"green lettuce"
+		]
+	},
+	"mushroom-cultivated": {
+		"category": "vegetable",
+		"names": {
+			"en": "Cultivated mushrooms",
+			"de": "Champignons",
+			"fr": "Champignons de Paris",
+			"it": "Funghi coltivati"
+		},
+		"aliases": [
+			"mushroom",
+			"mushrooms",
+			"button mushroom",
+			"white mushroom",
+			"champignon",
+			"cultivated mushroom"
+		]
+	},
+	"mushroom-wild": {
+		"category": "vegetable",
+		"names": {
+			"en": "Wild mushrooms",
+			"de": "Waldpilze",
+			"fr": "Champignons sauvages",
+			"it": "Funghi selvatici"
+		},
+		"aliases": [
+			"wild mushroom",
+			"wild mushrooms",
+			"mushroom",
+			"mushrooms",
+			"porcini",
+			"chanterelle",
+			"forest mushroom"
+		]
+	},
+	"onion": {
+		"category": "vegetable",
+		"names": {
+			"en": "Onion",
+			"de": "Zwiebel",
+			"fr": "Oignon",
+			"it": "Cipolla"
+		},
+		"aliases": [
+			"onion",
+			"yellow onion",
+			"brown onion",
+			"bulb onion",
+			"cooking onion"
+		]
+	},
+	"parsnip": {
+		"category": "vegetable",
+		"names": {
+			"en": "Parsnip",
+			"de": "Pastinake",
+			"fr": "Panais",
+			"it": "Pastinaca"
+		},
+		"aliases": [
+			"parsnip"
+		]
+	},
+	"pea": {
+		"category": "vegetable",
+		"names": {
+			"en": "Pea",
+			"de": "Erbse",
+			"fr": "Petit pois",
+			"it": "Pisello"
+		},
+		"aliases": [
+			"pea",
+			"peas",
+			"pea pod",
+			"pea pods",
+			"garden pea",
+			"garden peas"
+		]
+	},
+	"pepper": {
+		"category": "vegetable",
+		"names": {
+			"en": "Bell pepper",
+			"de": "Paprika",
+			"fr": "Poivron",
+			"it": "Peperone"
+		},
+		"aliases": [
+			"bell pepper",
+			"capsicum",
+			"sweet pepper",
+			"paprika"
+		]
+	},
+	"potato": {
+		"category": "vegetable",
+		"names": {
+			"en": "Potato",
+			"de": "Kartoffel",
+			"fr": "Pomme de terre",
+			"it": "Patata"
+		},
+		"aliases": [
+			"potato",
+			"potatoes"
+		]
+	},
+	"pumpkin": {
+		"category": "vegetable",
+		"names": {
+			"en": "Pumpkin & squash",
+			"de": "Kürbis",
+			"fr": "Courge",
+			"it": "Zucca"
+		},
+		"aliases": [
+			"pumpkin",
+			"squash",
+			"winter squash",
+			"hokkaido",
+			"butternut squash"
+		]
+	},
+	"radicchio": {
+		"category": "vegetable",
+		"names": {
+			"en": "Radicchio",
+			"de": "Radicchio",
+			"fr": "Radicchio",
+			"it": "Radicchio"
+		},
+		"aliases": [
+			"radicchio",
+			"red chicory",
+			"italian chicory"
+		]
+	},
+	"radish": {
+		"category": "vegetable",
+		"names": {
+			"en": "Radish",
+			"de": "Radieschen",
+			"fr": "Radis",
+			"it": "Ravanello"
+		},
+		"aliases": [
+			"radish",
+			"red radish"
+		]
+	},
+	"rhubarb": {
+		"category": "vegetable",
+		"names": {
+			"en": "Rhubarb",
+			"de": "Rhabarber",
+			"fr": "Rhubarbe",
+			"it": "Rabarbaro"
+		},
+		"aliases": [
+			"rhubarb",
+			"rhubarb stalks",
+			"rhubarb stalk"
+		]
+	},
+	"rocket": {
+		"category": "vegetable",
+		"names": {
+			"en": "Rocket",
+			"de": "Rucola",
+			"fr": "Roquette",
+			"it": "Rucola"
+		},
+		"aliases": [
+			"rocket",
+			"arugula",
+			"rucola",
+			"salad rocket"
+		]
+	},
+	"salsify": {
+		"category": "vegetable",
+		"names": {
+			"en": "Salsify",
+			"de": "Schwarzwurzel",
+			"fr": "Scorsonère",
+			"it": "Scorzonera"
+		},
+		"aliases": [
+			"salsify",
+			"black salsify",
+			"scorzonera",
+			"oyster plant",
+			"oyster root"
+		]
+	},
+	"shallot": {
+		"category": "vegetable",
+		"names": {
+			"en": "Shallot",
+			"de": "Schalotte",
+			"fr": "Échalote",
+			"it": "Scalogno"
+		},
+		"aliases": [
+			"shallot",
+			"shallots"
+		]
+	},
+	"snap-pea": {
+		"category": "vegetable",
+		"names": {
+			"en": "Snap peas",
+			"de": "Zuckerschoten",
+			"fr": "Pois gourmands",
+			"it": "Piselli mangiatutto"
+		},
+		"aliases": [
+			"snap pea",
+			"snap peas",
+			"sugar snap pea",
+			"snow pea",
+			"mangetout",
+			"mange tout",
+			"pea pod",
+			"pea pods",
+			"peas"
+		]
+	},
+	"spinach": {
+		"category": "vegetable",
+		"names": {
+			"en": "Spinach",
+			"de": "Spinat",
+			"fr": "Épinard",
+			"it": "Spinacio"
+		},
+		"aliases": [
+			"spinach",
+			"spinach leaves",
+			"spinach leaf"
+		]
+	},
+	"sweet-corn": {
+		"category": "vegetable",
+		"names": {
+			"en": "Sweetcorn",
+			"de": "Zuckermais",
+			"fr": "Maïs sucré",
+			"it": "Mais dolce"
+		},
+		"aliases": [
+			"sweetcorn",
+			"sweet corn",
+			"corn",
+			"corn cob",
+			"corn on the cob",
+			"maize",
+			"ear of corn"
+		]
+	},
+	"swiss-chard": {
+		"category": "vegetable",
+		"names": {
+			"en": "Swiss chard",
+			"de": "Mangold",
+			"fr": "Blette",
+			"it": "Bietola"
+		},
+		"aliases": [
+			"swiss chard",
+			"chard",
+			"silverbeet",
+			"mangold",
+			"leaf beet"
+		]
+	},
+	"tomato": {
+		"category": "vegetable",
+		"names": {
+			"en": "Tomato",
+			"de": "Tomate",
+			"fr": "Tomate",
+			"it": "Pomodoro"
+		},
+		"aliases": [
+			"tomato"
+		]
+	},
+	"turnip": {
+		"category": "vegetable",
+		"names": {
+			"en": "Turnip",
+			"de": "Weiße Rübe",
+			"fr": "Navet",
+			"it": "Rapa bianca"
+		},
+		"aliases": [
+			"turnip",
+			"white turnip"
+		]
+	},
+	"zucchini": {
+		"category": "vegetable",
+		"names": {
+			"en": "Zucchini",
+			"de": "Zucchini",
+			"fr": "Courgette",
+			"it": "Zucchina"
+		},
+		"aliases": [
+			"zucchini",
+			"courgette"
+		]
+	},
+	"apple": {
+		"category": "fruit",
+		"names": {
+			"en": "Apple",
+			"de": "Apfel",
+			"fr": "Pomme",
+			"it": "Mela"
+		},
+		"aliases": [
+			"apple"
+		]
+	},
+	"apricot": {
+		"category": "fruit",
+		"names": {
+			"en": "Apricot",
+			"de": "Aprikose",
+			"fr": "Abricot",
+			"it": "Albicocca"
+		},
+		"aliases": [
+			"apricot"
+		]
+	},
+	"blackberry": {
+		"category": "fruit",
+		"names": {
+			"en": "Blackberry",
+			"de": "Brombeere",
+			"fr": "Mûre",
+			"it": "Mora"
+		},
+		"aliases": [
+			"blackberry",
+			"blackberries"
+		]
+	},
+	"blueberry": {
+		"category": "fruit",
+		"names": {
+			"en": "Blueberry",
+			"de": "Heidelbeere",
+			"fr": "Myrtille",
+			"it": "Mirtillo"
+		},
+		"aliases": [
+			"blueberry",
+			"blueberries"
+		]
+	},
+	"cherry": {
+		"category": "fruit",
+		"names": {
+			"en": "Sweet cherry",
+			"de": "Kirsche",
+			"fr": "Cerise",
+			"it": "Ciliegia"
+		},
+		"aliases": [
+			"sweet cherry",
+			"cherry",
+			"cherries"
+		]
+	},
+	"currant": {
+		"category": "fruit",
+		"names": {
+			"en": "Red & black currant",
+			"de": "Johannisbeere",
+			"fr": "Groseille & cassis",
+			"it": "Ribes"
+		},
+		"aliases": [
+			"currant",
+			"currants",
+			"red currant",
+			"redcurrant",
+			"black currant",
+			"blackcurrant",
+			"berries",
+			"berry cluster",
+			"berry bunch"
+		]
+	},
+	"elderberry": {
+		"category": "fruit",
+		"names": {
+			"en": "Elderberry",
+			"de": "Holunderbeere",
+			"fr": "Baie de sureau",
+			"it": "Sambuco"
+		},
+		"aliases": [
+			"elderberry",
+			"elderberries",
+			"elder berry",
+			"berries",
+			"berry cluster"
+		]
+	},
+	"fig": {
+		"category": "fruit",
+		"names": {
+			"en": "Fig",
+			"de": "Feige",
+			"fr": "Figue",
+			"it": "Fico"
+		},
+		"aliases": [
+			"fig",
+			"figs"
+		]
+	},
+	"grape": {
+		"category": "fruit",
+		"names": {
+			"en": "Grape",
+			"de": "Traube",
+			"fr": "Raisin",
+			"it": "Uva"
+		},
+		"aliases": [
+			"grape",
+			"grapes",
+			"bunch of grapes",
+			"grape bunch"
+		]
+	},
+	"melon": {
+		"category": "fruit",
+		"names": {
+			"en": "Melon",
+			"de": "Melone",
+			"fr": "Melon",
+			"it": "Melone"
+		},
+		"aliases": [
+			"melon",
+			"honeydew",
+			"cantaloupe"
+		]
+	},
+	"mirabelle": {
+		"category": "fruit",
+		"names": {
+			"en": "Mirabelle plum",
+			"de": "Mirabelle",
+			"fr": "Mirabelle",
+			"it": "Mirabella"
+		},
+		"aliases": [
+			"mirabelle",
+			"mirabelle plum",
+			"yellow plum"
+		]
+	},
+	"nectarine-peach": {
+		"category": "fruit",
+		"names": {
+			"en": "Peach & nectarine",
+			"de": "Pfirsich & Nektarine",
+			"fr": "Pêche & nectarine",
+			"it": "Pesca & nettarina"
+		},
+		"aliases": [
+			"peach",
+			"nectarine"
+		]
+	},
+	"pear": {
+		"category": "fruit",
+		"names": {
+			"en": "Pear",
+			"de": "Birne",
+			"fr": "Poire",
+			"it": "Pera"
+		},
+		"aliases": [
+			"pear"
+		]
+	},
+	"plum": {
+		"category": "fruit",
+		"names": {
+			"en": "Plum",
+			"de": "Pflaume",
+			"fr": "Prune",
+			"it": "Susina"
+		},
+		"aliases": [
+			"plum",
+			"plums"
+		]
+	},
+	"quince": {
+		"category": "fruit",
+		"names": {
+			"en": "Quince",
+			"de": "Quitte",
+			"fr": "Coing",
+			"it": "Mela cotogna"
+		},
+		"aliases": [
+			"quince"
+		]
+	},
+	"raspberry": {
+		"category": "fruit",
+		"names": {
+			"en": "Raspberry",
+			"de": "Himbeere",
+			"fr": "Framboise",
+			"it": "Lampone"
+		},
+		"aliases": [
+			"raspberry",
+			"raspberries"
+		]
+	},
+	"strawberry": {
+		"category": "fruit",
+		"names": {
+			"en": "Strawberry",
+			"de": "Erdbeere",
+			"fr": "Fraise",
+			"it": "Fragola"
+		},
+		"aliases": [
+			"strawberry",
+			"strawberries"
+		]
+	},
+	"watermelon": {
+		"category": "fruit",
+		"names": {
+			"en": "Watermelon",
+			"de": "Wassermelone",
+			"fr": "Pastèque",
+			"it": "Anguria"
+		},
+		"aliases": [
+			"watermelon",
+			"water melon"
+		]
+	},
+	"clementine": {
+		"category": "fruit",
+		"names": {
+			"en": "Clementine",
+			"de": "Clementine",
+			"fr": "Clémentine",
+			"it": "Clementina"
+		},
+		"aliases": [
+			"clementine",
+			"clementines"
+		]
+	},
+	"grapefruit": {
+		"category": "fruit",
+		"names": {
+			"en": "Grapefruit",
+			"de": "Grapefruit",
+			"fr": "Pamplemousse",
+			"it": "Pompelmo"
+		},
+		"aliases": [
+			"grapefruit"
+		]
+	},
+	"lemon": {
+		"category": "fruit",
+		"names": {
+			"en": "Lemon",
+			"de": "Zitrone",
+			"fr": "Citron",
+			"it": "Limone"
+		},
+		"aliases": [
+			"lemon"
+		]
+	},
+	"mandarin": {
+		"category": "fruit",
+		"names": {
+			"en": "Mandarin",
+			"de": "Mandarine",
+			"fr": "Mandarine",
+			"it": "Mandarino"
+		},
+		"aliases": [
+			"mandarin",
+			"mandarine",
+			"tangerine"
+		]
+	},
+	"orange": {
+		"category": "fruit",
+		"names": {
+			"en": "Orange",
+			"de": "Orange",
+			"fr": "Orange",
+			"it": "Arancia"
+		},
+		"aliases": [
+			"orange",
+			"oranges"
+		]
+	},
+	"basil": {
+		"category": "herb",
+		"names": {
+			"en": "Basil",
+			"de": "Basilikum",
+			"fr": "Basilic",
+			"it": "Basilico"
+		},
+		"aliases": [
+			"basil",
+			"basil leaves",
+			"basil plant",
+			"basil sprig"
+		]
+	},
+	"chervil": {
+		"category": "herb",
+		"names": {
+			"en": "Chervil",
+			"de": "Kerbel",
+			"fr": "Cerfeuil",
+			"it": "Cerfoglio"
+		},
+		"aliases": [
+			"chervil",
+			"french parsley",
+			"garden chervil"
+		]
+	},
+	"chives": {
+		"category": "herb",
+		"names": {
+			"en": "Chives",
+			"de": "Schnittlauch",
+			"fr": "Ciboulette",
+			"it": "Erba cipollina"
+		},
+		"aliases": [
+			"chives",
+			"chive"
+		]
+	},
+	"dill": {
+		"category": "herb",
+		"names": {
+			"en": "Dill",
+			"de": "Dill",
+			"fr": "Aneth",
+			"it": "Aneto"
+		},
+		"aliases": [
+			"dill",
+			"dill weed",
+			"dill sprig"
+		]
+	},
+	"lovage": {
+		"category": "herb",
+		"names": {
+			"en": "Lovage",
+			"de": "Liebstöckel",
+			"fr": "Livèche",
+			"it": "Levistico"
+		},
+		"aliases": [
+			"lovage",
+			"love parsley",
+			"maggi plant"
+		]
+	},
+	"marjoram": {
+		"category": "herb",
+		"names": {
+			"en": "Marjoram",
+			"de": "Majoran",
+			"fr": "Marjolaine",
+			"it": "Maggiorana"
+		},
+		"aliases": [
+			"marjoram",
+			"sweet marjoram"
+		]
+	},
+	"mint": {
+		"category": "herb",
+		"names": {
+			"en": "Mint",
+			"de": "Pfefferminze",
+			"fr": "Menthe",
+			"it": "Menta"
+		},
+		"aliases": [
+			"mint",
+			"mint leaves",
+			"peppermint",
+			"spearmint",
+			"mint sprig"
+		]
+	},
+	"oregano": {
+		"category": "herb",
+		"names": {
+			"en": "Oregano",
+			"de": "Oregano",
+			"fr": "Origan",
+			"it": "Origano"
+		},
+		"aliases": [
+			"oregano",
+			"wild marjoram",
+			"oregano sprig"
+		]
+	},
+	"parsley": {
+		"category": "herb",
+		"names": {
+			"en": "Parsley",
+			"de": "Petersilie",
+			"fr": "Persil",
+			"it": "Prezzemolo"
+		},
+		"aliases": [
+			"parsley",
+			"curly parsley",
+			"curled parsley",
+			"flat-leaf parsley",
+			"parsley leaves"
+		]
+	},
+	"rosemary": {
+		"category": "herb",
+		"names": {
+			"en": "Rosemary",
+			"de": "Rosmarin",
+			"fr": "Romarin",
+			"it": "Rosmarino"
+		},
+		"aliases": [
+			"rosemary",
+			"rosemary sprig",
+			"rosemary branch"
+		]
+	},
+	"sage": {
+		"category": "herb",
+		"names": {
+			"en": "Sage",
+			"de": "Salbei",
+			"fr": "Sauge",
+			"it": "Salvia"
+		},
+		"aliases": [
+			"sage",
+			"sage leaves",
+			"sage leaf",
+			"salvia"
+		]
+	},
+	"thyme": {
+		"category": "herb",
+		"names": {
+			"en": "Thyme",
+			"de": "Thymian",
+			"fr": "Thym",
+			"it": "Timo"
+		},
+		"aliases": [
+			"thyme",
+			"thyme sprig",
+			"thyme branch"
+		]
+	},
+	"wild-garlic": {
+		"category": "herb",
+		"names": {
+			"en": "Wild garlic",
+			"de": "Bärlauch",
+			"fr": "Ail des ours",
+			"it": "Aglio orsino"
+		},
+		"aliases": [
+			"wild garlic",
+			"ramsons",
+			"bear garlic",
+			"bears garlic",
+			"bear leek",
+			"wild garlic leaves"
+		]
+	},
+	"chestnut": {
+		"category": "nut",
+		"names": {
+			"en": "Sweet chestnut",
+			"de": "Esskastanie",
+			"fr": "Châtaigne",
+			"it": "Castagna"
+		},
+		"aliases": [
+			"chestnut",
+			"chestnuts",
+			"sweet chestnut"
+		]
+	},
+	"hazelnut": {
+		"category": "nut",
+		"names": {
+			"en": "Hazelnut",
+			"de": "Haselnuss",
+			"fr": "Noisette",
+			"it": "Nocciola"
+		},
+		"aliases": [
+			"hazelnut",
+			"hazelnuts",
+			"hazel nut",
+			"filbert",
+			"cobnut"
+		]
+	},
+	"walnut": {
+		"category": "nut",
+		"names": {
+			"en": "Walnut",
+			"de": "Walnuss",
+			"fr": "Noix",
+			"it": "Noce"
+		},
+		"aliases": [
+			"walnut",
+			"walnuts"
+		]
+	}
+}
