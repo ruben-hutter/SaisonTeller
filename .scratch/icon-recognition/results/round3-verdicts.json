@@ -1,0 +1,236 @@
+{
+	"broad-bean": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Edamame",
+			"Pea pod",
+			"Soybean"
+		],
+		"hit": null
+	},
+	"cabbage-savoy": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Edamame",
+			"Peas",
+			"Soybeans"
+		],
+		"hit": null
+	},
+	"celeriac": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Turnip",
+			"Radish",
+			"Beet"
+		],
+		"hit": null
+	},
+	"kale": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Succulent",
+			"Tulip",
+			"Sprout"
+		],
+		"hit": null
+	},
+	"corn-salad": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Sprout",
+			"Clover",
+			"Basil"
+		],
+		"hit": null
+	},
+	"chicory": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Bamboo",
+			"Sugarcane",
+			"Asparagus"
+		],
+		"hit": null
+	},
+	"cabbage-red": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Blackberry",
+			"Grape",
+			"Blueberry"
+		],
+		"hit": null
+	},
+	"kohlrabi": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Turnip",
+			"Radish",
+			"Beet"
+		],
+		"hit": null
+	},
+	"rocket": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Seedling",
+			"Sprout",
+			"Plant"
+		],
+		"hit": null
+	},
+	"radicchio": {
+		"verdict": "FAIL",
+		"guesses": [
+			"onion",
+			"almond",
+			"beet"
+		],
+		"hit": null
+	},
+	"spinach": {
+		"verdict": "PASS",
+		"guesses": [
+			"Basil",
+			"Mint",
+			"Spinach"
+		],
+		"hit": {
+			"guess": "Spinach",
+			"synonym": "Spinach"
+		}
+	},
+	"quince": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Orange",
+			"Lemon",
+			"Grapefruit"
+		],
+		"hit": null
+	},
+	"salsify": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Radish",
+			"Daikon",
+			"Turnip"
+		],
+		"hit": null
+	},
+	"shallot": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Beet",
+			"Turnip",
+			"Onion"
+		],
+		"hit": null
+	},
+	"mirabelle": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Lychee",
+			"Longan",
+			"Plum"
+		],
+		"hit": null
+	},
+	"clementine": {
+		"verdict": "PASS",
+		"guesses": [
+			"Orange",
+			"Tangerine",
+			"Apricot"
+		],
+		"hit": {
+			"guess": "Tangerine",
+			"synonym": "tangerine"
+		}
+	},
+	"swiss-chard": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Cactus",
+			"Potted plant",
+			"Succulent"
+		],
+		"hit": null
+	},
+	"lovage": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Seedling",
+			"Tulip",
+			"Bell pepper"
+		],
+		"hit": null
+	},
+	"mint": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Pistachio",
+			"Seedling",
+			"Walnut"
+		],
+		"hit": null
+	},
+	"wild-garlic": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Asparagus",
+			"Garlic",
+			"Dandelion"
+		],
+		"hit": null
+	},
+	"marjoram": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Eucalyptus branch",
+			"Rosemary sprig",
+			"Olive branch"
+		],
+		"hit": null
+	},
+	"oregano": {
+		"verdict": "FAIL",
+		"guesses": [
+			"peas",
+			"blueberries",
+			"mistletoe"
+		],
+		"hit": null
+	},
+	"thyme": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Lavender",
+			"Pea plant",
+			"Berry branch"
+		],
+		"hit": null
+	},
+	"sage": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Seedling",
+			"Sprout",
+			"Sunflower"
+		],
+		"hit": null
+	},
+	"chestnut": {
+		"verdict": "PASS",
+		"guesses": [
+			"Chestnut",
+			"Acorn",
+			"Hazelnut"
+		],
+		"hit": {
+			"guess": "Chestnut",
+			"synonym": "chestnut"
+		}
+	}
+}

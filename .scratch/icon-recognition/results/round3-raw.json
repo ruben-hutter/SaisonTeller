@@ -1,0 +1,127 @@
+{
+	"broad-bean": {
+		"blind": "cae764f974c7",
+		"model": "glm-5.3-flash",
+		"raw": "1. Edamame\n2. Pea pod\n3. Soybean"
+	},
+	"cabbage-savoy": {
+		"blind": "2da2405407e1",
+		"model": "glm-5.3-flash",
+		"raw": "1. Edamame\n2. Peas\n3. Soybeans"
+	},
+	"celeriac": {
+		"blind": "0299e83799f9",
+		"model": "glm-5.3-flash",
+		"raw": "1. Turnip\n2. Radish\n3. Beet"
+	},
+	"kale": {
+		"blind": "475051e7fbd2",
+		"model": "glm-5.3-flash",
+		"raw": "1. Succulent\n2. Tulip\n3. Sprout"
+	},
+	"corn-salad": {
+		"blind": "73aac213b442",
+		"model": "glm-5.3-flash",
+		"raw": "1. Sprout\n2. Clover\n3. Basil"
+	},
+	"chicory": {
+		"blind": "7e18662613ae",
+		"model": "glm-5.3-flash",
+		"raw": "1. Bamboo\n2. Sugarcane\n3. Asparagus"
+	},
+	"cabbage-red": {
+		"blind": "114a55aae92a",
+		"model": "glm-5.3-flash",
+		"raw": "1. Blackberry\n2. Grape\n3. Blueberry"
+	},
+	"kohlrabi": {
+		"blind": "8218363717b2",
+		"model": "glm-5.3-flash",
+		"raw": "1. Turnip\n2. Radish\n3. Beet"
+	},
+	"rocket": {
+		"blind": "207cffb5ee06",
+		"model": "glm-5.3-flash",
+		"raw": "1. Seedling\n2. Sprout\n3. Plant"
+	},
+	"radicchio": {
+		"blind": "317ffe2135a9",
+		"model": "glm-5.3-flash",
+		"raw": "1. onion\n2. almond\n3. beet"
+	},
+	"spinach": {
+		"blind": "843a09a891af",
+		"model": "glm-5.3-flash",
+		"raw": "1. Basil\n2. Mint\n3. Spinach"
+	},
+	"quince": {
+		"blind": "42c0a83d4855",
+		"model": "glm-5.3-flash",
+		"raw": "1. Orange\n2. Lemon\n3. Grapefruit"
+	},
+	"salsify": {
+		"blind": "1c25c7452c39",
+		"model": "glm-5.3-flash",
+		"raw": "1. Radish\n2. Daikon\n3. Turnip"
+	},
+	"shallot": {
+		"blind": "35399bab1861",
+		"model": "glm-5.3-flash",
+		"raw": "1. Beet\n2. Turnip\n3. Onion"
+	},
+	"mirabelle": {
+		"blind": "e727674b7dc7",
+		"model": "glm-5.3-flash",
+		"raw": "1. Lychee\n2. Longan\n3. Plum"
+	},
+	"clementine": {
+		"blind": "131d04ae8b34",
+		"model": "glm-5.3-flash",
+		"raw": "1. Orange\n2. Tangerine\n3. Apricot"
+	},
+	"swiss-chard": {
+		"blind": "b3329ab2a51e",
+		"model": "glm-5.3-flash",
+		"raw": "1. Cactus\n2. Potted plant\n3. Succulent"
+	},
+	"lovage": {
+		"blind": "ced4eda0e2f0",
+		"model": "glm-5.3-flash",
+		"raw": "1. Seedling\n2. Tulip\n3. Bell pepper"
+	},
+	"mint": {
+		"blind": "7d13e6b02121",
+		"model": "glm-5.3-flash",
+		"raw": "1. Pistachio\n2. Seedling\n3. Walnut"
+	},
+	"wild-garlic": {
+		"blind": "bd377ddaf482",
+		"model": "glm-5.3-flash",
+		"raw": "1. Asparagus\n2. Garlic\n3. Dandelion"
+	},
+	"marjoram": {
+		"blind": "20c60c739889",
+		"model": "glm-5.3-flash",
+		"raw": "1. Eucalyptus branch\n2. Rosemary sprig\n3. Olive branch"
+	},
+	"oregano": {
+		"blind": "60ebd7aa810a",
+		"model": "glm-5.3-flash",
+		"raw": "1. peas\n2. blueberries\n3. mistletoe"
+	},
+	"thyme": {
+		"blind": "8069c1358452",
+		"model": "glm-5.3-flash",
+		"raw": "1. Lavender\n2. Pea plant\n3. Berry branch"
+	},
+	"sage": {
+		"blind": "8dbbbbeab954",
+		"model": "glm-5.3-flash",
+		"raw": "1. Seedling\n2. Sprout\n3. Sunflower"
+	},
+	"chestnut": {
+		"blind": "a026c05f5ec5",
+		"model": "glm-5.3-flash",
+		"raw": "1. Chestnut\n2. Acorn\n3. Hazelnut"
+	}
+}

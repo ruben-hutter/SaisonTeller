@@ -1,8 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-  <path d="M64 112 Q56 106 50 104 M64 112 Q72 106 78 104 M64 112 L64 104" fill="none" stroke="#F2EFE4" stroke-width="5" stroke-linecap="round"/>
-  <path d="M64 104 Q56 88 50 66 Q46 44 52 30 Q64 38 66 56 Q67 80 64 104 Z" fill="#2E6B33"/>
-  <path d="M64 104 Q72 88 78 66 Q82 44 76 30 Q64 38 62 56 Q61 80 64 104 Z" fill="#3A8C3F"/>
-  <path d="M64 104 Q62 84 60 62 Q60 44 64 34" fill="none" stroke="#F2A93B" stroke-width="5" stroke-linecap="round"/>
-  <path d="M56 60 Q52 50 54 40 M72 60 Q76 50 74 40" fill="none" stroke="#F2A93B" stroke-width="3" stroke-linecap="round"/>
-  <path d="M64 34 Q60 30 54 30 M64 34 Q68 30 74 30" fill="none" stroke="#8FBF6E" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M40 110 L38 72 Q38 56 48 48 Q50 40 60 38 Q70 40 72 50 Q80 58 80 72 L78 110 Z" fill="#F2EFE4"/>
+  <path d="M56 110 L54 76 Q54 62 62 56 Q70 62 70 76 L68 110 Z" fill="#C05A9E"/>
+  <path d="M40 110 L38 72 Q38 56 48 48 Q50 40 60 38 Q70 40 72 50 Q80 58 80 72 L78 110 Z" fill="none" stroke="#E8E4D8" stroke-width="3"/>
+  <path d="M48 46 Q44 38 38 36 M66 48 Q68 40 74 38 M58 40 Q58 32 54 26" fill="none" stroke="#2E6B33" stroke-width="6" stroke-linecap="round"/>
+  <path d="M38 36 Q32 30 26 32 M38 36 Q34 28 28 26 M74 38 Q80 32 86 32 M74 38 Q78 30 84 28" fill="none" stroke="#3A8C3F" stroke-width="4" stroke-linecap="round"/>
+  <path d="M58 26 Q54 20 48 20 M58 26 Q60 18 66 16" fill="none" stroke="#3A8C3F" stroke-width="4" stroke-linecap="round"/>
+  <path d="M48 60 Q46 72 48 86 M70 64 Q72 76 70 90" fill="none" stroke="#E8D5E8" stroke-width="3" stroke-linecap="round"/>
+  <rect x="36" y="110" width="46" height="8" rx="4" fill="#E8E4D8"/>
 </svg>

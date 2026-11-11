@@ -1,6 +1,6 @@
 # Icon recognition loop — spec
 
-**Status:** ready-for-agent
+**Status:** resolved (see `report.md`) — 63/85 pass, 22 hard cases
 **Branch:** `feat/better-produce-icons` (worktree `better-produce-icons`)
 
 ## Goal

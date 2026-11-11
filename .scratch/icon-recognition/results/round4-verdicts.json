@@ -1,0 +1,209 @@
+{
+	"chicory": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Asparagus",
+			"Baby corn",
+			"Bamboo shoots"
+		],
+		"hit": null
+	},
+	"broad-bean": {
+		"verdict": "FAIL",
+		"guesses": [
+			"edamame",
+			"soybean pod",
+			"pea pod"
+		],
+		"hit": null
+	},
+	"cabbage-savoy": {
+		"verdict": "PASS",
+		"guesses": [
+			"Cabbage",
+			"Brussels sprout",
+			"Lettuce"
+		],
+		"hit": {
+			"guess": "Cabbage",
+			"synonym": "cabbage"
+		}
+	},
+	"celeriac": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Tomato",
+			"Turnip",
+			"Radish"
+		],
+		"hit": null
+	},
+	"corn-salad": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Seaweed",
+			"Herb",
+			"Grass"
+		],
+		"hit": null
+	},
+	"kale": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Tulip",
+			"Celery",
+			"Artichoke"
+		],
+		"hit": null
+	},
+	"rocket": {
+		"verdict": "FAIL",
+		"guesses": [
+			"seedling",
+			"sprout",
+			"herb"
+		],
+		"hit": null
+	},
+	"kohlrabi": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Turnip",
+			"Radish",
+			"Beet"
+		],
+		"hit": null
+	},
+	"quince": {
+		"verdict": "PASS",
+		"guesses": [
+			"Quince",
+			"Pear",
+			"Apple"
+		],
+		"hit": {
+			"guess": "Quince",
+			"synonym": "Quince"
+		}
+	},
+	"cabbage-red": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Fig",
+			"Onion",
+			"Bud"
+		],
+		"hit": null
+	},
+	"salsify": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Eggplant",
+			"Cacao pod",
+			"Cucumber"
+		],
+		"hit": null
+	},
+	"radicchio": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Fig",
+			"Snail",
+			"Plum"
+		],
+		"hit": null
+	},
+	"shallot": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Pomegranate",
+			"Onion",
+			"Chestnut"
+		],
+		"hit": null
+	},
+	"swiss-chard": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Fennel",
+			"Celery",
+			"Onion"
+		],
+		"hit": null
+	},
+	"mint": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Sprout",
+			"Seedling",
+			"Plant"
+		],
+		"hit": null
+	},
+	"mirabelle": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Orange",
+			"Apricot",
+			"Lemon"
+		],
+		"hit": null
+	},
+	"lovage": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Seedling",
+			"Sprout",
+			"Plant"
+		],
+		"hit": null
+	},
+	"wild-garlic": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Sprout",
+			"Seedling",
+			"Cactus"
+		],
+		"hit": null
+	},
+	"sage": {
+		"verdict": "PASS",
+		"guesses": [
+			"Basil",
+			"Mint",
+			"Sage"
+		],
+		"hit": {
+			"guess": "Sage",
+			"synonym": "Sage"
+		}
+	},
+	"marjoram": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Tarragon",
+			"Lavender",
+			"Wheat"
+		],
+		"hit": null
+	},
+	"thyme": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Pea pod",
+			"Beans",
+			"Asparagus"
+		],
+		"hit": null
+	},
+	"oregano": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Tree",
+			"Christmas tree",
+			"Grape"
+		],
+		"hit": null
+	}
+}

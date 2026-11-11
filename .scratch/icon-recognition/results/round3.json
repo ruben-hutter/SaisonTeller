@@ -1,0 +1,127 @@
+{
+	"broad-bean": [
+		"Edamame",
+		"Pea pod",
+		"Soybean"
+	],
+	"cabbage-savoy": [
+		"Edamame",
+		"Peas",
+		"Soybeans"
+	],
+	"celeriac": [
+		"Turnip",
+		"Radish",
+		"Beet"
+	],
+	"kale": [
+		"Succulent",
+		"Tulip",
+		"Sprout"
+	],
+	"corn-salad": [
+		"Sprout",
+		"Clover",
+		"Basil"
+	],
+	"chicory": [
+		"Bamboo",
+		"Sugarcane",
+		"Asparagus"
+	],
+	"cabbage-red": [
+		"Blackberry",
+		"Grape",
+		"Blueberry"
+	],
+	"kohlrabi": [
+		"Turnip",
+		"Radish",
+		"Beet"
+	],
+	"rocket": [
+		"Seedling",
+		"Sprout",
+		"Plant"
+	],
+	"radicchio": [
+		"onion",
+		"almond",
+		"beet"
+	],
+	"spinach": [
+		"Basil",
+		"Mint",
+		"Spinach"
+	],
+	"quince": [
+		"Orange",
+		"Lemon",
+		"Grapefruit"
+	],
+	"salsify": [
+		"Radish",
+		"Daikon",
+		"Turnip"
+	],
+	"shallot": [
+		"Beet",
+		"Turnip",
+		"Onion"
+	],
+	"mirabelle": [
+		"Lychee",
+		"Longan",
+		"Plum"
+	],
+	"clementine": [
+		"Orange",
+		"Tangerine",
+		"Apricot"
+	],
+	"swiss-chard": [
+		"Cactus",
+		"Potted plant",
+		"Succulent"
+	],
+	"lovage": [
+		"Seedling",
+		"Tulip",
+		"Bell pepper"
+	],
+	"mint": [
+		"Pistachio",
+		"Seedling",
+		"Walnut"
+	],
+	"wild-garlic": [
+		"Asparagus",
+		"Garlic",
+		"Dandelion"
+	],
+	"marjoram": [
+		"Eucalyptus branch",
+		"Rosemary sprig",
+		"Olive branch"
+	],
+	"oregano": [
+		"peas",
+		"blueberries",
+		"mistletoe"
+	],
+	"thyme": [
+		"Lavender",
+		"Pea plant",
+		"Berry branch"
+	],
+	"sage": [
+		"Seedling",
+		"Sprout",
+		"Sunflower"
+	],
+	"chestnut": [
+		"Chestnut",
+		"Acorn",
+		"Hazelnut"
+	]
+}

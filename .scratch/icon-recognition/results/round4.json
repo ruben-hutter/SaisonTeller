@@ -1,0 +1,112 @@
+{
+	"chicory": [
+		"Asparagus",
+		"Baby corn",
+		"Bamboo shoots"
+	],
+	"broad-bean": [
+		"edamame",
+		"soybean pod",
+		"pea pod"
+	],
+	"cabbage-savoy": [
+		"Cabbage",
+		"Brussels sprout",
+		"Lettuce"
+	],
+	"celeriac": [
+		"Tomato",
+		"Turnip",
+		"Radish"
+	],
+	"corn-salad": [
+		"Seaweed",
+		"Herb",
+		"Grass"
+	],
+	"kale": [
+		"Tulip",
+		"Celery",
+		"Artichoke"
+	],
+	"rocket": [
+		"seedling",
+		"sprout",
+		"herb"
+	],
+	"kohlrabi": [
+		"Turnip",
+		"Radish",
+		"Beet"
+	],
+	"quince": [
+		"Quince",
+		"Pear",
+		"Apple"
+	],
+	"cabbage-red": [
+		"Fig",
+		"Onion",
+		"Bud"
+	],
+	"salsify": [
+		"Eggplant",
+		"Cacao pod",
+		"Cucumber"
+	],
+	"radicchio": [
+		"Fig",
+		"Snail",
+		"Plum"
+	],
+	"shallot": [
+		"Pomegranate",
+		"Onion",
+		"Chestnut"
+	],
+	"swiss-chard": [
+		"Fennel",
+		"Celery",
+		"Onion"
+	],
+	"mint": [
+		"Sprout",
+		"Seedling",
+		"Plant"
+	],
+	"mirabelle": [
+		"Orange",
+		"Apricot",
+		"Lemon"
+	],
+	"lovage": [
+		"Seedling",
+		"Sprout",
+		"Plant"
+	],
+	"wild-garlic": [
+		"Sprout",
+		"Seedling",
+		"Cactus"
+	],
+	"sage": [
+		"Basil",
+		"Mint",
+		"Sage"
+	],
+	"marjoram": [
+		"Tarragon",
+		"Lavender",
+		"Wheat"
+	],
+	"thyme": [
+		"Pea pod",
+		"Beans",
+		"Asparagus"
+	],
+	"oregano": [
+		"Tree",
+		"Christmas tree",
+		"Grape"
+	]
+}
