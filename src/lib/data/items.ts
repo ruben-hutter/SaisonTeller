@@ -23,6 +23,11 @@ export interface ProduceItem {
 /**
  * Reference calendar for Switzerland & Central Europe.
  * Source of truth: `.scratch/season-calendar/spec.md` (dataset table).
+ * Provenance: verified item-by-item (2026-11-11) against published season
+ * calendars — BZfE/BLE "Der Saisonkalender", the Verbraucherzentrale calendar
+ * (scientifically advised by IGZ / Uni Bonn) and the Bio Suisse Saisonkalender.
+ * See `.scratch/season-calendar/issues/10-data-provenance.md` and
+ * `docs/adr/0002-dataset-provenance-no-api.md`.
  */
 export const items: ProduceItem[] = [
 	// --- Vegetables -----------------------------------------------------------
@@ -548,7 +553,9 @@ export const items: ProduceItem[] = [
 		id: 'rosemary',
 		category: 'herb',
 		names: { en: 'Rosemary', de: 'Rosmarin', fr: 'Romarin', it: 'Rosmarino' },
-		harvest: months('1-12')
+		// Field-harvest window 5–11 per the published calendars (Verbraucherzentrale);
+		// the earlier year-round claim (1–12) matched only potted/evergreen availability.
+		harvest: months('5-11')
 	},
 	{
 		id: 'sage',

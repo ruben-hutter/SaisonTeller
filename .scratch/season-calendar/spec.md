@@ -74,6 +74,8 @@ Chips `<button aria-pressed>`; month links `aria-label="{aria.showMonth} {Month}
 
 ## Dataset (source of truth)
 
+Provenance (verified 2026-11-11): all 85 rows were checked against published calendars — BZfE/BLE "Der Saisonkalender", the Verbraucherzentrale calendar (scientifically advised by IGZ / Uni Bonn) and the Bio Suisse Saisonkalender. 57 exact matches, 10 ≤1-month edge drifts within normal published disagreement, 17 items outside those calendars' scope (imports/exotics/niche; `origin: 'south'` where applicable), and one correction: rosemary narrowed `1-12` → `5-11` (no source supports year-round field harvest). Details: `issues/10-data-provenance.md`; decision record: `docs/adr/0002-dataset-provenance-no-api.md`. No official API exists (opendata.swiss, LINDAS, BLE all checked) — the dataset stays project-owned; cite, don't integrate.
+
 `H` = harvest, `S` = storage, `origin=south` marked. Ranges inclusive, wrap allowed.
 
 | id | cat | en | de | fr | it | H | S | origin |
@@ -156,7 +158,7 @@ Chips `<button aria-pressed>`; month links `aria-label="{aria.showMonth} {Month}
 | mint | herb | Mint | Pfefferminze | Menthe | Menta | 4-10 | | |
 | oregano | herb | Oregano | Oregano | Origan | Origano | 6-9 | | |
 | parsley | herb | Parsley | Petersilie | Persil | Prezzemolo | 4-11 | | |
-| rosemary | herb | Rosemary | Rosmarin | Romarin | Rosmarino | 1-12 | | |
+| rosemary | herb | Rosemary | Rosmarin | Romarin | Rosmarino | 5-11 | | |
 | sage | herb | Sage | Salbei | Sauge | Salvia | 5-10 | | |
 | thyme | herb | Thyme | Thymian | Thym | Timo | 5-10 | | |
 | wild-garlic | herb | Wild garlic | Bärlauch | Ail des ours | Aglio orsino | 3-5 | | |

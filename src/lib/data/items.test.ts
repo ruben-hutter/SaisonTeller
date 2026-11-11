@@ -124,8 +124,8 @@ describe('itemsForMonth', () => {
 		const harvestIds = harvest.map((item) => item.id);
 		const storageIds = storage.map((item) => item.id);
 
-		// Fresh in January: rosemary, mushrooms, and the winter/wrap-around crops.
-		expect(harvestIds).toContain('rosemary');
+		// Fresh in January: radicchio, mushrooms, and the winter/wrap-around crops.
+		expect(harvestIds).toContain('radicchio');
 		expect(harvestIds).toContain('mushroom-cultivated');
 		expect(harvestIds).toContain('brussels-sprouts');
 		expect(harvestIds).toContain('kale');
