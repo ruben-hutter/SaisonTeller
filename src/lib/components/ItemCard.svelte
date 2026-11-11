@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { isHarvestMonth, isStorageMonth, type ProduceItem } from '$lib/data/items';
-	import { emojiFileName } from '$lib/images';
 	import { t, type Locale } from '$lib/i18n';
 	import { ALL_MONTHS } from '$lib/seasons';
 
@@ -17,17 +16,17 @@
 
 	let { item, locale, highlight, fromStorage = false, dimmed = false }: Props = $props();
 
-	// Degrade gracefully if a vendored SVG is missing: show the plain emoji.
+	// Degrade gracefully if a bespoke SVG is missing: hide the <img> entirely.
 	let imgFailed = $state(false);
 
-	const fileName = $derived(emojiFileName(item.image));
-	const imgSrc = $derived(`/img/produce/${fileName}`);
+	const imgSrc = $derived(`/img/bespoke/${item.id}.svg`);
 	let imgEl: HTMLImageElement | undefined = $state();
 
 	// Svelte 5 hydration quirk: `src` on <img> nodes claimed from SSR HTML —
-	// or cloned from them when the keyed each re-keys — is not re-patched, so a
-	// direct /{locale}?m=N load could keep the prerendered month's image.
-	// Re-assert the src once hydration settles; a no-op when already correct.
+	// or cloned from them when the keyed each re-keys on month change — is not
+	// re-patched, so a card can keep the previous item's glyph (verified in
+	// headless Chromium: without this, client nav shows stale id-mismatched
+	// images). Re-assert the src once hydration settles; a no-op when correct.
 	$effect(() => {
 		if (imgEl && imgEl.getAttribute('src') !== imgSrc) imgEl.setAttribute('src', imgSrc);
 	});
@@ -46,9 +45,7 @@
 
 <article class="card" class:from-storage={fromStorage} class:dimmed={dimmed}>
 	<div class="head">
-		{#if imgFailed}
-			<span class="pic pic-fallback" aria-hidden="true">{item.image}</span>
-		{:else}
+		{#if !imgFailed}
 			<img
 				bind:this={imgEl}
 				class="pic"
@@ -124,15 +121,6 @@
 		border-radius: 10px;
 		background: var(--surface-dim);
 		object-fit: contain;
-	}
-
-	/* Fallback when the vendored SVG is missing: the plain emoji character. */
-	.pic-fallback {
-		display: inline-flex;
-		align-items: center;
-		justify-content: center;
-		font-size: 30px;
-		line-height: 1;
 	}
 
 	.meta {

@@ -25,7 +25,6 @@ export const en = {
 	'aria.stripLabel': 'Harvest months',
 	'footer.note':
 		'Reference calendar for Switzerland & Central Europe — nature varies by year and region.',
-	'footer.credit': 'Illustrations: Noto Emoji (Apache 2.0)',
 } as const;
 
 export type StringKey = keyof typeof en;

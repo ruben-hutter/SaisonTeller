@@ -12,8 +12,6 @@ export interface ProduceItem {
 	category: Category;
 	/** Display name per locale. */
 	names: Record<Locale, string>;
-	/** Illustration emoji — vendored as a Noto Emoji SVG via `emojiFileName()`. */
-	image: string;
 	/** Peak harvest months, 1..12, ascending. */
 	harvest: number[];
 	/** Months the item is still available from storage, 1..12, ascending, disjoint from harvest. */
@@ -32,21 +30,18 @@ export const items: ProduceItem[] = [
 		id: 'artichoke',
 		category: 'vegetable',
 		names: { en: 'Artichoke', de: 'Artischocke', fr: 'Artichaut', it: 'Carciofo' },
-		image: '🥬',
 		harvest: months('7-10')
 	},
 	{
 		id: 'asparagus',
 		category: 'vegetable',
 		names: { en: 'Asparagus', de: 'Spargel', fr: 'Asperge', it: 'Asparagi' },
-		image: '🌱',
 		harvest: months('4-6')
 	},
 	{
 		id: 'beetroot',
 		category: 'vegetable',
 		names: { en: 'Beetroot', de: 'Rote Bete', fr: 'Betterave rouge', it: 'Barbabietola rossa' },
-		image: '🍠',
 		harvest: months('6-10'),
 		storage: months('11-2')
 	},
@@ -54,14 +49,12 @@ export const items: ProduceItem[] = [
 		id: 'broad-bean',
 		category: 'vegetable',
 		names: { en: 'Broad bean', de: 'Dicke Bohne', fr: 'Fève', it: 'Fava' },
-		image: '🫘',
 		harvest: months('5-8')
 	},
 	{
 		id: 'broccoli',
 		category: 'vegetable',
 		names: { en: 'Broccoli', de: 'Brokkoli', fr: 'Brocoli', it: 'Broccolo' },
-		image: '🥦',
 		harvest: months('6-11')
 	},
 	{
@@ -73,14 +66,12 @@ export const items: ProduceItem[] = [
 			fr: 'Chou de Bruxelles',
 			it: 'Cavolo di Bruxelles'
 		},
-		image: '🥦',
 		harvest: months('10-2')
 	},
 	{
 		id: 'cabbage-white',
 		category: 'vegetable',
 		names: { en: 'White cabbage', de: 'Weißkohl', fr: 'Chou blanc', it: 'Cavolo cappuccio' },
-		image: '🥬',
 		harvest: months('6-11'),
 		storage: months('12-5')
 	},
@@ -88,7 +79,6 @@ export const items: ProduceItem[] = [
 		id: 'cabbage-red',
 		category: 'vegetable',
 		names: { en: 'Red cabbage', de: 'Rotkohl', fr: 'Chou rouge', it: 'Cavolo rosso' },
-		image: '🥬',
 		harvest: months('9-11'),
 		storage: months('12-2')
 	},
@@ -96,7 +86,6 @@ export const items: ProduceItem[] = [
 		id: 'cabbage-savoy',
 		category: 'vegetable',
 		names: { en: 'Savoy cabbage', de: 'Wirsing', fr: 'Chou de Milan', it: 'Cavolo verza' },
-		image: '🥬',
 		harvest: months('9-11'),
 		storage: months('12-2')
 	},
@@ -104,7 +93,6 @@ export const items: ProduceItem[] = [
 		id: 'carrot',
 		category: 'vegetable',
 		names: { en: 'Carrot', de: 'Karotte', fr: 'Carotte', it: 'Carota' },
-		image: '🥕',
 		harvest: months('5-10'),
 		storage: months('11-4')
 	},
@@ -112,14 +100,12 @@ export const items: ProduceItem[] = [
 		id: 'cauliflower',
 		category: 'vegetable',
 		names: { en: 'Cauliflower', de: 'Blumenkohl', fr: 'Chou-fleur', it: 'Cavolfiore' },
-		image: '🥦',
 		harvest: months('5-11')
 	},
 	{
 		id: 'celeriac',
 		category: 'vegetable',
 		names: { en: 'Celeriac', de: 'Knollensellerie', fr: 'Céleri-rave', it: 'Sedano rapa' },
-		image: '🥔',
 		harvest: months('8-11'),
 		storage: months('12-3')
 	},
@@ -127,14 +113,12 @@ export const items: ProduceItem[] = [
 		id: 'celery',
 		category: 'vegetable',
 		names: { en: 'Celery', de: 'Stangensellerie', fr: 'Céleri branche', it: 'Sedano' },
-		image: '🌿',
 		harvest: months('7-11')
 	},
 	{
 		id: 'chicory',
 		category: 'vegetable',
 		names: { en: 'Belgian endive', de: 'Chicorée', fr: 'Endive', it: 'Cicoria belga' },
-		image: '🥬',
 		harvest: months('10-11'),
 		storage: months('12-3')
 	},
@@ -142,42 +126,36 @@ export const items: ProduceItem[] = [
 		id: 'chili',
 		category: 'vegetable',
 		names: { en: 'Chili pepper', de: 'Chilischote', fr: 'Piment', it: 'Peperoncino' },
-		image: '🌶️',
 		harvest: months('7-10')
 	},
 	{
 		id: 'corn-salad',
 		category: 'vegetable',
 		names: { en: 'Lamb’s lettuce', de: 'Feldsalat', fr: 'Mâche', it: 'Valerianella' },
-		image: '🌱',
 		harvest: months('10-3')
 	},
 	{
 		id: 'cucumber',
 		category: 'vegetable',
 		names: { en: 'Cucumber', de: 'Gurke', fr: 'Concombre', it: 'Cetriolo' },
-		image: '🥒',
 		harvest: months('6-9')
 	},
 	{
 		id: 'eggplant',
 		category: 'vegetable',
 		names: { en: 'Aubergine', de: 'Aubergine', fr: 'Aubergine', it: 'Melanzana' },
-		image: '🍆',
 		harvest: months('7-10')
 	},
 	{
 		id: 'fennel',
 		category: 'vegetable',
 		names: { en: 'Fennel', de: 'Fenchel', fr: 'Fenouil', it: 'Finocchio' },
-		image: '🌿',
 		harvest: months('6-10')
 	},
 	{
 		id: 'garlic',
 		category: 'vegetable',
 		names: { en: 'Garlic', de: 'Knoblauch', fr: 'Ail', it: 'Aglio' },
-		image: '🧄',
 		harvest: months('7-8'),
 		storage: months('9-5')
 	},
@@ -185,28 +163,24 @@ export const items: ProduceItem[] = [
 		id: 'green-bean',
 		category: 'vegetable',
 		names: { en: 'Green bean', de: 'Grüne Bohne', fr: 'Haricot vert', it: 'Fagiolino' },
-		image: '🫛',
 		harvest: months('6-10')
 	},
 	{
 		id: 'kale',
 		category: 'vegetable',
 		names: { en: 'Curly kale', de: 'Grünkohl', fr: 'Chou frisé', it: 'Cavolo riccio' },
-		image: '🥬',
 		harvest: months('11-2')
 	},
 	{
 		id: 'kohlrabi',
 		category: 'vegetable',
 		names: { en: 'Kohlrabi', de: 'Kohlrabi', fr: 'Chou-rave', it: 'Cavolo rapa' },
-		image: '🥬',
 		harvest: months('5-10')
 	},
 	{
 		id: 'leek',
 		category: 'vegetable',
 		names: { en: 'Leek', de: 'Lauch', fr: 'Poireau', it: 'Porro' },
-		image: '🧅',
 		harvest: months('6-11'),
 		storage: months('12-3')
 	},
@@ -214,7 +188,6 @@ export const items: ProduceItem[] = [
 		id: 'lettuce',
 		category: 'vegetable',
 		names: { en: 'Lettuce', de: 'Kopfsalat', fr: 'Laitue', it: 'Lattuga' },
-		image: '🥗',
 		harvest: months('4-11')
 	},
 	{
@@ -226,7 +199,6 @@ export const items: ProduceItem[] = [
 			fr: 'Champignons de Paris',
 			it: 'Funghi coltivati'
 		},
-		image: '🍄',
 		harvest: months('1-12')
 	},
 	{
@@ -238,14 +210,12 @@ export const items: ProduceItem[] = [
 			fr: 'Champignons sauvages',
 			it: 'Funghi selvatici'
 		},
-		image: '🍄',
 		harvest: months('9-11')
 	},
 	{
 		id: 'onion',
 		category: 'vegetable',
 		names: { en: 'Onion', de: 'Zwiebel', fr: 'Oignon', it: 'Cipolla' },
-		image: '🧅',
 		harvest: months('6-8'),
 		storage: months('9-5')
 	},
@@ -253,7 +223,6 @@ export const items: ProduceItem[] = [
 		id: 'parsnip',
 		category: 'vegetable',
 		names: { en: 'Parsnip', de: 'Pastinake', fr: 'Panais', it: 'Pastinaca' },
-		image: '🥕',
 		harvest: months('10-11'),
 		storage: months('12-3')
 	},
@@ -261,21 +230,18 @@ export const items: ProduceItem[] = [
 		id: 'pea',
 		category: 'vegetable',
 		names: { en: 'Pea', de: 'Erbse', fr: 'Petit pois', it: 'Pisello' },
-		image: '🫛',
 		harvest: months('5-8')
 	},
 	{
 		id: 'pepper',
 		category: 'vegetable',
 		names: { en: 'Bell pepper', de: 'Paprika', fr: 'Poivron', it: 'Peperone' },
-		image: '🫑',
 		harvest: months('7-10')
 	},
 	{
 		id: 'potato',
 		category: 'vegetable',
 		names: { en: 'Potato', de: 'Kartoffel', fr: 'Pomme de terre', it: 'Patata' },
-		image: '🥔',
 		harvest: months('5-8'),
 		storage: months('9-4')
 	},
@@ -283,7 +249,6 @@ export const items: ProduceItem[] = [
 		id: 'pumpkin',
 		category: 'vegetable',
 		names: { en: 'Pumpkin & squash', de: 'Kürbis', fr: 'Courge', it: 'Zucca' },
-		image: '🎃',
 		harvest: months('9-10'),
 		storage: months('11-2')
 	},
@@ -291,35 +256,30 @@ export const items: ProduceItem[] = [
 		id: 'radicchio',
 		category: 'vegetable',
 		names: { en: 'Radicchio', de: 'Radicchio', fr: 'Radicchio', it: 'Radicchio' },
-		image: '🥬',
 		harvest: months('10-1')
 	},
 	{
 		id: 'radish',
 		category: 'vegetable',
 		names: { en: 'Radish', de: 'Radieschen', fr: 'Radis', it: 'Ravanello' },
-		image: '🌶️',
 		harvest: months('4-10')
 	},
 	{
 		id: 'rhubarb',
 		category: 'vegetable',
 		names: { en: 'Rhubarb', de: 'Rhabarber', fr: 'Rhubarbe', it: 'Rabarbaro' },
-		image: '🌿',
 		harvest: months('4-6')
 	},
 	{
 		id: 'rocket',
 		category: 'vegetable',
 		names: { en: 'Rocket', de: 'Rucola', fr: 'Roquette', it: 'Rucola' },
-		image: '🌿',
 		harvest: months('4-10')
 	},
 	{
 		id: 'salsify',
 		category: 'vegetable',
 		names: { en: 'Salsify', de: 'Schwarzwurzel', fr: 'Scorsonère', it: 'Scorzonera' },
-		image: '🥕',
 		harvest: months('10-11'),
 		storage: months('12-2')
 	},
@@ -327,7 +287,6 @@ export const items: ProduceItem[] = [
 		id: 'shallot',
 		category: 'vegetable',
 		names: { en: 'Shallot', de: 'Schalotte', fr: 'Échalote', it: 'Scalogno' },
-		image: '🧅',
 		harvest: months('7-8'),
 		storage: months('9-12')
 	},
@@ -335,49 +294,42 @@ export const items: ProduceItem[] = [
 		id: 'snap-pea',
 		category: 'vegetable',
 		names: { en: 'Snap peas', de: 'Zuckerschoten', fr: 'Pois gourmands', it: 'Piselli mangiatutto' },
-		image: '🫛',
 		harvest: months('6-8')
 	},
 	{
 		id: 'spinach',
 		category: 'vegetable',
 		names: { en: 'Spinach', de: 'Spinat', fr: 'Épinard', it: 'Spinacio' },
-		image: '🥗',
 		harvest: [...months('4-6'), ...months('9-11')]
 	},
 	{
 		id: 'sweet-corn',
 		category: 'vegetable',
 		names: { en: 'Sweetcorn', de: 'Zuckermais', fr: 'Maïs sucré', it: 'Mais dolce' },
-		image: '🌽',
 		harvest: months('8-10')
 	},
 	{
 		id: 'swiss-chard',
 		category: 'vegetable',
 		names: { en: 'Swiss chard', de: 'Mangold', fr: 'Blette', it: 'Bietola' },
-		image: '🥬',
 		harvest: months('6-10')
 	},
 	{
 		id: 'tomato',
 		category: 'vegetable',
 		names: { en: 'Tomato', de: 'Tomate', fr: 'Tomate', it: 'Pomodoro' },
-		image: '🍅',
 		harvest: months('6-10')
 	},
 	{
 		id: 'turnip',
 		category: 'vegetable',
 		names: { en: 'Turnip', de: 'Weiße Rübe', fr: 'Navet', it: 'Rapa bianca' },
-		image: '🥔',
 		harvest: months('6-10')
 	},
 	{
 		id: 'zucchini',
 		category: 'vegetable',
 		names: { en: 'Zucchini', de: 'Zucchini', fr: 'Courgette', it: 'Zucchina' },
-		image: '🥒',
 		harvest: months('6-9')
 	},
 	// --- Fruits ---------------------------------------------------------------
@@ -385,7 +337,6 @@ export const items: ProduceItem[] = [
 		id: 'apple',
 		category: 'fruit',
 		names: { en: 'Apple', de: 'Apfel', fr: 'Pomme', it: 'Mela' },
-		image: '🍎',
 		harvest: months('8-11'),
 		storage: months('12-7')
 	},
@@ -393,28 +344,24 @@ export const items: ProduceItem[] = [
 		id: 'apricot',
 		category: 'fruit',
 		names: { en: 'Apricot', de: 'Aprikose', fr: 'Abricot', it: 'Albicocca' },
-		image: '🍑',
 		harvest: months('7-8')
 	},
 	{
 		id: 'blackberry',
 		category: 'fruit',
 		names: { en: 'Blackberry', de: 'Brombeere', fr: 'Mûre', it: 'Mora' },
-		image: '🫐',
 		harvest: months('7-10')
 	},
 	{
 		id: 'blueberry',
 		category: 'fruit',
 		names: { en: 'Blueberry', de: 'Heidelbeere', fr: 'Myrtille', it: 'Mirtillo' },
-		image: '🫐',
 		harvest: months('6-9')
 	},
 	{
 		id: 'cherry',
 		category: 'fruit',
 		names: { en: 'Sweet cherry', de: 'Kirsche', fr: 'Cerise', it: 'Ciliegia' },
-		image: '🍒',
 		harvest: months('6-7')
 	},
 	{
@@ -426,21 +373,18 @@ export const items: ProduceItem[] = [
 			fr: 'Groseille & cassis',
 			it: 'Ribes'
 		},
-		image: '🍇',
 		harvest: months('6-8')
 	},
 	{
 		id: 'elderberry',
 		category: 'fruit',
 		names: { en: 'Elderberry', de: 'Holunderbeere', fr: 'Baie de sureau', it: 'Sambuco' },
-		image: '🫐',
 		harvest: months('8-9')
 	},
 	{
 		id: 'fig',
 		category: 'fruit',
 		names: { en: 'Fig', de: 'Feige', fr: 'Figue', it: 'Fico' },
-		image: '🍇',
 		harvest: months('8-10'),
 		origin: 'south'
 	},
@@ -448,21 +392,18 @@ export const items: ProduceItem[] = [
 		id: 'grape',
 		category: 'fruit',
 		names: { en: 'Grape', de: 'Traube', fr: 'Raisin', it: 'Uva' },
-		image: '🍇',
 		harvest: months('8-10')
 	},
 	{
 		id: 'melon',
 		category: 'fruit',
 		names: { en: 'Melon', de: 'Melone', fr: 'Melon', it: 'Melone' },
-		image: '🍈',
 		harvest: months('7-9')
 	},
 	{
 		id: 'mirabelle',
 		category: 'fruit',
 		names: { en: 'Mirabelle plum', de: 'Mirabelle', fr: 'Mirabelle', it: 'Mirabella' },
-		image: '🍑',
 		harvest: months('7-8')
 	},
 	{
@@ -474,14 +415,12 @@ export const items: ProduceItem[] = [
 			fr: 'Pêche & nectarine',
 			it: 'Pesca & nettarina'
 		},
-		image: '🍑',
 		harvest: months('7-9')
 	},
 	{
 		id: 'pear',
 		category: 'fruit',
 		names: { en: 'Pear', de: 'Birne', fr: 'Poire', it: 'Pera' },
-		image: '🍐',
 		harvest: months('8-11'),
 		storage: months('12-4')
 	},
@@ -489,42 +428,36 @@ export const items: ProduceItem[] = [
 		id: 'plum',
 		category: 'fruit',
 		names: { en: 'Plum', de: 'Pflaume', fr: 'Prune', it: 'Susina' },
-		image: '🍑',
 		harvest: months('8-9')
 	},
 	{
 		id: 'quince',
 		category: 'fruit',
 		names: { en: 'Quince', de: 'Quitte', fr: 'Coing', it: 'Mela cotogna' },
-		image: '🍐',
 		harvest: months('9-10')
 	},
 	{
 		id: 'raspberry',
 		category: 'fruit',
 		names: { en: 'Raspberry', de: 'Himbeere', fr: 'Framboise', it: 'Lampone' },
-		image: '🍓',
 		harvest: months('6-10')
 	},
 	{
 		id: 'strawberry',
 		category: 'fruit',
 		names: { en: 'Strawberry', de: 'Erdbeere', fr: 'Fraise', it: 'Fragola' },
-		image: '🍓',
 		harvest: months('5-7')
 	},
 	{
 		id: 'watermelon',
 		category: 'fruit',
 		names: { en: 'Watermelon', de: 'Wassermelone', fr: 'Pastèque', it: 'Anguria' },
-		image: '🍉',
 		harvest: months('7-9')
 	},
 	{
 		id: 'clementine',
 		category: 'fruit',
 		names: { en: 'Clementine', de: 'Clementine', fr: 'Clémentine', it: 'Clementina' },
-		image: '🍊',
 		harvest: months('11-1'),
 		origin: 'south'
 	},
@@ -532,7 +465,6 @@ export const items: ProduceItem[] = [
 		id: 'grapefruit',
 		category: 'fruit',
 		names: { en: 'Grapefruit', de: 'Grapefruit', fr: 'Pamplemousse', it: 'Pompelmo' },
-		image: '🍊',
 		harvest: months('11-2'),
 		origin: 'south'
 	},
@@ -540,7 +472,6 @@ export const items: ProduceItem[] = [
 		id: 'lemon',
 		category: 'fruit',
 		names: { en: 'Lemon', de: 'Zitrone', fr: 'Citron', it: 'Limone' },
-		image: '🍋',
 		harvest: months('11-4'),
 		origin: 'south'
 	},
@@ -548,7 +479,6 @@ export const items: ProduceItem[] = [
 		id: 'mandarin',
 		category: 'fruit',
 		names: { en: 'Mandarin', de: 'Mandarine', fr: 'Mandarine', it: 'Mandarino' },
-		image: '🍊',
 		harvest: months('11-1'),
 		origin: 'south'
 	},
@@ -556,7 +486,6 @@ export const items: ProduceItem[] = [
 		id: 'orange',
 		category: 'fruit',
 		names: { en: 'Orange', de: 'Orange', fr: 'Orange', it: 'Arancia' },
-		image: '🍊',
 		harvest: months('12-4'),
 		origin: 'south'
 	},
@@ -565,91 +494,78 @@ export const items: ProduceItem[] = [
 		id: 'basil',
 		category: 'herb',
 		names: { en: 'Basil', de: 'Basilikum', fr: 'Basilic', it: 'Basilico' },
-		image: '🌿',
 		harvest: months('6-9')
 	},
 	{
 		id: 'chervil',
 		category: 'herb',
 		names: { en: 'Chervil', de: 'Kerbel', fr: 'Cerfeuil', it: 'Cerfoglio' },
-		image: '🌿',
 		harvest: [...months('4-6'), ...months('9-10')]
 	},
 	{
 		id: 'chives',
 		category: 'herb',
 		names: { en: 'Chives', de: 'Schnittlauch', fr: 'Ciboulette', it: 'Erba cipollina' },
-		image: '🌱',
 		harvest: months('4-10')
 	},
 	{
 		id: 'dill',
 		category: 'herb',
 		names: { en: 'Dill', de: 'Dill', fr: 'Aneth', it: 'Aneto' },
-		image: '🌿',
 		harvest: months('5-9')
 	},
 	{
 		id: 'lovage',
 		category: 'herb',
 		names: { en: 'Lovage', de: 'Liebstöckel', fr: 'Livèche', it: 'Levistico' },
-		image: '🌿',
 		harvest: months('4-7')
 	},
 	{
 		id: 'marjoram',
 		category: 'herb',
 		names: { en: 'Marjoram', de: 'Majoran', fr: 'Marjolaine', it: 'Maggiorana' },
-		image: '🌿',
 		harvest: months('6-9')
 	},
 	{
 		id: 'mint',
 		category: 'herb',
 		names: { en: 'Mint', de: 'Pfefferminze', fr: 'Menthe', it: 'Menta' },
-		image: '🍀',
 		harvest: months('4-10')
 	},
 	{
 		id: 'oregano',
 		category: 'herb',
 		names: { en: 'Oregano', de: 'Oregano', fr: 'Origan', it: 'Origano' },
-		image: '🌿',
 		harvest: months('6-9')
 	},
 	{
 		id: 'parsley',
 		category: 'herb',
 		names: { en: 'Parsley', de: 'Petersilie', fr: 'Persil', it: 'Prezzemolo' },
-		image: '🌿',
 		harvest: months('4-11')
 	},
 	{
 		id: 'rosemary',
 		category: 'herb',
 		names: { en: 'Rosemary', de: 'Rosmarin', fr: 'Romarin', it: 'Rosmarino' },
-		image: '🌿',
 		harvest: months('1-12')
 	},
 	{
 		id: 'sage',
 		category: 'herb',
 		names: { en: 'Sage', de: 'Salbei', fr: 'Sauge', it: 'Salvia' },
-		image: '🌿',
 		harvest: months('5-10')
 	},
 	{
 		id: 'thyme',
 		category: 'herb',
 		names: { en: 'Thyme', de: 'Thymian', fr: 'Thym', it: 'Timo' },
-		image: '🌿',
 		harvest: months('5-10')
 	},
 	{
 		id: 'wild-garlic',
 		category: 'herb',
 		names: { en: 'Wild garlic', de: 'Bärlauch', fr: 'Ail des ours', it: 'Aglio orsino' },
-		image: '🌱',
 		harvest: months('3-5')
 	},
 	// --- Nuts -----------------------------------------------------------------
@@ -657,21 +573,18 @@ export const items: ProduceItem[] = [
 		id: 'chestnut',
 		category: 'nut',
 		names: { en: 'Sweet chestnut', de: 'Esskastanie', fr: 'Châtaigne', it: 'Castagna' },
-		image: '🌰',
 		harvest: months('10-11')
 	},
 	{
 		id: 'hazelnut',
 		category: 'nut',
 		names: { en: 'Hazelnut', de: 'Haselnuss', fr: 'Noisette', it: 'Nocciola' },
-		image: '🌰',
 		harvest: months('9-10')
 	},
 	{
 		id: 'walnut',
 		category: 'nut',
 		names: { en: 'Walnut', de: 'Walnuss', fr: 'Noix', it: 'Noce' },
-		image: '🌰',
 		harvest: months('9-10')
 	}
 ];

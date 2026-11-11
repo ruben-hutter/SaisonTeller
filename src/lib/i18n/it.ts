@@ -27,5 +27,4 @@ export const it: Record<StringKey, string> = {
 	'aria.stripLabel': 'Mesi di raccolto',
 	'footer.note':
 		'Calendario di riferimento per la Svizzera e l’Europa centrale — la natura varia secondo anno e regione.',
-	'footer.credit': 'Immagini: Noto Emoji (Apache 2.0)',
 };

@@ -1,9 +1,8 @@
-import { existsSync } from 'node:fs';
+import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { de } from '../i18n/de';
 import { en } from '../i18n/en';
-import { emojiFileName } from '../images';
 import { fr } from '../i18n/fr';
 import { it as itDict } from '../i18n/it';
 import type { Locale } from '../i18n';
@@ -79,66 +78,27 @@ describe('items dataset integrity', () => {
 		}
 	});
 
-	it('gives every item a non-empty image emoji', () => {
-		for (const item of items) {
-			expect(item.image.trim().length, item.id).toBeGreaterThan(0);
-		}
-	});
-
-	it('uses exactly the expected set of distinct glyphs', () => {
-		// Pins the dataset's emoji vocabulary: an accidental glyph edit (e.g. a
-		// wrong codepoint) changes this set and fails loudly here, not just in art.
-		const files = [...new Set(items.map((item) => emojiFileName(item.image)))].sort();
-		expect(files).toEqual([
-			'emoji_u1f330.svg',
-			'emoji_u1f331.svg',
-			'emoji_u1f336.svg',
-			'emoji_u1f33d.svg',
-			'emoji_u1f33f.svg',
-			'emoji_u1f340.svg',
-			'emoji_u1f344.svg',
-			'emoji_u1f345.svg',
-			'emoji_u1f346.svg',
-			'emoji_u1f347.svg',
-			'emoji_u1f348.svg',
-			'emoji_u1f349.svg',
-			'emoji_u1f34a.svg',
-			'emoji_u1f34b.svg',
-			'emoji_u1f34e.svg',
-			'emoji_u1f350.svg',
-			'emoji_u1f351.svg',
-			'emoji_u1f352.svg',
-			'emoji_u1f353.svg',
-			'emoji_u1f360.svg',
-			'emoji_u1f383.svg',
-			'emoji_u1f952.svg',
-			'emoji_u1f954.svg',
-			'emoji_u1f955.svg',
-			'emoji_u1f957.svg',
-			'emoji_u1f966.svg',
-			'emoji_u1f96c.svg',
-			'emoji_u1f9c4.svg',
-			'emoji_u1f9c5.svg',
-			'emoji_u1fad0.svg',
-			'emoji_u1fad1.svg',
-			'emoji_u1fad8.svg',
-			'emoji_u1fadb.svg'
-		]);
-	});
-
-	it('maps every image emoji to an existing vendored SVG', () => {
-		// Strongest guard for the image feature: the exact file the card
-		// <img src> points at must exist in static/img/produce/.
-		for (const item of items) {
-			const file = join(process.cwd(), 'static', 'img', 'produce', emojiFileName(item.image));
-			expect(existsSync(file), `${file} (${item.id})`).toBe(true);
-		}
-	});
 	it('marks exactly the six southern items', () => {
 		const south = items.filter((item) => item.origin === 'south').map((item) => item.id);
 		expect(south.sort()).toEqual(
 			['clementine', 'fig', 'grapefruit', 'lemon', 'mandarin', 'orange'].sort()
 		);
+	});
+
+	it('maps every item id to an existing, well-formed bespoke SVG (no orphans)', () => {
+		// Icons are id-keyed: the exact file the card <img src> points at must
+		// exist under static/img/bespoke/ — and every file must belong to an item.
+		const dir = join(process.cwd(), 'static', 'img', 'bespoke');
+		const ids = new Set(items.map((item) => item.id));
+		for (const item of items) {
+			const file = join(dir, `${item.id}.svg`);
+			expect(existsSync(file), `${file} (${item.id})`).toBe(true);
+			const svg = readFileSync(file, 'utf8');
+			expect(svg.includes('<svg'), item.id).toBe(true);
+			expect(svg.includes('viewBox'), item.id).toBe(true);
+		}
+		const orphans = readdirSync(dir).filter((f) => !ids.has(f.replace(/\.svg$/, '')));
+		expect(orphans).toEqual([]);
 	});
 });
 

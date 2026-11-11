@@ -27,5 +27,4 @@ export const de: Record<StringKey, string> = {
 	'aria.stripLabel': 'Erntemonate',
 	'footer.note':
 		'Referenzkalender für die Schweiz & Mitteleuropa — die Natur variiert je nach Jahr und Region.',
-	'footer.credit': 'Bilder: Noto Emoji (Apache 2.0)',
 };
