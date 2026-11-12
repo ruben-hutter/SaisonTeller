@@ -1,0 +1,22 @@
+{
+	"swiss-chard": {
+		"blind": "05cf0b9aa2c7",
+		"model": "qwen2.5vl:7b",
+		"raw": "1. Cabbage\n2. Lettuce\n3. Spinach"
+	},
+	"celeriac": {
+		"blind": "84e084bc5028",
+		"model": "qwen2.5vl:7b",
+		"raw": "1. Leek\n2. Onion\n3. Garlic"
+	},
+	"shallot": {
+		"blind": "bcc3ef24789e",
+		"model": "qwen2.5vl:7b",
+		"raw": "1. Onion\n2. Garlic\n3. Leek"
+	},
+	"rocket": {
+		"blind": "ecd666decb2f",
+		"model": "qwen2.5vl:7b",
+		"raw": "1. Mint\n2. Basil\n3. Parsley"
+	}
+}

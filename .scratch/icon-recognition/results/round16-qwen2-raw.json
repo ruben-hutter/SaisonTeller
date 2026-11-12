@@ -1,0 +1,17 @@
+{
+	"celeriac": {
+		"blind": "7ce1b73d64b3",
+		"model": "qwen2.5vl:7b",
+		"raw": "1. Leek\n2. Onion\n3. Garlic"
+	},
+	"corn-salad": {
+		"blind": "424b940cc67c",
+		"model": "qwen2.5vl:7b",
+		"raw": "1. Broccoli\n2. Spinach\n3. Peas"
+	},
+	"radicchio": {
+		"blind": "7f284a47d419",
+		"model": "qwen2.5vl:7b",
+		"raw": "1. Beet\n2. Radish\n3. Carrot"
+	}
+}

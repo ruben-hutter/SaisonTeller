@@ -1,0 +1,32 @@
+{
+	"shallot": [
+		"Fig",
+		"Onion",
+		"Beet"
+	],
+	"celeriac": [
+		"Ginger root",
+		"Potato",
+		"Kiwi"
+	],
+	"swiss-chard": [
+		"Swiss chard",
+		"Spinach",
+		"Beet greens"
+	],
+	"corn-salad": [
+		"Flower",
+		"Fireworks",
+		"Herb"
+	],
+	"rocket": [
+		"watercress",
+		"nasturtium leaves",
+		"lotus sprout"
+	],
+	"radicchio": [
+		"Vanilla pod",
+		"Aloe vera",
+		"Chili peppers"
+	]
+}

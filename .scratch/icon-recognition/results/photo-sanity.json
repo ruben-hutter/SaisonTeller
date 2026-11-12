@@ -1,0 +1,138 @@
+{
+ "broad-bean": {
+  "photo_guesses": [
+   "1. Lima beans",
+   "2. Fava beans",
+   "3. Edamame"
+  ],
+  "photo_pass": true
+ },
+ "celeriac": {
+  "photo_guesses": [
+   "1. Celeriac",
+   "2. Celery",
+   "3. Parsley root"
+  ],
+  "photo_pass": true
+ },
+ "chicory": {
+  "photo_guesses": [
+   "1. Plow",
+   "2. Wheel hoe",
+   "3. Seed drill"
+  ],
+  "photo_pass": false
+ },
+ "corn-salad": {
+  "photo_guesses": [
+   "1. Lamb's lettuce",
+   "2. Plantain",
+   "3. Lettuce"
+  ],
+  "photo_pass": true
+ },
+ "kohlrabi": {
+  "photo_guesses": [
+   "1. Cantaloupe",
+   "2. Corn",
+   "3. Lettuce"
+  ],
+  "photo_pass": false
+ },
+ "radicchio": {
+  "photo_guesses": [
+   "1. Radicchio",
+   "2. Red cabbage",
+   "3. Cabbage"
+  ],
+  "photo_pass": true
+ },
+ "rocket": {
+  "photo_guesses": [
+   "1. Arugula flowers",
+   "2. Wild radish",
+   "3. Mustard plant"
+  ],
+  "photo_pass": true
+ },
+ "salsify": {
+  "photo_guesses": [
+   "1. Radish",
+   "2. Parsnip",
+   "3. Salsify"
+  ],
+  "photo_pass": true
+ },
+ "shallot": {
+  "photo_guesses": [
+   "1. Shallot",
+   "2. Onion",
+   "3. Garlic"
+  ],
+  "photo_pass": true
+ },
+ "swiss-chard": {
+  "photo_guesses": [
+   "1. Swiss chard",
+   "2. Spinach leaf",
+   "3. Leaf lettuce"
+  ],
+  "photo_pass": true
+ },
+ "mirabelle": {
+  "photo_guesses": [
+   "1. Plum",
+   "2. Cherry",
+   "3. Grape"
+  ],
+  "photo_pass": false
+ },
+ "lovage": {
+  "photo_guesses": [
+   "1. Poison hemlock",
+   "2. Wild carrot",
+   "3. Cow parsley"
+  ],
+  "photo_pass": false
+ },
+ "marjoram": {
+  "photo_guesses": [
+   "1. Marjoram",
+   "2. Oregano",
+   "3. Mint"
+  ],
+  "photo_pass": true
+ },
+ "mint": {
+  "photo_guesses": [
+   "1. Mint tea",
+   "2. Mint leaves",
+   "3. Cup"
+  ],
+  "photo_pass": true
+ },
+ "oregano": {
+  "photo_guesses": [
+   "1. Oregano",
+   "2. Marjoram",
+   "3. Thyme"
+  ],
+  "photo_pass": true
+ },
+ "thyme": {
+  "photo_guesses": [
+   "1. Brahmi (Bacopa monnieri)",
+   "2. Water hyssop",
+   "3. Clover"
+  ],
+  "photo_pass": false
+ },
+ "wild-garlic": {
+  "photo_guesses": [
+   "1. Wild garlic",
+   "2. Spinach",
+   "3. Hosta"
+  ],
+  "photo_pass": true
+ }
+}

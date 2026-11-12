@@ -1,0 +1,32 @@
+{
+	"spinach": [
+		"Spinach",
+		"Kale",
+		"Leaf"
+	],
+	"sage": [
+		"Herb sprig",
+		"Twig",
+		"Rosemary"
+	],
+	"kale": [
+		"Kale",
+		"Lettuce",
+		"Parsley"
+	],
+	"raspberry": [
+		"Raspberry",
+		"Grape cluster",
+		"Blackberry"
+	],
+	"broad-bean": [
+		"Pea pod",
+		"Green beans",
+		"Snow peas"
+	],
+	"cabbage-red": [
+		"Purple passionflower",
+		"Flower",
+		"Dahlia"
+	]
+}

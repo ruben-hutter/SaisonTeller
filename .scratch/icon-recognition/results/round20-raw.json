@@ -1,0 +1,427 @@
+{
+	"asparagus": {
+		"blind": "f15dd7cd733e",
+		"model": "glm-5.3-flash",
+		"raw": "1. Asparagus\n2. Celery\n3. Sugarcane"
+	},
+	"beetroot": {
+		"blind": "da5d5599daad",
+		"model": "glm-5.3-flash",
+		"raw": "1. Beet\n2. Radish\n3. Turnip"
+	},
+	"brussels-sprouts": {
+		"blind": "017e9d683ffe",
+		"model": "glm-5.3-flash",
+		"raw": "1. Peas\n2. Brussels sprouts\n3. Edamame"
+	},
+	"artichoke": {
+		"blind": "c3261e4033f0",
+		"model": "glm-5.3-flash",
+		"raw": "1. Artichoke\n2. Asparagus\n3. Pine cone"
+	},
+	"broccoli": {
+		"blind": "05f2fe6f32ca",
+		"model": "glm-5.3-flash",
+		"raw": "1. Broccoli\n2. Tree\n3. Cauliflower"
+	},
+	"cabbage-white": {
+		"blind": "048336ff0720",
+		"model": "glm-5.3-flash",
+		"raw": "1. Cabbage\n2. Lettuce\n3. Broccoli"
+	},
+	"broad-bean": {
+		"blind": "426e6f9d0625",
+		"model": "glm-5.3-flash",
+		"raw": "1. Peas\n2. Edamame\n3. Soybeans"
+	},
+	"cabbage-savoy": {
+		"blind": "ccae6fa3e4ce",
+		"model": "glm-5.3-flash",
+		"raw": "1. Brussels sprout\n2. Lime\n3. Cabbage"
+	},
+	"cabbage-red": {
+		"blind": "a6b732f30082",
+		"model": "glm-5.3-flash",
+		"raw": "1. Fig\n2. Plum\n3. Passion fruit"
+	},
+	"carrot": {
+		"blind": "2f9f8152cb7a",
+		"model": "glm-5.3-flash",
+		"raw": "1. Carrot\n2. Radish\n3. Turnip"
+	},
+	"cauliflower": {
+		"blind": "8d4b87c93156",
+		"model": "glm-5.3-flash",
+		"raw": "1. Cauliflower\n2. Lettuce\n3. Cabbage"
+	},
+	"celeriac": {
+		"blind": "14ec764b1165",
+		"model": "glm-5.3-flash",
+		"raw": "1. Celery root (celeriac)\n2. Turnip\n3. Beet"
+	},
+	"celery": {
+		"blind": "607dc9f6521f",
+		"model": "glm-5.3-flash",
+		"raw": "1. Celery\n2. Bok choy\n3. Leek"
+	},
+	"cucumber": {
+		"blind": "422ac9403188",
+		"model": "glm-5.3-flash",
+		"raw": "1. Pickle\n2. Cucumber\n3. Zucchini"
+	},
+	"chicory": {
+		"blind": "586ea1c60d6b",
+		"model": "glm-5.3-flash",
+		"raw": "1. Asparagus\n2. Bamboo shoots\n3. White carrots"
+	},
+	"chili": {
+		"blind": "ead0bf744942",
+		"model": "glm-5.3-flash",
+		"raw": "1. Chili pepper\n2. Pepper\n3. Chili"
+	},
+	"corn-salad": {
+		"blind": "3eddc4748753",
+		"model": "glm-5.3-flash",
+		"raw": "1. Ginkgo\n2. Parsley\n3. Spinach"
+	},
+	"garlic": {
+		"blind": "12d866116ebe",
+		"model": "glm-5.3-flash",
+		"raw": "1. Garlic\n2. Onion\n3. Shallot"
+	},
+	"green-bean": {
+		"blind": "b9d057b3d0fe",
+		"model": "glm-5.3-flash",
+		"raw": "1. Bean pod\n2. Green bean\n3. Pea pod"
+	},
+	"fennel": {
+		"blind": "5c39b2dcf0e4",
+		"model": "glm-5.3-flash",
+		"raw": "1. Celery\n2. Fennel\n3. Celery root"
+	},
+	"kohlrabi": {
+		"blind": "1c5491a359d4",
+		"model": "glm-5.3-flash",
+		"raw": "1. Radish\n2. Turnip\n3. Beet"
+	},
+	"leek": {
+		"blind": "99d2328bbb86",
+		"model": "glm-5.3-flash",
+		"raw": "1. Scallion\n2. Leek\n3. Spring onion"
+	},
+	"lettuce": {
+		"blind": "12233a2b432b",
+		"model": "glm-5.3-flash",
+		"raw": "1. Brussels sprout\n2. Cabbage\n3. Cauliflower"
+	},
+	"mushroom-wild": {
+		"blind": "1ff8d37eddb2",
+		"model": "glm-5.3-flash",
+		"raw": "1. Mushroom\n2. Toadstool\n3. Champignon"
+	},
+	"eggplant": {
+		"blind": "3cedafa0a906",
+		"model": "glm-5.3-flash",
+		"raw": "1. Eggplant\n2. Plum\n3. Grape"
+	},
+	"onion": {
+		"blind": "68d24087ed30",
+		"model": "glm-5.3-flash",
+		"raw": "1. Potato\n2. Kiwi\n3. Onion"
+	},
+	"mushroom-cultivated": {
+		"blind": "f36fcfcac0b8",
+		"model": "glm-5.3-flash",
+		"raw": "1. Mushroom\n2. Toadstool\n3. Fungus"
+	},
+	"parsnip": {
+		"blind": "ecf69b01b698",
+		"model": "glm-5.3-flash",
+		"raw": "1. Parsnip\n2. Carrot\n3. Radish"
+	},
+	"pea": {
+		"blind": "c135aba78f9d",
+		"model": "glm-5.3-flash",
+		"raw": "1. Pea pod\n2. Green beans\n3. Snap peas"
+	},
+	"pepper": {
+		"blind": "fedf3e29ae79",
+		"model": "glm-5.3-flash",
+		"raw": "1. Bell pepper\n2. Habanero pepper\n3. Papaya"
+	},
+	"pumpkin": {
+		"blind": "5c95ffea129f",
+		"model": "glm-5.3-flash",
+		"raw": "1. Pumpkin\n2. Tomato\n3. Orange"
+	},
+	"potato": {
+		"blind": "3413663a7801",
+		"model": "glm-5.3-flash",
+		"raw": "1. Cookie\n2. Potato\n3. Kiwi"
+	},
+	"radish": {
+		"blind": "963593a37e2a",
+		"model": "glm-5.3-flash",
+		"raw": "1. Radish\n2. Beet\n3. Turnip"
+	},
+	"kale": {
+		"blind": "b3978daae5d7",
+		"model": "glm-5.3-flash",
+		"raw": "1. Kale\n2. Spinach\n3. Lettuce"
+	},
+	"rhubarb": {
+		"blind": "f9d2dadcd36d",
+		"model": "glm-5.3-flash",
+		"raw": "1. Rhubarb\n2. Swiss chard\n3. Beet greens"
+	},
+	"salsify": {
+		"blind": "a6a12ad07c2e",
+		"model": "glm-5.3-flash",
+		"raw": "1. Eggplant\n2. Date\n3. Cocoa pod"
+	},
+	"snap-pea": {
+		"blind": "964e6e47899c",
+		"model": "glm-5.3-flash",
+		"raw": "1. Green bean\n2. Pea pod\n3. Bean"
+	},
+	"radicchio": {
+		"blind": "91996d43ccae",
+		"model": "glm-5.3-flash",
+		"raw": "1. Pomegranate\n2. Tomato\n3. Radish"
+	},
+	"spinach": {
+		"blind": "81dc90421ec6",
+		"model": "glm-5.3-flash",
+		"raw": "1. Spinach\n2. Lettuce\n3. Parsley"
+	},
+	"shallot": {
+		"blind": "b1b5a4aa17b6",
+		"model": "glm-5.3-flash",
+		"raw": "1. Onion\n2. Shallot\n3. Beet"
+	},
+	"rocket": {
+		"blind": "a97e7b226c44",
+		"model": "glm-5.3-flash",
+		"raw": "1. Cotyledon\n2. Jade plant\n3. Money plant"
+	},
+	"tomato": {
+		"blind": "5177bb9aa03f",
+		"model": "glm-5.3-flash",
+		"raw": "1. Tomato\n2. Cherry\n3. Radish"
+	},
+	"turnip": {
+		"blind": "490a6392a6ae",
+		"model": "glm-5.3-flash",
+		"raw": "1. Turnip\n2. Radish\n3. Beet"
+	},
+	"swiss-chard": {
+		"blind": "d3f5c85b59ab",
+		"model": "glm-5.3-flash",
+		"raw": "1. Spinach\n2. Chard\n3. Lettuce"
+	},
+	"sweet-corn": {
+		"blind": "ba08488492dc",
+		"model": "glm-5.3-flash",
+		"raw": "1. Corn\n2. Cucumber\n3. Zucchini"
+	},
+	"apple": {
+		"blind": "31b3aae87022",
+		"model": "glm-5.3-flash",
+		"raw": "1. Mango\n2. Plum\n3. Peach"
+	},
+	"apricot": {
+		"blind": "d7f92d442daa",
+		"model": "glm-5.3-flash",
+		"raw": "1. Apricot\n2. Peach\n3. Plum"
+	},
+	"zucchini": {
+		"blind": "2ae86e2e3013",
+		"model": "glm-5.3-flash",
+		"raw": "1. Zucchini\n2. Cucumber\n3. Pickle"
+	},
+	"blackberry": {
+		"blind": "c28ad90fdff6",
+		"model": "glm-5.3-flash",
+		"raw": "1. Grapes\n2. Blackberry\n3. Berry"
+	},
+	"cherry": {
+		"blind": "9b05fbddf3e9",
+		"model": "glm-5.3-flash",
+		"raw": "1. Cherries\n2. Cherry\n3. Berry"
+	},
+	"elderberry": {
+		"blind": "5a322b9ad22f",
+		"model": "glm-5.3-flash",
+		"raw": "1. grapes\n2. blueberries\n3. blackcurrant"
+	},
+	"blueberry": {
+		"blind": "2e2c72cfe114",
+		"model": "glm-5.3-flash",
+		"raw": "1. Blueberry\n2. Berry\n3. Grape"
+	},
+	"currant": {
+		"blind": "729f57c3d427",
+		"model": "glm-5.3-flash",
+		"raw": "1. Currants\n2. Grapes\n3. Cherries"
+	},
+	"fig": {
+		"blind": "c404fe7f454b",
+		"model": "glm-5.3-flash",
+		"raw": "1. Plum\n2. Eggplant\n3. Fig"
+	},
+	"grape": {
+		"blind": "6d6cf598534f",
+		"model": "glm-5.3-flash",
+		"raw": "1. Grapes\n2. Blackberries\n3. Blueberries"
+	},
+	"mirabelle": {
+		"blind": "5cbde8de5121",
+		"model": "glm-5.3-flash",
+		"raw": "1. Apricot\n2. Plum\n3. Peach"
+	},
+	"melon": {
+		"blind": "5db8206afbf1",
+		"model": "glm-5.3-flash",
+		"raw": "1. Watermelon\n2. Melon\n3. Pumpkin"
+	},
+	"plum": {
+		"blind": "6996742219bc",
+		"model": "glm-5.3-flash",
+		"raw": "1. Plum\n2. Eggplant\n3. Fig"
+	},
+	"pear": {
+		"blind": "3e16e26f29e1",
+		"model": "glm-5.3-flash",
+		"raw": "1. Pear\n2. Gourd\n3. Squash"
+	},
+	"nectarine-peach": {
+		"blind": "6ad04a0bb285",
+		"model": "glm-5.3-flash",
+		"raw": "1. Peach\n2. Apricot\n3. Plum"
+	},
+	"strawberry": {
+		"blind": "e51d79243bc7",
+		"model": "glm-5.3-flash",
+		"raw": "1. Strawberry\n2. Radish\n3. Beet"
+	},
+	"quince": {
+		"blind": "eb2f72b321bb",
+		"model": "glm-5.3-flash",
+		"raw": "1. Pear\n2. Quince\n3. Pumpkin"
+	},
+	"raspberry": {
+		"blind": "b356f6cec35e",
+		"model": "glm-5.3-flash",
+		"raw": "1. Raspberry\n2. Blackberry\n3. Grape"
+	},
+	"watermelon": {
+		"blind": "c157d8836b73",
+		"model": "glm-5.3-flash",
+		"raw": "1. Watermelon\n2. Melon\n3. Cantaloupe"
+	},
+	"mandarin": {
+		"blind": "c316a0738a4a",
+		"model": "glm-5.3-flash",
+		"raw": "1. Orange\n2. Tangerine\n3. Grapefruit"
+	},
+	"lemon": {
+		"blind": "041a99356eaa",
+		"model": "glm-5.3-flash",
+		"raw": "1. Lemon\n2. Pear\n3. Mango"
+	},
+	"grapefruit": {
+		"blind": "df88f3244d7d",
+		"model": "glm-5.3-flash",
+		"raw": "1. Orange\n2. Grapefruit\n3. Tomato"
+	},
+	"orange": {
+		"blind": "7b483ab56b60",
+		"model": "glm-5.3-flash",
+		"raw": "1. Orange\n2. Tangerine\n3. Grapefruit"
+	},
+	"basil": {
+		"blind": "77c2e41e4ae9",
+		"model": "glm-5.3-flash",
+		"raw": "1. Seedling\n2. Sprout\n3. Basil"
+	},
+	"clementine": {
+		"blind": "390bc7dab530",
+		"model": "glm-5.3-flash",
+		"raw": "1. Tangerine\n2. Orange\n3. Apricot"
+	},
+	"chives": {
+		"blind": "2d77c8dcddc8",
+		"model": "glm-5.3-flash",
+		"raw": "1. allium\n2. chive blossom\n3. onion flower"
+	},
+	"lovage": {
+		"blind": "44dce0786293",
+		"model": "glm-5.3-flash",
+		"raw": "1. Basil\n2. Sprout\n3. Mint"
+	},
+	"dill": {
+		"blind": "45d8604709c8",
+		"model": "glm-5.3-flash",
+		"raw": "1. Fennel\n2. Dill\n3. Cow parsley"
+	},
+	"parsley": {
+		"blind": "67263950ea90",
+		"model": "glm-5.3-flash",
+		"raw": "1. Parsley\n2. Parsnip\n3. Coriander"
+	},
+	"mint": {
+		"blind": "ec7cea2c2f13",
+		"model": "glm-5.3-flash",
+		"raw": "1. Pea sprout\n2. Seedling\n3. Basil"
+	},
+	"rosemary": {
+		"blind": "c8054f8fc9e3",
+		"model": "glm-5.3-flash",
+		"raw": "1. Fern\n2. Rosemary\n3. Feather"
+	},
+	"chervil": {
+		"blind": "3ced2d2df362",
+		"model": "glm-5.3-flash",
+		"raw": "1. Dill\n2. Fennel\n3. Parsley"
+	},
+	"marjoram": {
+		"blind": "0695122e8526",
+		"model": "glm-5.3-flash",
+		"raw": "1. sprig\n2. rosemary\n3. branch"
+	},
+	"oregano": {
+		"blind": "6fb4b2563088",
+		"model": "glm-5.3-flash",
+		"raw": "1. Grape\n2. Tree\n3. Broccoli"
+	},
+	"sage": {
+		"blind": "d219689a4c95",
+		"model": "glm-5.3-flash",
+		"raw": "1. Herb sprig\n2. Basil\n3. Plant branch"
+	},
+	"thyme": {
+		"blind": "108dc74bfc97",
+		"model": "glm-5.3-flash",
+		"raw": "1. Pea pod\n2. Beans\n3. Asparagus"
+	},
+	"wild-garlic": {
+		"blind": "ff2255f45433",
+		"model": "glm-5.3-flash",
+		"raw": "1. Asparagus\n2. Cactus\n3. Aloe vera"
+	},
+	"walnut": {
+		"blind": "6be0c3247676",
+		"model": "glm-5.3-flash",
+		"raw": "1. Walnut\n2. Coconut\n3. Nutmeg"
+	},
+	"chestnut": {
+		"blind": "3dbb55f973c3",
+		"model": "glm-5.3-flash",
+		"raw": "1. Seedling\n2. Sprout\n3. Bean sprout"
+	},
+	"hazelnut": {
+		"blind": "193f3a3adfb4",
+		"model": "glm-5.3-flash",
+		"raw": "1. Coconut\n2. Acorn\n3. Walnut"
+	}
+}

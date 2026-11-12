@@ -1,0 +1,65 @@
+{
+	"spinach": {
+		"verdict": "PASS",
+		"guesses": [
+			"Spinach",
+			"Kale",
+			"Leaf"
+		],
+		"hit": {
+			"guess": "Spinach",
+			"synonym": "Spinach"
+		}
+	},
+	"sage": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Herb sprig",
+			"Twig",
+			"Rosemary"
+		],
+		"hit": null
+	},
+	"kale": {
+		"verdict": "PASS",
+		"guesses": [
+			"Kale",
+			"Lettuce",
+			"Parsley"
+		],
+		"hit": {
+			"guess": "Kale",
+			"synonym": "kale"
+		}
+	},
+	"raspberry": {
+		"verdict": "PASS",
+		"guesses": [
+			"Raspberry",
+			"Grape cluster",
+			"Blackberry"
+		],
+		"hit": {
+			"guess": "Raspberry",
+			"synonym": "Raspberry"
+		}
+	},
+	"broad-bean": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Pea pod",
+			"Green beans",
+			"Snow peas"
+		],
+		"hit": null
+	},
+	"cabbage-red": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Purple passionflower",
+			"Flower",
+			"Dahlia"
+		],
+		"hit": null
+	}
+}

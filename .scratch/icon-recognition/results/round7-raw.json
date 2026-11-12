@@ -1,0 +1,17 @@
+{
+	"cabbage-red": {
+		"blind": "5978d10cea60",
+		"model": "glm-5.3-flash",
+		"raw": "1. Hot air balloon\n2. Plum\n3. Onion"
+	},
+	"sage": {
+		"blind": "f66704428b29",
+		"model": "glm-5.3-flash",
+		"raw": "1. Sprig (herb)\n2. Basil\n3. Bay leaf"
+	},
+	"broad-bean": {
+		"blind": "f154a1ebcbc1",
+		"model": "glm-5.3-flash",
+		"raw": "1. Edamame\n2. Pea pod\n3. Soybeans"
+	}
+}

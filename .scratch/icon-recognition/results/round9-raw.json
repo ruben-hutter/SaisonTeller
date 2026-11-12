@@ -1,0 +1,17 @@
+{
+	"spinach": {
+		"blind": "204caa4db438",
+		"model": "glm-5.3-flash",
+		"raw": "1. Spinach\n2. Basil\n3. Parsley"
+	},
+	"kale": {
+		"blind": "fc6a16ede656",
+		"model": "glm-5.3-flash",
+		"raw": "1. Kale\n2. Lettuce\n3. Parsley"
+	},
+	"raspberry": {
+		"blind": "932700b96689",
+		"model": "glm-5.3-flash",
+		"raw": "1. Raspberry\n2. Blackberry\n3. Grape"
+	}
+}

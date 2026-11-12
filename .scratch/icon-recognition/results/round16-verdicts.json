@@ -1,0 +1,32 @@
+{
+	"radicchio": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Pomegranate",
+			"Beet",
+			"Radish"
+		],
+		"hit": null
+	},
+	"celeriac": {
+		"verdict": "PASS",
+		"guesses": [
+			"Celeriac",
+			"Radish",
+			"Taro"
+		],
+		"hit": {
+			"guess": "Celeriac",
+			"synonym": "Celeriac"
+		}
+	},
+	"corn-salad": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Avocado slices",
+			"Spinach leaves",
+			"Kale"
+		],
+		"hit": null
+	}
+}

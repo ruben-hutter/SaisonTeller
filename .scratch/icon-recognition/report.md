@@ -1,5 +1,9 @@
 # Icon recognition loop — final report
 
+> **Loop 2 (2025-11-12) superseded parts of this report: see `report-loop2.md` —
+> two independent judges (GLM + local Qwen2.5-VL), photo-sanity diagnostics,
+> majority-of-3 stability, 12 icons redesigned, official verdict 67/85.**
+
 **Branch:** `feat/better-produce-icons` · **Rounds:** initial + 3 redesign rounds + final verification
 **Result: 63 / 85 icons pass the blind recognition test** (round 1 baseline: 43 / 85)
 

@@ -1,0 +1,29 @@
+{
+	"celeriac": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Leek",
+			"Onion",
+			"Garlic"
+		],
+		"hit": null
+	},
+	"corn-salad": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Broccoli",
+			"Spinach",
+			"Peas"
+		],
+		"hit": null
+	},
+	"radicchio": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Beet",
+			"Radish",
+			"Carrot"
+		],
+		"hit": null
+	}
+}

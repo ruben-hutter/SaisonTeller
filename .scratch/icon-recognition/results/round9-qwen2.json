@@ -1,0 +1,17 @@
+{
+	"spinach": [
+		"Lettuce",
+		"Spinach",
+		"Collard Greens"
+	],
+	"kale": [
+		"Spinach",
+		"Kale",
+		"Lettuce"
+	],
+	"raspberry": [
+		"Grapes",
+		"Berries",
+		"Strawberries"
+	]
+}

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-// Score a round: read results/round<N>.json ({ id: [g1, g2, g3] }),
-// match against expected.json (names + aliases), write results/round<N>-verdicts.json.
-// Usage: node score.mjs <round>
+// Score a round: read results/round<N>[suffix].json ({ id: [g1, g2, g3] }),
+// match against expected.json (names + aliases), write results/round<N>[suffix]-verdicts.json.
+// Usage: node score.mjs <round> [suffix]   (suffix e.g. "-qwen2"; default: GLM judge file)
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -9,7 +9,8 @@ import { fileURLToPath } from 'node:url';
 const round = process.argv[2];
 const here = dirname(fileURLToPath(import.meta.url));
 const dir = join(here, '..', 'results');
-const guessesPath = join(dir, `round${round}.json`);
+const suffix = process.argv[3] ?? '';
+const guessesPath = join(dir, `round${round}${suffix}.json`);
 if (!round || !existsSync(guessesPath)) {
 	console.error('usage: node score.mjs <round>  (results/round<N>.json must exist)');
 	process.exit(1);
@@ -44,7 +45,7 @@ for (const id of Object.keys(guesses)) {
 	if (hit) pass++; else fail++;
 	verdicts[id] = { verdict, guesses: g, hit };
 }
-writeFileSync(join(dir, `round${round}-verdicts.json`), JSON.stringify(verdicts, null, '\t') + '\n');
+writeFileSync(join(dir, `round${round}${suffix}-verdicts.json`), JSON.stringify(verdicts, null, '\t') + '\n');
 const fails = Object.entries(verdicts).filter(([, v]) => v.verdict !== 'PASS').map(([id]) => id);
 console.log(`PASS ${pass} / FAIL ${fail}`);
 console.log(`fails: ${fails.join(' ') || '(none)'}`);

@@ -1,0 +1,50 @@
+{
+	"shallot": {
+		"verdict": "PASS",
+		"guesses": [
+			"Onion",
+			"Shallot",
+			"Red onion"
+		],
+		"hit": {
+			"guess": "Shallot",
+			"synonym": "Shallot"
+		}
+	},
+	"celeriac": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Potato",
+			"Ginger",
+			"Taro"
+		],
+		"hit": null
+	},
+	"rocket": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Watercress",
+			"Herb",
+			"Plant"
+		],
+		"hit": null
+	},
+	"corn-salad": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Lettuce",
+			"Kale",
+			"Cabbage"
+		],
+		"hit": null
+	},
+	"radicchio": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Lychee",
+			"Rambutan",
+			"Pomegranate"
+		],
+		"hit": null
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"spinach": {
+		"blind": "204caa4db438",
+		"model": "qwen2.5vl:7b",
+		"raw": "1. Lettuce\n2. Spinach\n3. Collard Greens"
+	},
+	"kale": {
+		"blind": "fc6a16ede656",
+		"model": "qwen2.5vl:7b",
+		"raw": "1. Spinach\n2. Kale\n3. Lettuce"
+	},
+	"raspberry": {
+		"blind": "932700b96689",
+		"model": "qwen2.5vl:7b",
+		"raw": "1. Grapes\n2. Berries\n3. Strawberries"
+	}
+}

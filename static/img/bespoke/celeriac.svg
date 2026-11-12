@@ -1,13 +1,73 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-  <path d="M54 44 Q50 36 44 32 M64 42 Q64 32 60 26 M74 44 Q78 36 84 32" fill="none" stroke="#7FA653" stroke-width="5" stroke-linecap="round"/>
-  <ellipse cx="42" cy="30" rx="8" ry="4" transform="rotate(30 42 30)" fill="#8FBC63"/>
-  <ellipse cx="60" cy="24" rx="8" ry="4" fill="#8FBC63"/>
-  <ellipse cx="86" cy="30" rx="8" ry="4" transform="rotate(-30 86 30)" fill="#8FBC63"/>
-  <path d="M30 74 Q28 50 50 46 Q56 45 60 48 Q46 54 44 66 Q42 78 48 88 Q38 92 34 88 Q30 84 30 74 Z" fill="#7FA653"/>
-  <path d="M98 74 Q100 50 78 46 Q72 45 68 48 Q82 54 84 66 Q86 78 80 88 Q90 92 94 88 Q98 84 98 74 Z" fill="#7FA653"/>
-  <path d="M34 78 Q34 54 58 50 Q64 49 66 52 Q50 58 48 72 Q46 86 54 94 L60 98 Q40 98 34 78 Z" fill="#8FBC63"/>
-  <path d="M38 66 Q38 56 46 52 M90 66 Q90 56 82 52" fill="none" stroke="#5E8C3A" stroke-width="3" stroke-linecap="round"/>
-  <path d="M40 62 Q36 66 36 72 Q36 80 40 86 Q44 92 52 94 Q60 98 68 94 Q78 92 84 86 Q92 78 92 66 Q92 58 88 54 L84 58 Q88 66 86 74 Q84 84 76 90 Q68 96 58 92 Q48 90 44 82 Q40 74 42 66 Z" fill="#C9B896"/>
-  <path d="M44 64 Q44 58 50 56 M84 64 Q84 58 78 56 M50 74 Q48 80 52 86 M78 74 Q80 80 76 86" fill="none" stroke="#8A7448" stroke-width="3" stroke-linecap="round"/>
-  <path d="M58 96 Q54 104 50 106 M70 96 Q74 104 78 106 M64 97 Q64 106 62 110" fill="none" stroke="#C4B489" stroke-width="3" stroke-linecap="round"/>
+  <g transform="translate(0 2)">
+  <!-- short root strands at the base (tops hidden under the bulb) -->
+  <g fill="none" stroke="#A5885B" stroke-width="2" stroke-linecap="round">
+    <path d="M50 105 Q47 110 45 113"/>
+    <path d="M57 108 Q56 111 54 114"/>
+    <path d="M63 109 Q63 112 62 114"/>
+    <path d="M69 108 Q70 111 72 114"/>
+    <path d="M76 105 Q79 110 81 112"/>
+  </g>
+  <!-- bulb: light tan body with a gently knobby silhouette -->
+  <g fill="#C4A672">
+    <ellipse cx="64" cy="86.5" rx="27.5" ry="23.5"/>
+    <circle cx="39.5" cy="71" r="3.5"/>
+    <circle cx="50" cy="64.5" r="3"/>
+    <circle cx="78" cy="64.5" r="3"/>
+    <circle cx="87.5" cy="71" r="3.5"/>
+    <circle cx="91" cy="85" r="3.5"/>
+    <circle cx="85.5" cy="98.5" r="3"/>
+    <circle cx="73.5" cy="106.5" r="3"/>
+    <circle cx="45" cy="103" r="3"/>
+    <circle cx="37" cy="86" r="3.5"/>
+  </g>
+  <!-- subtle root-knob dots and skin creases -->
+  <g fill="#A5885B">
+    <circle cx="54" cy="78" r="2.5"/>
+    <circle cx="71" cy="75" r="2.2"/>
+    <circle cx="61" cy="89" r="2.6"/>
+    <circle cx="76" cy="92" r="2.2"/>
+    <circle cx="48" cy="91" r="2.2"/>
+    <circle cx="66" cy="100" r="2.4"/>
+  </g>
+  <g fill="none" stroke="#A5885B" stroke-width="1.8" stroke-linecap="round">
+    <path d="M45.5 77 Q43.5 83 46 89"/>
+    <path d="M82.5 76 Q84.5 82 82 88"/>
+  </g>
+  <!-- celery stalks: four tall pale-green stalks fanning from the crown -->
+  <g fill="none" stroke="#9CAF6E" stroke-width="7" stroke-linecap="round">
+    <path d="M53 66.5 Q43.5 50 35.5 29"/>
+    <path d="M60 66.5 Q55 45 52 23"/>
+    <path d="M68 66.5 Q70 45 72 22"/>
+    <path d="M75 66.5 Q84.5 50 92 29"/>
+  </g>
+  <!-- pale crown where the stalks sprout from the bulb -->
+  <ellipse cx="64" cy="64.5" rx="12.5" ry="4.2" fill="#D9C29B"/>
+  <!-- leafy crowns: five small dark-green leaves per stalk tip -->
+  <g fill="#6E8B3D">
+    <path d="M35.5 29 Q31.5 23.5 35.5 16.5 Q39.5 23.5 35.5 29 Z"/>
+    <path d="M34.5 30 Q28 27.5 26.5 20 Q33 23 34.5 30 Z"/>
+    <path d="M33.5 31 Q26.5 32 23.5 27 Q30 26.5 33.5 31 Z"/>
+    <path d="M36.5 30 Q43 27.5 44.5 20 Q38 23 36.5 30 Z"/>
+    <path d="M37.5 31 Q44.5 33 47.5 28 Q41 26.5 37.5 31 Z"/>
+
+    <path d="M52 23 Q48 17.5 52 11 Q56 17.5 52 23 Z"/>
+    <path d="M51 24 Q44.5 21.5 43 14.5 Q49.5 17 51 24 Z"/>
+    <path d="M50 25 Q43.5 26 41 21.5 Q46.5 20.5 50 25 Z"/>
+    <path d="M53 24 Q59.5 21.5 61 14.5 Q54.5 17 53 24 Z"/>
+    <path d="M54 25 Q60.5 26.5 63 21.5 Q57.5 20.5 54 25 Z"/>
+
+    <path d="M72 22 Q68 16.5 72 10 Q76 16.5 72 22 Z"/>
+    <path d="M71 23 Q64.5 20.5 63 13.5 Q69.5 16 71 23 Z"/>
+    <path d="M70 24 Q63.5 25 61 20.5 Q66.5 19.5 70 24 Z"/>
+    <path d="M73 23 Q79.5 20.5 81 13.5 Q74.5 16 73 23 Z"/>
+    <path d="M74 24 Q80.5 25.5 83 21 Q77.5 19.5 74 24 Z"/>
+
+    <path d="M92 29 Q88 23.5 92 17 Q96 23.5 92 29 Z"/>
+    <path d="M91 30 Q84.5 27.5 83 20 Q89.5 23 91 30 Z"/>
+    <path d="M90 31 Q83.5 32 81 27 Q87.5 26.5 90 31 Z"/>
+    <path d="M93 30 Q99.5 27.5 101 20 Q94.5 23 93 30 Z"/>
+    <path d="M94 31 Q101 33 104 28 Q97.5 26.5 94 31 Z"/>
+  </g>
+  </g>
 </svg>

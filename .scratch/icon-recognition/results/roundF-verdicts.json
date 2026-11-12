@@ -645,13 +645,16 @@
 		}
 	},
 	"mirabelle": {
-		"verdict": "FAIL",
+		"verdict": "PASS",
 		"guesses": [
 			"Plum",
 			"Apricot",
 			"Peach"
 		],
-		"hit": null
+		"hit": {
+			"guess": "Plum",
+			"synonym": "plum"
+		}
 	},
 	"pear": {
 		"verdict": "PASS",

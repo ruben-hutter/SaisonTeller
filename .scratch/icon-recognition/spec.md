@@ -1,6 +1,6 @@
 # Icon recognition loop — spec
 
-**Status:** resolved (see `report.md`) — 63/85 pass, 22 hard cases
+**Status:** resolved — loop 1: `report.md` (63/85) · loop 2 (two-judge protocol): `report-loop2.md` (67/85 majority-of-3)
 **Branch:** `feat/better-produce-icons` (worktree `better-produce-icons`)
 
 ## Goal

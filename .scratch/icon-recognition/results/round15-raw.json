@@ -1,0 +1,27 @@
+{
+	"shallot": {
+		"blind": "366a1235adfb",
+		"model": "glm-5.3-flash",
+		"raw": "1. Onion\n2. Shallot\n3. Red onion"
+	},
+	"celeriac": {
+		"blind": "fd3d5cb230b7",
+		"model": "glm-5.3-flash",
+		"raw": "1. Potato\n2. Ginger\n3. Taro"
+	},
+	"rocket": {
+		"blind": "a1d5c116df41",
+		"model": "glm-5.3-flash",
+		"raw": "1. Watercress\n2. Herb\n3. Plant"
+	},
+	"corn-salad": {
+		"blind": "1d63624b490f",
+		"model": "glm-5.3-flash",
+		"raw": "1. Lettuce\n2. Kale\n3. Cabbage"
+	},
+	"radicchio": {
+		"blind": "f577ff092423",
+		"model": "glm-5.3-flash",
+		"raw": "1. Lychee\n2. Rambutan\n3. Pomegranate"
+	}
+}

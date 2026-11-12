@@ -1,0 +1,17 @@
+{
+	"broad-bean": {
+		"blind": "e69056b01852",
+		"model": "glm-5.3-flash",
+		"raw": "1. Pea pod\n2. Edamame\n3. Caterpillar"
+	},
+	"cabbage-red": {
+		"blind": "dbee22c0efb7",
+		"model": "glm-5.3-flash",
+		"raw": "1. Fig\n2. Onion\n3. Plum"
+	},
+	"sage": {
+		"blind": "e66e651d8028",
+		"model": "glm-5.3-flash",
+		"raw": "1. Rosemary sprig\n2. Herb branch\n3. Willow branch"
+	}
+}

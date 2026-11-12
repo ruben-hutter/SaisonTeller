@@ -1,0 +1,17 @@
+{
+	"sage": {
+		"blind": "e66e651d8028",
+		"model": "qwen2.5vl:7b",
+		"raw": "1. Herb\n2. Stem\n3. Plant"
+	},
+	"broad-bean": {
+		"blind": "e69056b01852",
+		"model": "qwen2.5vl:7b",
+		"raw": "1. Peas\n2. Beans\n3. Pea pods"
+	},
+	"cabbage-red": {
+		"blind": "dbee22c0efb7",
+		"model": "qwen2.5vl:7b",
+		"raw": "1. Onion\n2. Garlic\n3. Ginger"
+	}
+}

@@ -1,0 +1,32 @@
+{
+	"swiss-chard": {
+		"blind": "38af7bbf6fbe",
+		"model": "qwen2.5vl:7b",
+		"raw": "1. Lettuce\n2. Spinach\n3. Kale"
+	},
+	"radicchio": {
+		"blind": "0408f09e8e1f",
+		"model": "qwen2.5vl:7b",
+		"raw": "1. Watermelon\n2. Pineapple\n3. Tomato"
+	},
+	"shallot": {
+		"blind": "cd79b60c132b",
+		"model": "qwen2.5vl:7b",
+		"raw": "1. Fig\n2. Onion\n3. Garlic"
+	},
+	"celeriac": {
+		"blind": "90883c4513a3",
+		"model": "qwen2.5vl:7b",
+		"raw": "1. Mushroom\n2. Plant\n3. Fungus"
+	},
+	"rocket": {
+		"blind": "cc219cd09151",
+		"model": "qwen2.5vl:7b",
+		"raw": "1. Spinach\n2. Watercress\n3. Arugula"
+	},
+	"corn-salad": {
+		"blind": "8a466d226714",
+		"model": "qwen2.5vl:7b",
+		"raw": "1. Spinach\n2. Pea pod\n3. Broccoli"
+	}
+}

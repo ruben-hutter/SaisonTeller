@@ -1,0 +1,17 @@
+{
+	"sage": {
+		"blind": "f66704428b29",
+		"model": "qwen2.5vl:7b",
+		"raw": "1. Bamboo\n2. Plant\n3. Leaf"
+	},
+	"broad-bean": {
+		"blind": "f154a1ebcbc1",
+		"model": "qwen2.5vl:7b",
+		"raw": "1. Pea pod\n2. Peas\n3. Bean pod"
+	},
+	"cabbage-red": {
+		"blind": "5978d10cea60",
+		"model": "qwen2.5vl:7b",
+		"raw": "1. Bread\n2. Loaf\n3. Bun"
+	}
+}

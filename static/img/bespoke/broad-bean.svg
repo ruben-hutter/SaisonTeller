@@ -1,10 +1,37 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-  <path d="M22 88 Q14 58 36 38 Q58 20 86 30 Q106 38 102 54 Q96 72 76 80 Q48 92 30 92 Q24 92 22 88 Z" fill="#8FBA6E"/>
-  <path d="M22 88 Q14 58 36 38 Q48 28 62 28 Q56 42 58 58 Q44 66 38 78 Q32 88 22 88 Z" fill="#A9CB80"/>
-  <path d="M36 84 Q30 60 46 44 Q60 32 80 38 Q88 46 84 56 Q70 62 60 72 Q50 82 40 84 Z" fill="#DCEBB2"/>
-  <ellipse cx="58" cy="52" rx="11" ry="8" fill="#C9DFA0"/>
-  <ellipse cx="76" cy="56" rx="11" ry="8" fill="#C9DFA0"/>
-  <ellipse cx="64" cy="68" rx="11" ry="8" fill="#C9DFA0"/>
-  <path d="M54 47 Q52 54 56 58 M72 51 Q70 58 74 62 M60 63 Q58 70 62 74" fill="none" stroke="#6E9B4F" stroke-width="2.5" stroke-linecap="round"/>
-  <path d="M96 42 Q102 36 108 38" fill="none" stroke="#6E9B4F" stroke-width="3" stroke-linecap="round"/>
+  <!-- broad bean (fava): wide flat open pod, 4 large flat beans dominate, thin green rim, pale lining, short stub stem -->
+  <!-- short thick stem stub (emerges from behind pod rim, no curl) -->
+  <path d="M27.5 52.5 L20.5 46" fill="none" stroke="#558B2F" stroke-width="7.5" stroke-linecap="round"/>
+  <!-- pod hull: wide flattish oval; pod wall is only a thin green rim -->
+  <path d="M18.5 63.5
+           C21 48 40 35.5 63 35.5
+           C87 35.5 106 49 109.5 63.5
+           C106 78.5 87 91.5 63 91.5
+           C39 91.5 21 79.5 18.5 63.5 Z"
+        fill="#7CB342" stroke="#558B2F" stroke-width="3" stroke-linejoin="round"/>
+  <!-- pale cream-green lining of the opened pod, visible around the beans -->
+  <path d="M24 63.5
+           C26.5 51 41 41 63 41
+           C85 41 100.5 51.5 104 63.5
+           C100.5 76 85 86 63 86
+           C41 86 26.5 76.5 24 63.5 Z"
+        fill="#E8F0D8"/>
+  <!-- 4 very large flat beans, packed edge to edge with slight overlap;
+       each with a dark hilum dash along its lower edge -->
+  <g transform="translate(39.5 62.5) rotate(-12)">
+    <ellipse rx="10.6" ry="18" fill="#9CCC65" stroke="#558B2F" stroke-width="3"/>
+    <path d="M-4.2 11.6 L4.2 10.6" fill="none" stroke="#33691E" stroke-width="4.6" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(55.7 63.5) rotate(8)">
+    <ellipse rx="10.6" ry="18" fill="#8BC34A" stroke="#558B2F" stroke-width="3"/>
+    <path d="M-4.2 11.6 L4.2 10.6" fill="none" stroke="#33691E" stroke-width="4.6" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(71.9 63.5) rotate(-8)">
+    <ellipse rx="10.6" ry="18" fill="#9CCC65" stroke="#558B2F" stroke-width="3"/>
+    <path d="M-4.2 11.6 L4.2 10.6" fill="none" stroke="#33691E" stroke-width="4.6" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(88.1 62.5) rotate(12)">
+    <ellipse rx="10.6" ry="18" fill="#8BC34A" stroke="#558B2F" stroke-width="3"/>
+    <path d="M-4.2 11.6 L4.2 10.6" fill="none" stroke="#33691E" stroke-width="4.6" stroke-linecap="round"/>
+  </g>
 </svg>

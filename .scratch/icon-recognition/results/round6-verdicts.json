@@ -1,0 +1,29 @@
+{
+	"broad-bean": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Pea pod",
+			"Edamame",
+			"Caterpillar"
+		],
+		"hit": null
+	},
+	"cabbage-red": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Fig",
+			"Onion",
+			"Plum"
+		],
+		"hit": null
+	},
+	"sage": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Rosemary sprig",
+			"Herb branch",
+			"Willow branch"
+		],
+		"hit": null
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"cabbage-red": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Hot air balloon",
+			"Plum",
+			"Onion"
+		],
+		"hit": null
+	},
+	"sage": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Sprig (herb)",
+			"Basil",
+			"Bay leaf"
+		],
+		"hit": null
+	},
+	"broad-bean": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Edamame",
+			"Pea pod",
+			"Soybeans"
+		],
+		"hit": null
+	}
+}

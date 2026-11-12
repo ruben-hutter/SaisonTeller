@@ -1,0 +1,17 @@
+{
+	"sage": [
+		"Herb",
+		"Stem",
+		"Plant"
+	],
+	"broad-bean": [
+		"Peas",
+		"Beans",
+		"Pea pods"
+	],
+	"cabbage-red": [
+		"Onion",
+		"Garlic",
+		"Ginger"
+	]
+}

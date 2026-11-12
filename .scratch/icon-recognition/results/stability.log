@@ -1,0 +1,11 @@
+Judged 3/3 → results/round9.json
+Judged 1/1 → results/round10.json
+Judged 1/1 → results/round11.json
+Judged 1/1 → results/round12.json
+Judged 1/1 → results/round13.json
+Judged 3/3 with qwen2.5vl:7b → results/round9-qwen2.json
+Judged 1/1 with qwen2.5vl:7b → results/round10-qwen2.json
+Judged 1/1 with qwen2.5vl:7b → results/round11-qwen2.json
+Judged 1/1 with qwen2.5vl:7b → results/round12-qwen2.json
+Judged 1/1 with qwen2.5vl:7b → results/round13-qwen2.json
+ALL-JUDGED

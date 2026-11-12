@@ -1,0 +1,14 @@
+{
+	"cabbage-red": {
+		"verdict": "PASS",
+		"guesses": [
+			"Cabbage",
+			"Radish",
+			"Turnip"
+		],
+		"hit": {
+			"guess": "Cabbage",
+			"synonym": "cabbage"
+		}
+	}
+}

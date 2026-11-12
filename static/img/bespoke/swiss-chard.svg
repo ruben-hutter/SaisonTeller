@@ -1,10 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-  <path d="M40 110 L38 72 Q38 56 48 48 Q50 40 60 38 Q70 40 72 50 Q80 58 80 72 L78 110 Z" fill="#F2EFE4"/>
-  <path d="M56 110 L54 76 Q54 62 62 56 Q70 62 70 76 L68 110 Z" fill="#C05A9E"/>
-  <path d="M40 110 L38 72 Q38 56 48 48 Q50 40 60 38 Q70 40 72 50 Q80 58 80 72 L78 110 Z" fill="none" stroke="#E8E4D8" stroke-width="3"/>
-  <path d="M48 46 Q44 38 38 36 M66 48 Q68 40 74 38 M58 40 Q58 32 54 26" fill="none" stroke="#2E6B33" stroke-width="6" stroke-linecap="round"/>
-  <path d="M38 36 Q32 30 26 32 M38 36 Q34 28 28 26 M74 38 Q80 32 86 32 M74 38 Q78 30 84 28" fill="none" stroke="#3A8C3F" stroke-width="4" stroke-linecap="round"/>
-  <path d="M58 26 Q54 20 48 20 M58 26 Q60 18 66 16" fill="none" stroke="#3A8C3F" stroke-width="4" stroke-linecap="round"/>
-  <path d="M48 60 Q46 72 48 86 M70 64 Q72 76 70 90" fill="none" stroke="#E8D5E8" stroke-width="3" stroke-linecap="round"/>
-  <rect x="36" y="110" width="46" height="8" rx="4" fill="#E8E4D8"/>
+  <defs>
+    <g id="unit">
+      <path d="M64 104 L64 70" fill="none" stroke="#F5A623" stroke-width="13" stroke-linecap="round"/>
+      <path d="M64 19 C57 25 50 30 47 38 Q43 44 48 49 Q45 55 51 59 Q48 65 55 68 C57 70 60.5 71 64 71 C67.5 71 71 70 73 68 Q80 65 77 59 Q83 55 80 49 Q85 44 81 38 C78 30 71 25 64 19 Z"/>
+      <path d="M64 71 L64 26" fill="none" stroke="#F5A623" stroke-width="6.5" stroke-linecap="round"/>
+      <path d="M64 61 Q56 60 52.5 55 M64 51 Q57 50 53.5 45 M64 41 Q58 40 55 35 M64 61 Q72 60 75.5 55 M64 51 Q71 50 74.5 45 M64 41 Q70 40 73 35" fill="none" stroke="#F5A623" stroke-width="3" stroke-linecap="round"/>
+      <path d="M61.5 101 L61.5 72" fill="none" stroke="#FFD166" stroke-width="3.5" stroke-linecap="round"/>
+    </g>
+  </defs>
+  <use href="#unit" fill="#1E5B2A" transform="translate(64 104) rotate(-26) scale(0.95) translate(-64 -104)"/>
+  <use href="#unit" fill="#1E5B2A" transform="translate(64 104) rotate(26) scale(0.95) translate(-64 -104)"/>
+  <ellipse cx="64" cy="104" rx="9" ry="6.5" fill="#F5A623"/>
+  <path d="M60 102 Q64 100 68 102" fill="none" stroke="#FFD166" stroke-width="3" stroke-linecap="round"/>
+  <use href="#unit" fill="#2E8B3D"/>
 </svg>

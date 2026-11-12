@@ -1,0 +1,32 @@
+{
+	"spinach": {
+		"blind": "ef0cbdfdfbc9",
+		"model": "glm-5.3-flash",
+		"raw": "1. Spinach\n2. Kale\n3. Leaf"
+	},
+	"sage": {
+		"blind": "b6b3d2765e3a",
+		"model": "glm-5.3-flash",
+		"raw": "1. Herb sprig\n2. Twig\n3. Rosemary"
+	},
+	"kale": {
+		"blind": "6aff1140ff37",
+		"model": "glm-5.3-flash",
+		"raw": "1. Kale\n2. Lettuce\n3. Parsley"
+	},
+	"raspberry": {
+		"blind": "69663a8a911c",
+		"model": "glm-5.3-flash",
+		"raw": "1. Raspberry\n2. Grape cluster\n3. Blackberry"
+	},
+	"broad-bean": {
+		"blind": "b9707ca6a338",
+		"model": "glm-5.3-flash",
+		"raw": "1. Pea pod\n2. Green beans\n3. Snow peas"
+	},
+	"cabbage-red": {
+		"blind": "ae3df3f61500",
+		"model": "glm-5.3-flash",
+		"raw": "1. Purple passionflower\n2. Flower\n3. Dahlia"
+	}
+}

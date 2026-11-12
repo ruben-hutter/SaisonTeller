@@ -1,0 +1,32 @@
+{
+	"shallot": {
+		"blind": "cd79b60c132b",
+		"model": "glm-5.3-flash",
+		"raw": "1. Fig\n2. Onion\n3. Beet"
+	},
+	"celeriac": {
+		"blind": "90883c4513a3",
+		"model": "glm-5.3-flash",
+		"raw": "1. Ginger root\n2. Potato\n3. Kiwi"
+	},
+	"swiss-chard": {
+		"blind": "38af7bbf6fbe",
+		"model": "glm-5.3-flash",
+		"raw": "1. Swiss chard\n2. Spinach\n3. Beet greens"
+	},
+	"corn-salad": {
+		"blind": "8a466d226714",
+		"model": "glm-5.3-flash",
+		"raw": "1. Flower\n2. Fireworks\n3. Herb"
+	},
+	"rocket": {
+		"blind": "cc219cd09151",
+		"model": "glm-5.3-flash",
+		"raw": "1. watercress\n2. nasturtium leaves\n3. lotus sprout"
+	},
+	"radicchio": {
+		"blind": "0408f09e8e1f",
+		"model": "glm-5.3-flash",
+		"raw": "1. Vanilla pod\n2. Aloe vera\n3. Chili peppers"
+	}
+}

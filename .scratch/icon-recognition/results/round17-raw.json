@@ -1,0 +1,22 @@
+{
+	"swiss-chard": {
+		"blind": "c6734306c64d",
+		"model": "glm-5.3-flash",
+		"raw": "1. Spinach\n2. Swiss chard\n3. Beet greens"
+	},
+	"shallot": {
+		"blind": "072592f5ff15",
+		"model": "glm-5.3-flash",
+		"raw": "1. Red onion\n2. Shallot\n3. Beet"
+	},
+	"rocket": {
+		"blind": "941c9fb5744d",
+		"model": "glm-5.3-flash",
+		"raw": "1. Parsley\n2. Watercress\n3. Nasturtium"
+	},
+	"celeriac": {
+		"blind": "66ef78fdc380",
+		"model": "glm-5.3-flash",
+		"raw": "1. Konjac (elephant yam corm)\n2. Celeriac (celery root)\n3. Taro"
+	}
+}

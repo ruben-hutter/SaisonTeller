@@ -1,0 +1,968 @@
+{
+	"asparagus": {
+		"verdict": "PASS",
+		"guesses": [
+			"Asparagus",
+			"Sugarcane",
+			"Bamboo"
+		],
+		"hit": {
+			"guess": "Asparagus",
+			"synonym": "Asparagus"
+		}
+	},
+	"brussels-sprouts": {
+		"verdict": "PASS",
+		"guesses": [
+			"Brussels sprouts",
+			"Peas",
+			"Grapes"
+		],
+		"hit": {
+			"guess": "Brussels sprouts",
+			"synonym": "Brussels sprouts"
+		}
+	},
+	"broccoli": {
+		"verdict": "PASS",
+		"guesses": [
+			"Broccoli",
+			"Tree",
+			"Cauliflower"
+		],
+		"hit": {
+			"guess": "Broccoli",
+			"synonym": "Broccoli"
+		}
+	},
+	"broad-bean": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Pea pod",
+			"Edamame",
+			"Beans"
+		],
+		"hit": null
+	},
+	"artichoke": {
+		"verdict": "PASS",
+		"guesses": [
+			"Artichoke",
+			"Asparagus",
+			"Cabbage"
+		],
+		"hit": {
+			"guess": "Artichoke",
+			"synonym": "Artichoke"
+		}
+	},
+	"cabbage-red": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Fig",
+			"Plum",
+			"Passion fruit"
+		],
+		"hit": null
+	},
+	"carrot": {
+		"verdict": "PASS",
+		"guesses": [
+			"Carrot",
+			"Radish",
+			"Turnip"
+		],
+		"hit": {
+			"guess": "Carrot",
+			"synonym": "Carrot"
+		}
+	},
+	"beetroot": {
+		"verdict": "PASS",
+		"guesses": [
+			"Beet",
+			"Radish",
+			"Turnip"
+		],
+		"hit": {
+			"guess": "Beet",
+			"synonym": "beet"
+		}
+	},
+	"cabbage-white": {
+		"verdict": "PASS",
+		"guesses": [
+			"Cabbage",
+			"Lettuce",
+			"Tree"
+		],
+		"hit": {
+			"guess": "Cabbage",
+			"synonym": "cabbage"
+		}
+	},
+	"cabbage-savoy": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Watermelon",
+			"Lettuce",
+			"Brussels sprout"
+		],
+		"hit": null
+	},
+	"chili": {
+		"verdict": "PASS",
+		"guesses": [
+			"Chili pepper",
+			"Pepper",
+			"Cayenne"
+		],
+		"hit": {
+			"guess": "Chili pepper",
+			"synonym": "Chili pepper"
+		}
+	},
+	"celery": {
+		"verdict": "PASS",
+		"guesses": [
+			"Celery",
+			"Asparagus",
+			"Leek"
+		],
+		"hit": {
+			"guess": "Celery",
+			"synonym": "Celery"
+		}
+	},
+	"corn-salad": {
+		"verdict": "FAIL",
+		"guesses": [
+			"parsley",
+			"spinach",
+			"watercress"
+		],
+		"hit": null
+	},
+	"chicory": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Asparagus",
+			"Bamboo shoots",
+			"White carrots"
+		],
+		"hit": null
+	},
+	"celeriac": {
+		"verdict": "PASS",
+		"guesses": [
+			"Celeriac",
+			"Celery",
+			"Taro"
+		],
+		"hit": {
+			"guess": "Celeriac",
+			"synonym": "Celeriac"
+		}
+	},
+	"cauliflower": {
+		"verdict": "PASS",
+		"guesses": [
+			"Cauliflower",
+			"Artichoke",
+			"Broccoli"
+		],
+		"hit": {
+			"guess": "Cauliflower",
+			"synonym": "Cauliflower"
+		}
+	},
+	"cucumber": {
+		"verdict": "PASS",
+		"guesses": [
+			"Cucumber",
+			"Pickle",
+			"Zucchini"
+		],
+		"hit": {
+			"guess": "Cucumber",
+			"synonym": "Cucumber"
+		}
+	},
+	"garlic": {
+		"verdict": "PASS",
+		"guesses": [
+			"Garlic",
+			"Onion",
+			"Tulip"
+		],
+		"hit": {
+			"guess": "Garlic",
+			"synonym": "Garlic"
+		}
+	},
+	"eggplant": {
+		"verdict": "PASS",
+		"guesses": [
+			"Eggplant",
+			"Plum",
+			"Grape"
+		],
+		"hit": {
+			"guess": "Eggplant",
+			"synonym": "eggplant"
+		}
+	},
+	"green-bean": {
+		"verdict": "PASS",
+		"guesses": [
+			"Green bean",
+			"Pea pod",
+			"Bean sprout"
+		],
+		"hit": {
+			"guess": "Green bean",
+			"synonym": "Green bean"
+		}
+	},
+	"kale": {
+		"verdict": "PASS",
+		"guesses": [
+			"Kale",
+			"Spinach",
+			"Lettuce"
+		],
+		"hit": {
+			"guess": "Kale",
+			"synonym": "kale"
+		}
+	},
+	"fennel": {
+		"verdict": "PASS",
+		"guesses": [
+			"fennel",
+			"celery",
+			"turnip"
+		],
+		"hit": {
+			"guess": "fennel",
+			"synonym": "Fennel"
+		}
+	},
+	"lettuce": {
+		"verdict": "PASS",
+		"guesses": [
+			"brussels sprout",
+			"cabbage",
+			"lettuce"
+		],
+		"hit": {
+			"guess": "lettuce",
+			"synonym": "Lettuce"
+		}
+	},
+	"leek": {
+		"verdict": "PASS",
+		"guesses": [
+			"Leek",
+			"Green onion",
+			"Scallion"
+		],
+		"hit": {
+			"guess": "Leek",
+			"synonym": "Leek"
+		}
+	},
+	"kohlrabi": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Turnip",
+			"Radish",
+			"Beet"
+		],
+		"hit": null
+	},
+	"mushroom-cultivated": {
+		"verdict": "PASS",
+		"guesses": [
+			"Mushroom",
+			"Toadstool",
+			"Fungus"
+		],
+		"hit": {
+			"guess": "Mushroom",
+			"synonym": "mushroom"
+		}
+	},
+	"mushroom-wild": {
+		"verdict": "PASS",
+		"guesses": [
+			"Mushroom",
+			"Toadstool",
+			"Fungus"
+		],
+		"hit": {
+			"guess": "Mushroom",
+			"synonym": "mushroom"
+		}
+	},
+	"parsnip": {
+		"verdict": "PASS",
+		"guesses": [
+			"Parsnip",
+			"Carrot",
+			"Daikon radish"
+		],
+		"hit": {
+			"guess": "Parsnip",
+			"synonym": "Parsnip"
+		}
+	},
+	"onion": {
+		"verdict": "PASS",
+		"guesses": [
+			"Onion",
+			"Potato",
+			"Turnip"
+		],
+		"hit": {
+			"guess": "Onion",
+			"synonym": "Onion"
+		}
+	},
+	"pea": {
+		"verdict": "PASS",
+		"guesses": [
+			"Pea pod",
+			"Edamame",
+			"Snow peas"
+		],
+		"hit": {
+			"guess": "Pea pod",
+			"synonym": "Pea"
+		}
+	},
+	"pumpkin": {
+		"verdict": "PASS",
+		"guesses": [
+			"Pumpkin",
+			"Orange",
+			"Melon"
+		],
+		"hit": {
+			"guess": "Pumpkin",
+			"synonym": "pumpkin"
+		}
+	},
+	"potato": {
+		"verdict": "PASS",
+		"guesses": [
+			"Cookie",
+			"Potato",
+			"Meatball"
+		],
+		"hit": {
+			"guess": "Potato",
+			"synonym": "Potato"
+		}
+	},
+	"pepper": {
+		"verdict": "PASS",
+		"guesses": [
+			"Bell pepper",
+			"Tomato",
+			"Pumpkin"
+		],
+		"hit": {
+			"guess": "Bell pepper",
+			"synonym": "Bell pepper"
+		}
+	},
+	"radicchio": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Pomegranate",
+			"Tomato",
+			"Antler"
+		],
+		"hit": null
+	},
+	"radish": {
+		"verdict": "PASS",
+		"guesses": [
+			"Radish",
+			"Beet",
+			"Turnip"
+		],
+		"hit": {
+			"guess": "Radish",
+			"synonym": "Radish"
+		}
+	},
+	"rhubarb": {
+		"verdict": "PASS",
+		"guesses": [
+			"Rhubarb",
+			"Celery",
+			"Swiss chard"
+		],
+		"hit": {
+			"guess": "Rhubarb",
+			"synonym": "Rhubarb"
+		}
+	},
+	"salsify": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Beet",
+			"Radish",
+			"Turnip"
+		],
+		"hit": null
+	},
+	"spinach": {
+		"verdict": "PASS",
+		"guesses": [
+			"Spinach",
+			"Parsley",
+			"Kale"
+		],
+		"hit": {
+			"guess": "Spinach",
+			"synonym": "Spinach"
+		}
+	},
+	"sweet-corn": {
+		"verdict": "PASS",
+		"guesses": [
+			"Corn",
+			"Cucumber",
+			"Zucchini"
+		],
+		"hit": {
+			"guess": "Corn",
+			"synonym": "corn"
+		}
+	},
+	"rocket": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Soybean",
+			"Pennywort",
+			"Alfalfa"
+		],
+		"hit": null
+	},
+	"snap-pea": {
+		"verdict": "PASS",
+		"guesses": [
+			"Pea pod",
+			"Green bean",
+			"Cucumber"
+		],
+		"hit": {
+			"guess": "Pea pod",
+			"synonym": "pea pod"
+		}
+	},
+	"shallot": {
+		"verdict": "PASS",
+		"guesses": [
+			"Red onion",
+			"Shallot",
+			"Beet"
+		],
+		"hit": {
+			"guess": "Shallot",
+			"synonym": "Shallot"
+		}
+	},
+	"swiss-chard": {
+		"verdict": "PASS",
+		"guesses": [
+			"Chard",
+			"Lettuce",
+			"Spinach"
+		],
+		"hit": {
+			"guess": "Chard",
+			"synonym": "chard"
+		}
+	},
+	"tomato": {
+		"verdict": "PASS",
+		"guesses": [
+			"Tomato",
+			"Cherry",
+			"Radish"
+		],
+		"hit": {
+			"guess": "Tomato",
+			"synonym": "Tomato"
+		}
+	},
+	"zucchini": {
+		"verdict": "PASS",
+		"guesses": [
+			"Cucumber",
+			"Zucchini",
+			"Pickle"
+		],
+		"hit": {
+			"guess": "Zucchini",
+			"synonym": "Zucchini"
+		}
+	},
+	"apple": {
+		"verdict": "PASS",
+		"guesses": [
+			"Mango",
+			"Plum",
+			"Apple"
+		],
+		"hit": {
+			"guess": "Apple",
+			"synonym": "Apple"
+		}
+	},
+	"turnip": {
+		"verdict": "PASS",
+		"guesses": [
+			"Turnip",
+			"Radish",
+			"Beet"
+		],
+		"hit": {
+			"guess": "Turnip",
+			"synonym": "Turnip"
+		}
+	},
+	"apricot": {
+		"verdict": "PASS",
+		"guesses": [
+			"Apricot",
+			"Peach",
+			"Plum"
+		],
+		"hit": {
+			"guess": "Apricot",
+			"synonym": "Apricot"
+		}
+	},
+	"cherry": {
+		"verdict": "PASS",
+		"guesses": [
+			"Cherries",
+			"Cherry",
+			"Berries"
+		],
+		"hit": {
+			"guess": "Cherry",
+			"synonym": "cherry"
+		}
+	},
+	"blackberry": {
+		"verdict": "PASS",
+		"guesses": [
+			"Grapes",
+			"Blackberry",
+			"Berry cluster"
+		],
+		"hit": {
+			"guess": "Blackberry",
+			"synonym": "Blackberry"
+		}
+	},
+	"currant": {
+		"verdict": "PASS",
+		"guesses": [
+			"Grapes",
+			"Cherries",
+			"Currants"
+		],
+		"hit": {
+			"guess": "Currants",
+			"synonym": "currants"
+		}
+	},
+	"elderberry": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Grapes",
+			"Blueberries",
+			"Blackcurrants"
+		],
+		"hit": null
+	},
+	"blueberry": {
+		"verdict": "PASS",
+		"guesses": [
+			"Blueberries",
+			"Grapes",
+			"Cherries"
+		],
+		"hit": {
+			"guess": "Blueberries",
+			"synonym": "blueberries"
+		}
+	},
+	"melon": {
+		"verdict": "PASS",
+		"guesses": [
+			"Melon",
+			"Watermelon",
+			"Cantaloupe"
+		],
+		"hit": {
+			"guess": "Melon",
+			"synonym": "Melon"
+		}
+	},
+	"fig": {
+		"verdict": "PASS",
+		"guesses": [
+			"Plum",
+			"Eggplant",
+			"Fig"
+		],
+		"hit": {
+			"guess": "Fig",
+			"synonym": "Fig"
+		}
+	},
+	"grape": {
+		"verdict": "PASS",
+		"guesses": [
+			"Grapes",
+			"Berry cluster",
+			"Blackcurrant"
+		],
+		"hit": {
+			"guess": "Grapes",
+			"synonym": "grapes"
+		}
+	},
+	"mirabelle": {
+		"verdict": "PASS",
+		"guesses": [
+			"Apricot",
+			"Plum",
+			"Orange"
+		],
+		"hit": {
+			"guess": "Plum",
+			"synonym": "plum"
+		}
+	},
+	"pear": {
+		"verdict": "PASS",
+		"guesses": [
+			"Pear",
+			"Avocado",
+			"Gourd"
+		],
+		"hit": {
+			"guess": "Pear",
+			"synonym": "Pear"
+		}
+	},
+	"nectarine-peach": {
+		"verdict": "PASS",
+		"guesses": [
+			"Apricot",
+			"Peach",
+			"Plum"
+		],
+		"hit": {
+			"guess": "Peach",
+			"synonym": "peach"
+		}
+	},
+	"quince": {
+		"verdict": "PASS",
+		"guesses": [
+			"Quince",
+			"Pear",
+			"Apple"
+		],
+		"hit": {
+			"guess": "Quince",
+			"synonym": "Quince"
+		}
+	},
+	"raspberry": {
+		"verdict": "PASS",
+		"guesses": [
+			"Raspberry",
+			"Grape",
+			"Blackberry"
+		],
+		"hit": {
+			"guess": "Raspberry",
+			"synonym": "Raspberry"
+		}
+	},
+	"plum": {
+		"verdict": "PASS",
+		"guesses": [
+			"Plum",
+			"Eggplant",
+			"Fig"
+		],
+		"hit": {
+			"guess": "Plum",
+			"synonym": "Plum"
+		}
+	},
+	"strawberry": {
+		"verdict": "PASS",
+		"guesses": [
+			"Strawberry",
+			"Berry",
+			"Radish"
+		],
+		"hit": {
+			"guess": "Strawberry",
+			"synonym": "Strawberry"
+		}
+	},
+	"watermelon": {
+		"verdict": "PASS",
+		"guesses": [
+			"Watermelon",
+			"Melon",
+			"Cantaloupe"
+		],
+		"hit": {
+			"guess": "Watermelon",
+			"synonym": "Watermelon"
+		}
+	},
+	"clementine": {
+		"verdict": "PASS",
+		"guesses": [
+			"Pumpkin",
+			"Orange",
+			"Tangerine"
+		],
+		"hit": {
+			"guess": "Tangerine",
+			"synonym": "tangerine"
+		}
+	},
+	"mandarin": {
+		"verdict": "PASS",
+		"guesses": [
+			"Orange",
+			"Tangerine",
+			"Grapefruit"
+		],
+		"hit": {
+			"guess": "Tangerine",
+			"synonym": "tangerine"
+		}
+	},
+	"orange": {
+		"verdict": "PASS",
+		"guesses": [
+			"Orange",
+			"Tangerine",
+			"Grapefruit"
+		],
+		"hit": {
+			"guess": "Orange",
+			"synonym": "Orange"
+		}
+	},
+	"grapefruit": {
+		"verdict": "PASS",
+		"guesses": [
+			"Orange",
+			"Grapefruit",
+			"Tomato"
+		],
+		"hit": {
+			"guess": "Grapefruit",
+			"synonym": "Grapefruit"
+		}
+	},
+	"chervil": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Dill",
+			"Fennel",
+			"Parsley"
+		],
+		"hit": null
+	},
+	"basil": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Seedling",
+			"Sprout",
+			"Sprig"
+		],
+		"hit": null
+	},
+	"chives": {
+		"verdict": "PASS",
+		"guesses": [
+			"Allium",
+			"Chives",
+			"Onion flower"
+		],
+		"hit": {
+			"guess": "Chives",
+			"synonym": "Chives"
+		}
+	},
+	"lemon": {
+		"verdict": "PASS",
+		"guesses": [
+			"Lemon",
+			"Lime",
+			"Pear"
+		],
+		"hit": {
+			"guess": "Lemon",
+			"synonym": "Lemon"
+		}
+	},
+	"lovage": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Seedling",
+			"Sprout",
+			"Parsley"
+		],
+		"hit": null
+	},
+	"dill": {
+		"verdict": "PASS",
+		"guesses": [
+			"Fennel",
+			"Dill",
+			"Allium"
+		],
+		"hit": {
+			"guess": "Dill",
+			"synonym": "Dill"
+		}
+	},
+	"mint": {
+		"verdict": "PASS",
+		"guesses": [
+			"basil",
+			"mint",
+			"sprout"
+		],
+		"hit": {
+			"guess": "mint",
+			"synonym": "Mint"
+		}
+	},
+	"marjoram": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Wheat",
+			"Lavender",
+			"Barley"
+		],
+		"hit": null
+	},
+	"parsley": {
+		"verdict": "PASS",
+		"guesses": [
+			"Parsley",
+			"Celery",
+			"Tree"
+		],
+		"hit": {
+			"guess": "Parsley",
+			"synonym": "Parsley"
+		}
+	},
+	"sage": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Herb sprig",
+			"Basil",
+			"Leaf"
+		],
+		"hit": null
+	},
+	"rosemary": {
+		"verdict": "PASS",
+		"guesses": [
+			"Rosemary",
+			"Fern",
+			"Branch"
+		],
+		"hit": {
+			"guess": "Rosemary",
+			"synonym": "Rosemary"
+		}
+	},
+	"oregano": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Broccoli",
+			"Christmas tree",
+			"Grapes"
+		],
+		"hit": null
+	},
+	"wild-garlic": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Cactus",
+			"Asparagus",
+			"Aloe vera"
+		],
+		"hit": null
+	},
+	"thyme": {
+		"verdict": "FAIL",
+		"guesses": [
+			"pea pod",
+			"beans",
+			"asparagus"
+		],
+		"hit": null
+	},
+	"walnut": {
+		"verdict": "PASS",
+		"guesses": [
+			"Walnut",
+			"Nutmeg",
+			"Coconut"
+		],
+		"hit": {
+			"guess": "Walnut",
+			"synonym": "Walnut"
+		}
+	},
+	"chestnut": {
+		"verdict": "PASS",
+		"guesses": [
+			"Chestnut",
+			"Seedling",
+			"Acorn"
+		],
+		"hit": {
+			"guess": "Chestnut",
+			"synonym": "chestnut"
+		}
+	},
+	"hazelnut": {
+		"verdict": "PASS",
+		"guesses": [
+			"Acorn",
+			"Chestnut",
+			"Hazelnut"
+		],
+		"hit": {
+			"guess": "Hazelnut",
+			"synonym": "Hazelnut"
+		}
+	}
+}

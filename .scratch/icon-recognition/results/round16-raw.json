@@ -1,0 +1,17 @@
+{
+	"radicchio": {
+		"blind": "7f284a47d419",
+		"model": "glm-5.3-flash",
+		"raw": "1. Pomegranate\n2. Beet\n3. Radish"
+	},
+	"celeriac": {
+		"blind": "7ce1b73d64b3",
+		"model": "glm-5.3-flash",
+		"raw": "1. Celeriac\n2. Radish\n3. Taro"
+	},
+	"corn-salad": {
+		"blind": "424b940cc67c",
+		"model": "glm-5.3-flash",
+		"raw": "1. Avocado slices\n2. Spinach leaves\n3. Kale"
+	}
+}

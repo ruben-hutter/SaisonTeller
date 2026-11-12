@@ -1,0 +1,32 @@
+{
+	"raspberry": {
+		"blind": "69663a8a911c",
+		"model": "qwen2.5vl:7b",
+		"raw": "1. Grapes\n2. Berries\n3. Fruits"
+	},
+	"sage": {
+		"blind": "b6b3d2765e3a",
+		"model": "qwen2.5vl:7b",
+		"raw": "1. Herb\n2. Plant\n3. Stem"
+	},
+	"spinach": {
+		"blind": "ef0cbdfdfbc9",
+		"model": "qwen2.5vl:7b",
+		"raw": "1. Lettuce\n2. Spinach\n3. Collard Greens"
+	},
+	"kale": {
+		"blind": "6aff1140ff37",
+		"model": "qwen2.5vl:7b",
+		"raw": "1. Spinach\n2. Kale\n3. Collard Greens"
+	},
+	"cabbage-red": {
+		"blind": "ae3df3f61500",
+		"model": "qwen2.5vl:7b",
+		"raw": "1. Flower\n2. Plant\n3. Petal"
+	},
+	"broad-bean": {
+		"blind": "b9707ca6a338",
+		"model": "qwen2.5vl:7b",
+		"raw": "1. Pea pod\n2. Bean pod\n3. Vegetable"
+	}
+}

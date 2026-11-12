@@ -1,9 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-  <path d="M64 22 Q80 26 86 40 Q92 54 88 66 Q84 80 74 86 L62 88 Q50 82 44 68 Q40 54 46 40 Q50 26 64 22 Z" fill="#6B1F2E"/>
-  <path d="M44 68 Q40 80 46 90 Q52 98 62 98 L66 98 Q76 96 82 88 Q88 80 84 68 L76 72 Q80 82 74 88 Q68 94 62 92 Q54 92 50 84 Q46 78 50 72 Z" fill="#A34A5E"/>
-  <path d="M64 30 Q72 34 74 44 Q76 56 72 66 L64 72 L56 66 Q52 56 54 44 Q56 34 64 30 Z" fill="#A34A5E"/>
-  <path d="M64 40 Q64 54 64 66" fill="none" stroke="#F2EBD4" stroke-width="4.5" stroke-linecap="round"/>
-  <path d="M56 44 Q54 54 56 62 M72 44 Q74 54 72 62" fill="none" stroke="#F2EBD4" stroke-width="3" stroke-linecap="round"/>
-  <path d="M52 76 Q58 72 64 76 Q70 80 76 76" fill="none" stroke="#F2EBD4" stroke-width="3.5" stroke-linecap="round"/>
-  <rect x="57" y="96" width="14" height="10" rx="4" fill="#E8DCC0"/>
+  <!-- stem nub -->
+  <rect x="58" y="96" width="12" height="11" rx="4" fill="#7A1B30"/>
+  <!-- outer wrapper leaves at the lower sides -->
+  <path d="M48 90 Q29 86 24 72 Q22 60 33 58 Q32 70 42 79 Q48 84 54 87 Q51 91 48 90 Z" fill="#7A1B30"/>
+  <path d="M80 90 Q99 86 104 72 Q106 60 95 58 Q96 70 86 79 Q80 84 74 87 Q77 91 80 90 Z" fill="#7A1B30"/>
+  <!-- compact bud: deep-red base -->
+  <circle cx="64" cy="60" r="38" fill="#A82540"/>
+  <!-- overlapping red leaves: mid-red sides, deep-red center -->
+  <path d="M64 92 Q42 88 34 68 Q28 48 42 36 Q48 46 50 62 Q52 78 64 92 Z" fill="#C13B52"/>
+  <path d="M64 92 Q86 88 94 68 Q100 48 86 36 Q80 46 78 62 Q76 78 64 92 Z" fill="#C13B52"/>
+  <path d="M64 94 Q52 86 50 64 Q48 42 64 30 Q80 42 78 64 Q76 86 64 94 Z" fill="#A82540"/>
+  <!-- bold white ribs fanning up from the base, each with 2 side veins -->
+  <path d="M49 77 Q43 74 38 70 M43 59 Q39 55 36 50" fill="none" stroke="#F1E4D7" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M62 84 Q47 80 44 66 Q41 52 44 42" fill="none" stroke="#F7EFE2" stroke-width="6" stroke-linecap="round"/>
+  <path d="M79 77 Q85 74 90 70 M85 59 Q89 55 92 50" fill="none" stroke="#F1E4D7" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M66 84 Q81 80 84 66 Q87 52 84 42" fill="none" stroke="#F7EFE2" stroke-width="6" stroke-linecap="round"/>
+  <path d="M64 64 Q58 61 55 56 M64 64 Q70 61 73 56" fill="none" stroke="#F1E4D7" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M64 84 Q63 62 64 42" fill="none" stroke="#F7EFE2" stroke-width="6" stroke-linecap="round"/>
 </svg>

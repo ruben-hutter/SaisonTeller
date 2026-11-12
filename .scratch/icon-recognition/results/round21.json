@@ -1,0 +1,427 @@
+{
+	"broccoli": [
+		"Broccoli",
+		"Tree",
+		"Cauliflower"
+	],
+	"beetroot": [
+		"Beet",
+		"Radish",
+		"Turnip"
+	],
+	"artichoke": [
+		"Artichoke",
+		"Asparagus",
+		"Pine cone"
+	],
+	"broad-bean": [
+		"Peas",
+		"Edamame",
+		"Okra"
+	],
+	"asparagus": [
+		"Asparagus",
+		"Green onions",
+		"Sugarcane"
+	],
+	"brussels-sprouts": [
+		"Peas",
+		"Brussels sprouts",
+		"Edamame"
+	],
+	"carrot": [
+		"Carrot",
+		"Radish",
+		"Turnip"
+	],
+	"cabbage-red": [
+		"Plum",
+		"Onion",
+		"Beet"
+	],
+	"cauliflower": [
+		"Cauliflower",
+		"Broccoli",
+		"Cabbage"
+	],
+	"cabbage-white": [
+		"Tree",
+		"Broccoli",
+		"Bush"
+	],
+	"cabbage-savoy": [
+		"Artichoke",
+		"Hot air balloon",
+		"Cabbage"
+	],
+	"chicory": [
+		"asparagus",
+		"bamboo shoots",
+		"green onions"
+	],
+	"chili": [
+		"Chili pepper",
+		"Pepper",
+		"Red pepper"
+	],
+	"celeriac": [
+		"Celery root",
+		"Yam",
+		"Taro"
+	],
+	"celery": [
+		"Celery",
+		"Asparagus",
+		"Baby corn"
+	],
+	"cucumber": [
+		"Pickle",
+		"Cucumber",
+		"Zucchini"
+	],
+	"corn-salad": [
+		"Parsley",
+		"Cilantro",
+		"Kale"
+	],
+	"fennel": [
+		"fennel",
+		"celery",
+		"leek"
+	],
+	"kale": [
+		"Kale",
+		"Lettuce",
+		"Parsley"
+	],
+	"green-bean": [
+		"Green bean",
+		"Pea pod",
+		"Bean"
+	],
+	"leek": [
+		"Leek",
+		"Green onion",
+		"Spring onion"
+	],
+	"kohlrabi": [
+		"Tomato",
+		"Radish",
+		"Turnip"
+	],
+	"mushroom-cultivated": [
+		"Mushroom",
+		"Toadstool",
+		"Fungus"
+	],
+	"mushroom-wild": [
+		"Mushroom",
+		"Toadstool",
+		"Umbrella"
+	],
+	"onion": [
+		"Potato",
+		"Onion",
+		"Coconut"
+	],
+	"lettuce": [
+		"Brussels sprout",
+		"Cabbage",
+		"Lettuce"
+	],
+	"pea": [
+		"Pea pod",
+		"Edamame",
+		"Green beans"
+	],
+	"parsnip": [
+		"Parsnip",
+		"Daikon radish",
+		"Carrot"
+	],
+	"garlic": [
+		"Garlic",
+		"Onion",
+		"Fig"
+	],
+	"eggplant": [
+		"Eggplant",
+		"Plum",
+		"Olive"
+	],
+	"pepper": [
+		"Bell pepper",
+		"Feijoa",
+		"Squash"
+	],
+	"potato": [
+		"Cookie",
+		"Potato",
+		"Meatball"
+	],
+	"pumpkin": [
+		"Pumpkin",
+		"Tomato",
+		"Orange"
+	],
+	"radish": [
+		"Radish",
+		"Beet",
+		"Turnip"
+	],
+	"radicchio": [
+		"Pomegranate",
+		"Tomato",
+		"Radish"
+	],
+	"rhubarb": [
+		"Rhubarb",
+		"Leek",
+		"Spring onion"
+	],
+	"rocket": [
+		"Watercress",
+		"Nasturtium",
+		"Nerve plant"
+	],
+	"snap-pea": [
+		"Cucumber",
+		"Pea pod",
+		"Green bean"
+	],
+	"spinach": [
+		"Spinach",
+		"Kale",
+		"Parsley"
+	],
+	"salsify": [
+		"Eggplant",
+		"Cacao pod",
+		"Cucumber"
+	],
+	"shallot": [
+		"Red onion",
+		"Beet",
+		"Plum"
+	],
+	"tomato": [
+		"Tomato",
+		"Cherry",
+		"Radish"
+	],
+	"sweet-corn": [
+		"Corn",
+		"Corn cob",
+		"Cucumber"
+	],
+	"turnip": [
+		"Turnip",
+		"Radish",
+		"Beet"
+	],
+	"swiss-chard": [
+		"Swiss chard",
+		"Lettuce",
+		"Celery"
+	],
+	"apple": [
+		"Mango",
+		"Plum",
+		"Radish"
+	],
+	"zucchini": [
+		"Pickle",
+		"Cucumber",
+		"Zucchini"
+	],
+	"apricot": [
+		"Mango",
+		"Apricot",
+		"Lemon"
+	],
+	"blackberry": [
+		"Grapes",
+		"Blackberries",
+		"Raspberry"
+	],
+	"blueberry": [
+		"Blueberries",
+		"Blueberry",
+		"Grapes"
+	],
+	"currant": [
+		"Grapes",
+		"Cherries",
+		"Berries"
+	],
+	"cherry": [
+		"Cherries",
+		"Berries",
+		"Grapes"
+	],
+	"fig": [
+		"Plum",
+		"Eggplant",
+		"Fig"
+	],
+	"melon": [
+		"Melon",
+		"Watermelon",
+		"Pumpkin"
+	],
+	"grape": [
+		"grapes",
+		"blackberries",
+		"blueberries"
+	],
+	"plum": [
+		"Plum",
+		"Eggplant",
+		"Fig"
+	],
+	"elderberry": [
+		"Grapes",
+		"Blueberries",
+		"Currants"
+	],
+	"quince": [
+		"Pear",
+		"Apple",
+		"Quince"
+	],
+	"nectarine-peach": [
+		"Peach",
+		"Apricot",
+		"Plum"
+	],
+	"mirabelle": [
+		"Plum",
+		"Apricot",
+		"Peach"
+	],
+	"pear": [
+		"Pear",
+		"Avocado",
+		"Gourd"
+	],
+	"raspberry": [
+		"Raspberry",
+		"Grape",
+		"Blackberry"
+	],
+	"grapefruit": [
+		"Orange",
+		"Grapefruit",
+		"Tomato"
+	],
+	"watermelon": [
+		"Watermelon",
+		"Cantaloupe",
+		"Melon"
+	],
+	"lemon": [
+		"Lemon",
+		"Lime",
+		"Citron"
+	],
+	"clementine": [
+		"Pumpkin",
+		"Orange",
+		"Tangerine"
+	],
+	"basil": [
+		"Seedling",
+		"Sprout",
+		"Basil"
+	],
+	"orange": [
+		"Orange",
+		"Grapefruit",
+		"Tangerine"
+	],
+	"mandarin": [
+		"Orange",
+		"Tangerine",
+		"Grapefruit"
+	],
+	"lovage": [
+		"Seedling",
+		"Sprout",
+		"Plant"
+	],
+	"strawberry": [
+		"Strawberry",
+		"Radish",
+		"Beet"
+	],
+	"dill": [
+		"Fennel",
+		"Dill",
+		"Parsley"
+	],
+	"marjoram": [
+		"rosemary",
+		"leaf branch",
+		"olive branch"
+	],
+	"parsley": [
+		"Parsley",
+		"Tree",
+		"Broccoli"
+	],
+	"oregano": [
+		"Tree",
+		"Grape",
+		"Hops"
+	],
+	"rosemary": [
+		"Fern",
+		"Rosemary",
+		"Branch"
+	],
+	"sage": [
+		"Herb sprig",
+		"Basil leaves",
+		"Plant branch"
+	],
+	"chives": [
+		"Allium",
+		"Chives",
+		"Wild onion"
+	],
+	"mint": [
+		"tulip",
+		"herb sprig",
+		"seedling"
+	],
+	"hazelnut": [
+		"Chestnut",
+		"Hazelnut",
+		"Acorn"
+	],
+	"chestnut": [
+		"Chestnut",
+		"Seedling",
+		"Acorn"
+	],
+	"wild-garlic": [
+		"Sprout",
+		"Cactus",
+		"Herb"
+	],
+	"walnut": [
+		"Coconut",
+		"Walnut",
+		"Chestnut"
+	],
+	"thyme": [
+		"lavender",
+		"lupine",
+		"asparagus"
+	],
+	"chervil": [
+		"Dill",
+		"Fennel",
+		"Parsley"
+	]
+}

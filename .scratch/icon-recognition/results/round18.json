@@ -1,0 +1,22 @@
+{
+	"swiss-chard": [
+		"Celery",
+		"Swiss chard",
+		"Romaine lettuce"
+	],
+	"celeriac": [
+		"Celeriac",
+		"Celery root",
+		"Kohlrabi"
+	],
+	"shallot": [
+		"Beet",
+		"Eggplant",
+		"Radish"
+	],
+	"rocket": [
+		"Nasturtium",
+		"Watercress",
+		"Pennywort"
+	]
+}

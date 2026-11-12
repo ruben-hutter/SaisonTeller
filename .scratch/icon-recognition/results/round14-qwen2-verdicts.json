@@ -1,0 +1,59 @@
+{
+	"swiss-chard": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Lettuce",
+			"Spinach",
+			"Kale"
+		],
+		"hit": null
+	},
+	"radicchio": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Watermelon",
+			"Pineapple",
+			"Tomato"
+		],
+		"hit": null
+	},
+	"shallot": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Fig",
+			"Onion",
+			"Garlic"
+		],
+		"hit": null
+	},
+	"celeriac": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Mushroom",
+			"Plant",
+			"Fungus"
+		],
+		"hit": null
+	},
+	"rocket": {
+		"verdict": "PASS",
+		"guesses": [
+			"Spinach",
+			"Watercress",
+			"Arugula"
+		],
+		"hit": {
+			"guess": "Arugula",
+			"synonym": "arugula"
+		}
+	},
+	"corn-salad": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Spinach",
+			"Pea pod",
+			"Broccoli"
+		],
+		"hit": null
+	}
+}

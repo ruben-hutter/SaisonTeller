@@ -1,0 +1,22 @@
+{
+	"swiss-chard": [
+		"Lettuce",
+		"Spinach",
+		"Kale"
+	],
+	"celeriac": [
+		"Leek",
+		"Onion",
+		"Garlic"
+	],
+	"shallot": [
+		"Onion",
+		"Garlic",
+		"Leek"
+	],
+	"rocket": [
+		"Mint",
+		"Parsley",
+		"Basil"
+	]
+}

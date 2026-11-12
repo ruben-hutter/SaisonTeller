@@ -1,0 +1,32 @@
+{
+	"swiss-chard": [
+		"Lettuce",
+		"Spinach",
+		"Kale"
+	],
+	"radicchio": [
+		"Watermelon",
+		"Pineapple",
+		"Tomato"
+	],
+	"shallot": [
+		"Fig",
+		"Onion",
+		"Garlic"
+	],
+	"celeriac": [
+		"Mushroom",
+		"Plant",
+		"Fungus"
+	],
+	"rocket": [
+		"Spinach",
+		"Watercress",
+		"Arugula"
+	],
+	"corn-salad": [
+		"Spinach",
+		"Pea pod",
+		"Broccoli"
+	]
+}
