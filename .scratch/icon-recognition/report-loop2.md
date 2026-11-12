@@ -1,9 +1,11 @@
 # Icon improvement loop 2 — two-judge protocol
 
-**Branch:** `feat/better-produce-icons` · **Date:** 2025-11-12 · **Changed icons:** 12 of 85 (2 small batches)
-**Result:** **67 / 85 stable-pass on the primary judge** (official majority-of-3 over three full-set blind
-rounds: 60 icons 3/3 + 7 icons 2/3) — up from 63/85 (loop-1, single sample). 2 further icons pass on the
-secondary judge only. 12 icons redesigned in 2 small batches, 6 newly stable passes, 1 principled alias fix.
+**Branch:** `feat/better-produce-icons` · **Date:** 2025-11-12 · **Changed icons:** 16 of 85 (3 small batches)
+**Result:** **71 / 85 stable-pass on the primary judge** (official majority-of-3 over full-set blind rounds:
+62 icons 3/3 + 9 icons 2/3) — up from 63/85 (loop-1, single sample). 1 further icon (cabbage-red) passes on
+the secondary judge only. 16 icons redesigned in 3 small batches, 10 newly stable passes, 1 principled
+alias fix. Remaining 14 failures are plateaued: proven judge-vocabulary walls, 3-iteration-exhausted
+designs, or judge-drift noise on untouched icons.
 
 ---
 
@@ -72,26 +74,43 @@ gaming).
 `lovage` (photo reads hemlock/wild carrot), `chicory` (chicon reads asparagus/bamboo; ref photos read farm tools),
 `kohlrabi` (photo reads cantaloupe/corn), `thyme` (photos read brahmi/clover/cilantro), `sage` (photos read
 dried herbs; icons read basil/rosemary — look-alike herbs collapse to the more famous name),
-`broad-bean` (photo reaches "fava" at rank-3 only; flat pod icons structurally read edamame/pea pod).
+`broad-bean` (photo reaches "fava" at rank-3 only; flat pod icons structurally read edamame/pea pod),
+`chervil` (photo/icon both read dill/fennel/parsley — no reachable visual signature).
 
-**Icon-improvable-in-principle but iterations exhausted (photo PASS, icon still fails after 3 designs):**
-`radicchio` (photo reads "Radicchio" rank-1; icon v3 now reads beet/pomegranate — closest vegetable read),
-`corn-salad` (photo reads "Lamb's lettuce" rank-1; icon v3 reads salad-family),
-`rocket` (photo reads "Arugula" rank-1; icon reads watercress/nasturtium — Qwen passed it once),
-`wild-garlic` (photo reads "Wild garlic" rank-1; icon reads green onion — **redesignable in a future loop**),
-`mint`, `marjoram`, `oregano` (photos PASS; icons still generic-herb — **best candidates for a future batch**,
-photo-derived briefs already in `refs/*/description.md`).
+**Plateaued icon cases — 3 iterations exhausted, best design kept (photo PASS, judges still fail):**
+`radicchio` (photo reads "Radicchio" rank-1; icon v3 now reads beet/pomegranate — closest vegetable read;
+needs a human design decision, e.g. a cut-face view), `corn-salad` (photo reads "Lamb's lettuce" rank-1;
+v3 reads salad-family), `rocket` (photo reads "Arugula" rank-1; reads watercress/nasturtium; Qwen passed
+once), `salsify` (photo reaches "Salsify" rank-3; icon reads eggplant/cacao — dark slender roots hard to
+read as anything else).
 
 **Judge-split pass (kept, monitor):** `cabbage-red` (Qwen 2/2 "Cabbage" rank-1; GLM photo says "Cabbage" but
 never the purple-ball icon — color dominates GLM's read).
 
+**Judge-drift noise on untouched icons:** `elderberry` (judge now says "Blackcurrants" — near-miss
+word-boundary vs alias "currant"), `chervil`, `apple` (now mango/plum, "Apple" 1/3). This instability is
+why the official verdict uses majority-of-3.
+
+## Batch 3 (4 herbs, all photo-sanity PASS)
+
+| icon | old GLM final | new design | GLM samples | decision |
+|---|---|---|---|---|
+| mint | ✗ basil/sprout | serrated opposite leaf pairs | ✓ ✓ ✓ (rank-1 ×3) | **ACCEPT** (3/3) |
+| oregano | ✗ grapes/berries | tiny 5-petal pink florets in umbels (v2: dots→flowers) | ✓ ✓ ✓ (rank-1 ×2) | **ACCEPT** (3/3) |
+| wild-garlic | ✗ green onion/grass | wide lily leaves + white bulb + star-flower umbel | ✓ ✓ ✗ (2/3) | **ACCEPT** (majority) |
+| marjoram | ✗ lavender/pea pod | leafy sprig + small pink bud knot (v2: cream→pink, leaves dominant) | ✓ ✗ ✓ (2/3) | **ACCEPT** (majority) |
+
+Batch-3 key fixes came from the photo-sanity descriptions: serration (mint), flowers-not-dots (oregano —
+dots read as berries), and pink-not-cream knot (marjoram — cream pom read as cauliflower).
+
 ## Final verification (all 85, fresh blind names, both judges, majority-of-3)
 
-- **GLM (primary): 67 / 85 stable-pass** — three independent full-set samples (r19/r20/r21, fresh blind
-  names each): 60 icons pass 3/3, 7 pass 2/3 (basil, cabbage-savoy, cabbage-white, chestnut, hazelnut,
-  lettuce, **shallot**). Single samples ranged 66–68 — sampling noise of ±1–2 icons per draw.
-- Newly stable passes vs loop-1: **spinach, kale, raspberry, swiss-chard, shallot, celeriac** (all redesigned,
-  ≥2/3; five of them 3/3) **+ mirabelle** (alias fix, 3/3 — "Plum" rank-1 in all three samples).
+- **GLM (primary): 71 / 85 stable-pass** — majority-of-3 per icon (r19/r20/r21 for 81 icons; r22–r25
+  post-redesign samples for the 4 batch-3 icons; every sample a fresh full-set blind render): 62 icons pass
+  3/3, 9 pass 2/3 (basil, cabbage-savoy, cabbage-white, chestnut, hazelnut, lettuce, marjoram, shallot,
+  wild-garlic). Single samples ranged 66–68 — sampling noise of ±1–2 icons per draw.
+- Newly stable passes vs loop-1: **spinach, kale, raspberry, swiss-chard, shallot, celeriac, mint, oregano,
+  marjoram, wild-garlic** (all redesigned, ≥2/3) **+ mirabelle** (alias fix, 3/3).
 - Judge-drift noise on untouched icons (same artwork passed loop-1, fails now): `elderberry` (judge now says
   "Blackcurrants" — near-miss word-boundary vs alias "currant"), `chervil` (now consistently dill/fennel/parsley),
   `apple` (now mango/plum, "Apple" 1/3). This instability is why the official verdict uses majority-of-3.
@@ -103,8 +122,9 @@ never the purple-ball icon — color dominates GLM's read).
 
 ## What changed in the repo
 
-- `static/img/bespoke/*.svg` — 12 icons redesigned: raspberry, sage, spinach, kale, cabbage-red, broad-bean,
-  swiss-chard, shallot, radicchio, celeriac, rocket, corn-salad. All flat 128×128, house style.
+- `static/img/bespoke/*.svg` — 16 icons redesigned: raspberry, sage, spinach, kale, cabbage-red, broad-bean,
+  swiss-chard, shallot, radicchio, celeriac, rocket, corn-salad, mint, oregano, marjoram, wild-garlic.
+  All flat 128×128, house style.
 - `.scratch/icon-recognition/` — tooling (judge2, sheet, score suffix, fetch-refs terms), snapshots
   (`snapshots/batch-{1,2}-pre/`), photo-sanity results, all rounds' blind renders + judge outputs + critiques,
   `aliases.json` + changelog, this report.
@@ -122,4 +142,5 @@ node .scratch/icon-recognition/tools/sheet.mjs  <outdir> compare HEAD [ids]  # b
 
 Round map: rF = pre-loop baseline (both judges) · r5/r6/r7 = batch-1 iterations · r8 = cabbage-red v4 ·
 r9–r13 = stability samples · r14/r15/r16 = batch-2 iterations · r17/r18 = batch-2 stability ·
-r19/r20/r21 = **final verification, all 85, GLM ×3 (majority-of-3 = official)** · r19 also judged by Qwen.
+r19/r20/r21 = full-set GLM samples (official majority base) · r22–r25 = batch-3 iterations + samples ·
+r19 also judged by Qwen (full set).

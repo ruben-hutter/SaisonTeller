@@ -1,0 +1,12 @@
+{
+	"marjoram": {
+		"blind": "492bc78d97a7",
+		"model": "glm-5.3-flash",
+		"raw": "1. Oregano\n2. Marjoram\n3. Thyme"
+	},
+	"oregano": {
+		"blind": "12afa62404a1",
+		"model": "glm-5.3-flash",
+		"raw": "1. Oregano\n2. Marjoram\n3. Thyme"
+	}
+}

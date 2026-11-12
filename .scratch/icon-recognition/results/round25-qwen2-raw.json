@@ -1,0 +1,22 @@
+{
+	"mint": {
+		"blind": "2590d5ac9e46",
+		"model": "qwen2.5vl:7b",
+		"raw": "1. Mint\n2. Rosemary\n3. Basil"
+	},
+	"oregano": {
+		"blind": "e0954ce3f0bd",
+		"model": "qwen2.5vl:7b",
+		"raw": "1. Forget-me-not\n2. Forget-me-not\n3. Forget-me-not"
+	},
+	"marjoram": {
+		"blind": "ea4a9bfbd6ec",
+		"model": "qwen2.5vl:7b",
+		"raw": "1. Hydrangea\n2. Lavender\n3. Rosemary"
+	},
+	"wild-garlic": {
+		"blind": "3a5fad3baf15",
+		"model": "qwen2.5vl:7b",
+		"raw": "1. Garlic\n2. Onion\n3. Ginger"
+	}
+}

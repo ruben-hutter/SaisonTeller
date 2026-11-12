@@ -1,0 +1,20 @@
+{
+	"oregano": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Forget-me-not",
+			"Forget-me-not",
+			"Forget-me-not"
+		],
+		"hit": null
+	},
+	"marjoram": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Hydrangea",
+			"Lavender",
+			"Rosemary"
+		],
+		"hit": null
+	}
+}

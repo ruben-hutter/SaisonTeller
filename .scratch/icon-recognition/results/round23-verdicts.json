@@ -1,0 +1,26 @@
+{
+	"marjoram": {
+		"verdict": "PASS",
+		"guesses": [
+			"Oregano",
+			"Marjoram",
+			"Thyme"
+		],
+		"hit": {
+			"guess": "Marjoram",
+			"synonym": "Marjoram"
+		}
+	},
+	"oregano": {
+		"verdict": "PASS",
+		"guesses": [
+			"Oregano",
+			"Marjoram",
+			"Thyme"
+		],
+		"hit": {
+			"guess": "Oregano",
+			"synonym": "Oregano"
+		}
+	}
+}

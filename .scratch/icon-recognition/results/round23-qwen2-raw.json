@@ -1,0 +1,12 @@
+{
+	"oregano": {
+		"blind": "12afa62404a1",
+		"model": "qwen2.5vl:7b",
+		"raw": "1. Forget-me-not\n2. Forget-me-not\n3. Forget-me-not"
+	},
+	"marjoram": {
+		"blind": "492bc78d97a7",
+		"model": "qwen2.5vl:7b",
+		"raw": "1. Hydrangea\n2. Lavender\n3. Rosemary"
+	}
+}

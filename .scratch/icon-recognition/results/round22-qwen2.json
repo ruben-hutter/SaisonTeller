@@ -1,0 +1,22 @@
+{
+	"oregano": [
+		"Lavender",
+		"Elderberry",
+		"Elderflower"
+	],
+	"mint": [
+		"Mint",
+		"Basil",
+		"Rosemary"
+	],
+	"marjoram": [
+		"Rose",
+		"Cotton",
+		"Sunflower"
+	],
+	"wild-garlic": [
+		"Garlic",
+		"Leek",
+		"Onion"
+	]
+}

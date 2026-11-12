@@ -1,0 +1,22 @@
+{
+	"oregano": {
+		"blind": "2076a967d803",
+		"model": "qwen2.5vl:7b",
+		"raw": "1. Lavender\n2. Elderberry\n3. Elderflower"
+	},
+	"mint": {
+		"blind": "5fcd029dc56d",
+		"model": "qwen2.5vl:7b",
+		"raw": "1. Mint\n2. Basil\n3. Rosemary"
+	},
+	"marjoram": {
+		"blind": "804140866267",
+		"model": "qwen2.5vl:7b",
+		"raw": "1. Rose\n2. Cotton\n3. Sunflower"
+	},
+	"wild-garlic": {
+		"blind": "4dcf7d7495cb",
+		"model": "qwen2.5vl:7b",
+		"raw": "1. Garlic\n2. Leek\n3. Onion"
+	}
+}

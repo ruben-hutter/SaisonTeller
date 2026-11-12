@@ -1,0 +1,22 @@
+{
+	"wild-garlic": {
+		"blind": "3a5fad3baf15",
+		"model": "glm-5.3-flash",
+		"raw": "1. Onion\n2. Garlic\n3. Leek"
+	},
+	"oregano": {
+		"blind": "e0954ce3f0bd",
+		"model": "glm-5.3-flash",
+		"raw": "1. Lavender\n2. Oregano\n3. Thyme"
+	},
+	"mint": {
+		"blind": "2590d5ac9e46",
+		"model": "glm-5.3-flash",
+		"raw": "1. Mint\n2. Sprig of leaves\n3. Herb"
+	},
+	"marjoram": {
+		"blind": "ea4a9bfbd6ec",
+		"model": "glm-5.3-flash",
+		"raw": "1. Oregano\n2. Thyme\n3. Marjoram"
+	}
+}

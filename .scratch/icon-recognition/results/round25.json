@@ -1,0 +1,22 @@
+{
+	"wild-garlic": [
+		"Onion",
+		"Garlic",
+		"Leek"
+	],
+	"oregano": [
+		"Lavender",
+		"Oregano",
+		"Thyme"
+	],
+	"mint": [
+		"Mint",
+		"Sprig of leaves",
+		"Herb"
+	],
+	"marjoram": [
+		"Oregano",
+		"Thyme",
+		"Marjoram"
+	]
+}

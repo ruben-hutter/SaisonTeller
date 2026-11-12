@@ -1,0 +1,22 @@
+{
+	"mint": [
+		"Herb",
+		"Plant",
+		"Leaf"
+	],
+	"oregano": [
+		"Forget-me-not",
+		"Forget-me-not",
+		"Forget-me-not"
+	],
+	"marjoram": [
+		"Lavender",
+		"Mint",
+		"Sage"
+	],
+	"wild-garlic": [
+		"Garlic",
+		"Onion",
+		"Ginger"
+	]
+}

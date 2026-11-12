@@ -1,0 +1,47 @@
+{
+	"wild-garlic": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Onion",
+			"Garlic",
+			"Leek"
+		],
+		"hit": null
+	},
+	"oregano": {
+		"verdict": "PASS",
+		"guesses": [
+			"Lavender",
+			"Oregano",
+			"Thyme"
+		],
+		"hit": {
+			"guess": "Oregano",
+			"synonym": "Oregano"
+		}
+	},
+	"mint": {
+		"verdict": "PASS",
+		"guesses": [
+			"Mint",
+			"Sprig of leaves",
+			"Herb"
+		],
+		"hit": {
+			"guess": "Mint",
+			"synonym": "Mint"
+		}
+	},
+	"marjoram": {
+		"verdict": "PASS",
+		"guesses": [
+			"Oregano",
+			"Thyme",
+			"Marjoram"
+		],
+		"hit": {
+			"guess": "Marjoram",
+			"synonym": "Marjoram"
+		}
+	}
+}

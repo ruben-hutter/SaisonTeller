@@ -1,0 +1,47 @@
+{
+	"mint": {
+		"verdict": "PASS",
+		"guesses": [
+			"Mint",
+			"Nettle",
+			"Holly"
+		],
+		"hit": {
+			"guess": "Mint",
+			"synonym": "Mint"
+		}
+	},
+	"oregano": {
+		"verdict": "PASS",
+		"guesses": [
+			"Oregano",
+			"Thyme",
+			"Marjoram"
+		],
+		"hit": {
+			"guess": "Oregano",
+			"synonym": "Oregano"
+		}
+	},
+	"marjoram": {
+		"verdict": "FAIL",
+		"guesses": [
+			"Elderberry",
+			"Grape vine",
+			"Berry branch"
+		],
+		"hit": null
+	},
+	"wild-garlic": {
+		"verdict": "PASS",
+		"guesses": [
+			"Wild garlic",
+			"Onion",
+			"Garlic"
+		],
+		"hit": {
+			"guess": "Wild garlic",
+			"synonym": "Wild garlic"
+		}
+	}
+}

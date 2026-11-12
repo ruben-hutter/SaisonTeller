@@ -1,0 +1,22 @@
+{
+	"mint": [
+		"Mint",
+		"Nettle",
+		"Holly"
+	],
+	"oregano": [
+		"Oregano",
+		"Thyme",
+		"Marjoram"
+	],
+	"marjoram": [
+		"Elderberry",
+		"Grape vine",
+		"Berry branch"
+	],
+	"wild-garlic": [
+		"Wild garlic",
+		"Onion",
+		"Garlic"
+	]
+}
