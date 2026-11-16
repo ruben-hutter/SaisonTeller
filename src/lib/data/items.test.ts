@@ -17,7 +17,7 @@ function isAscending(values: number[]): boolean {
 
 describe('items dataset integrity', () => {
 	it('has the expected total number of items', () => {
-		expect(items.length).toBe(85);
+		expect(items.length).toBe(87);
 	});
 
 	it('has unique kebab-case ids', () => {

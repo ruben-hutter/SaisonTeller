@@ -39,7 +39,7 @@ interface ProduceItem {
 
 `src/lib/seasons.ts`: `seasonOfMonth(m)` (spring 3–5, summer 6–8, autumn 9–11, winter 12,1–2), `monthsOfSeason(season)`, and `months('7-10')` inclusive range helper with wrap-around (`'10-2'` = 1,2,10,11,12; output ascending). Spinach and chervil have two harvest ranges concatenated (`[...months('4-6'), ...months('9-11')]`).
 
-Dataset: **85 items** (46 vegetables, 23 fruits, 13 herbs, 3 nuts; 6 with `origin: 'south'`: fig, clementine, grapefruit, lemon, mandarin, orange). Full table transcribed below — the single source of truth for `items.ts`.
+Dataset: **87 items** (47 vegetables, 24 fruits, 13 herbs, 3 nuts; 6 with `origin: 'south'`: fig, clementine, grapefruit, lemon, mandarin, orange). Full table transcribed below — the single source of truth for `items.ts`.
 
 ## Views
 
@@ -118,6 +118,7 @@ Provenance (verified 2026-11-11): all 85 rows were checked against published cal
 | rhubarb | veg | Rhubarb | Rhabarber | Rhubarbe | Rabarbaro | 4-6 | | |
 | rocket | veg | Rocket | Rucola | Roquette | Rucola | 4-10 | | |
 | salsify | veg | Salsify | Schwarzwurzel | Scorsonère | Scorzonera | 10-11 | 12-2 | |
+| scallion | veg | Scallion | Frühlingszwiebel | Ciboule | Cipollotto | 5-11 | | |
 | shallot | veg | Shallot | Schalotte | Échalote | Scalogno | 7-8 | 9-12 | |
 | snap-pea | veg | Snap peas | Zuckerschoten | Pois gourmands | Piselli mangiatutto | 6-8 | | |
 | spinach | veg | Spinach | Spinat | Épinard | Spinacio | 4-6,9-11 | | |
@@ -135,6 +136,7 @@ Provenance (verified 2026-11-11): all 85 rows were checked against published cal
 | elderberry | fruit | Elderberry | Holunderbeere | Baie de sureau | Sambuco | 8-9 | | |
 | fig | fruit | Fig | Feige | Figue | Fico | 8-10 | | south |
 | grape | fruit | Grape | Traube | Raisin | Uva | 8-10 | | |
+| kiwi | fruit | Kiwi | Kiwi | Kiwi | Kiwi | 10-11 | 12-3 | |
 | melon | fruit | Melon | Melone | Melon | Melone | 7-9 | | |
 | mirabelle | fruit | Mirabelle plum | Mirabelle | Mirabelle | Mirabella | 7-8 | | |
 | nectarine-peach | fruit | Peach & nectarine | Pfirsich & Nektarine | Pêche & nectarine | Pesca & nettarina | 7-9 | | |

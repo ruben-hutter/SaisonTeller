@@ -289,6 +289,12 @@ export const items: ProduceItem[] = [
 		storage: months('12-2')
 	},
 	{
+		id: 'scallion',
+		category: 'vegetable',
+		names: { en: 'Scallion', de: 'Frühlingszwiebel', fr: 'Ciboule', it: 'Cipollotto' },
+		harvest: months('5-11')
+	},
+	{
 		id: 'shallot',
 		category: 'vegetable',
 		names: { en: 'Shallot', de: 'Schalotte', fr: 'Échalote', it: 'Scalogno' },
@@ -398,6 +404,13 @@ export const items: ProduceItem[] = [
 		category: 'fruit',
 		names: { en: 'Grape', de: 'Traube', fr: 'Raisin', it: 'Uva' },
 		harvest: months('8-10')
+	},
+	{
+		id: 'kiwi',
+		category: 'fruit',
+		names: { en: 'Kiwi', de: 'Kiwi', fr: 'Kiwi', it: 'Kiwi' },
+		harvest: months('10-11'),
+		storage: months('12-3')
 	},
 	{
 		id: 'melon',

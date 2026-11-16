@@ -22,7 +22,7 @@ npm run dev      # http://localhost:5173/SaisonTeller/
 ## How it works
 
 - **Routes**: `/` redirects to the browser's language (`/en`, `/de`, `/fr`, `/it`); month via query param, e.g. `/de?m=7`.
-- **Data**: 85 produce items in `src/lib/data/items.ts`, month ranges via `src/lib/seasons.ts`. Project-owned dataset, verified against published Swiss/German calendars.
+- **Data**: 87 produce items in `src/lib/data/items.ts`, month ranges via `src/lib/seasons.ts`. Project-owned dataset, verified against published Swiss/German calendars.
 - **i18n**: typed dictionaries in `src/lib/i18n/`, month names from `Intl.DateTimeFormat`.
 - **Theme**: follows the system (`prefers-color-scheme`), no toggle.
 - **Zero runtime dependencies** — SvelteKit + adapter-static, everything prerendered.
